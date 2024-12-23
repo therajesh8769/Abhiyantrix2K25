@@ -22,15 +22,18 @@ export function Stars() {
       y: number;
       z: number;
       size: number;
+      speed: number;
     }[] = [];
 
     // Create stars
-    for (let i = 0; i < 1000; i++) {
+    const starCount = 300; // Reduced number of stars
+    for (let i = 0; i < starCount; i++) {
       stars.push({
         x: Math.random() * canvas.width - canvas.width / 2,
         y: Math.random() * canvas.height - canvas.height / 2,
-        z: Math.random() * 1500,
-        size: 1,
+        z: Math.random() * 1000,
+        size: Math.random() * 0.5 + 0.5, // Slightly smaller stars
+        speed: Math.random() * 0.3 + 0.2, // Slower base speed
       });
     }
 
@@ -38,21 +41,22 @@ export function Stars() {
     const centerY = canvas.height / 2;
 
     function drawStars() {
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.2)';
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.1)'; // Reduced opacity for smoother trails
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       stars.forEach((star) => {
-        star.z -= speedRef.current;
+        // Move stars towards viewer (out of screen) even without scrolling
+        star.z -= star.speed + speedRef.current;
 
         if (star.z <= 0) {
-          star.z = 1500;
+          star.z = 1000;
           star.x = Math.random() * canvas.width - centerX;
           star.y = Math.random() * canvas.height - centerY;
         }
 
         const x = (star.x / star.z) * 500 + centerX;
         const y = (star.y / star.z) * 500 + centerY;
-        const size = (1 - star.z / 1500) * 5;
+        const size = (1 - star.z / 1000) * 3; // Reduced maximum size
 
         // Create gradient for each star
         const gradient = ctx.createRadialGradient(x, y, 0, x, y, size);
@@ -79,7 +83,7 @@ export function Stars() {
       lastScrollY.current = currentScroll;
 
       // Increase speed based on scroll intensity
-      speedRef.current = Math.min(20, scrollDelta * 0.2);
+      speedRef.current = Math.min(10, scrollDelta * 0.1); // Reduced maximum speed and sensitivity
 
       // Clear existing timeout
       if (scrollTimeout.current) {
@@ -121,3 +125,4 @@ export function Stars() {
     />
   );
 }
+

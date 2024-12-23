@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Rocket } from 'lucide-react';
-
+import { Announcement } from './Annoucement';
+import { RegistrationForm } from './Registration/RegistrationForm';
 export function Hero() {
+  const [showRegistration, setShowRegistration] = useState(false);
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0  bg-cover bg-center opacity-20" />
       <div className="absolute inset-0 bg-black/60" />
+      <Announcement/>
       <div className="relative z-10 text-center px-4 w-full max-w-4xl mx-auto">
         <div className="relative">
           <Rocket 
@@ -33,6 +36,7 @@ export function Hero() {
           Explore the Universe of Innovation
         </p>
         <button 
+          onClick={() => setShowRegistration(true)}
           className="px-6 py-2.5 sm:px-8 sm:py-3 text-white rounded-full relative group overflow-hidden text-sm sm:text-base"
           style={{
             background: 'linear-gradient(45deg, #4facfe 0%, #00f2fe 100%)',
@@ -46,6 +50,10 @@ export function Hero() {
           />
         </button>
       </div>
+
+      {showRegistration && (
+        <RegistrationForm onClose={() => setShowRegistration(false)} />
+      )}
     </div>
   );
 }
