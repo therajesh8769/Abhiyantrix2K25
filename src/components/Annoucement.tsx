@@ -18,7 +18,7 @@ export function Announcement() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
  
 
-  axios.defaults.baseURL = 'http://localhost:8080';
+  axios.defaults.baseURL = 'https://abhiyantrix-backend-puaf-hofv0uucl-rajeshs-projects-837c11be.vercel.app';
   axios.defaults.withCredentials = true;
 
   useEffect(() => {

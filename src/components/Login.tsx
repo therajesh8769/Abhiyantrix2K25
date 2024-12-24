@@ -18,7 +18,7 @@ export function LoginPage({ onClose, onLoginSuccess }: LoginPageProps) {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:8080/auth/login', {
+      const response = await fetch('https://abhiyantrix-backend-puaf-hofv0uucl-rajeshs-projects-837c11be.vercel.app/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

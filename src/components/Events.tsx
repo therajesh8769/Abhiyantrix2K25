@@ -64,7 +64,7 @@ const eventImages: { [key: string]: string } = {
 };
 
 // Configure axios defaults for development
-axios.defaults.baseURL = 'http://localhost:8080';
+axios.defaults.baseURL = 'https://abhiyantrix-backend-puaf-hofv0uucl-rajeshs-projects-837c11be.vercel.app';
 axios.defaults.withCredentials = true;
 
 export function Events() {
