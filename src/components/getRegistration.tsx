@@ -8,7 +8,7 @@ import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 
 
-axios.defaults.baseURL = 'http://localhost:8080';
+axios.defaults.baseURL = 'https://abhiyantrixbackend.onrender.com';
 axios.defaults.withCredentials = true;
 
 interface MemberData {

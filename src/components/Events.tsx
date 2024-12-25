@@ -64,7 +64,7 @@ const eventImages: { [key: string]: string } = {
 };
 
 // Configure axios defaults for development
-axios.defaults.baseURL = 'https://abhiyantrix-backend-puaf.vercel.app';
+axios.defaults.baseURL = 'https://abhiyantrixbackend.onrender.com';
 axios.defaults.withCredentials = true;
 
 export function Events() {

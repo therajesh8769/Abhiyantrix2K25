@@ -38,7 +38,7 @@ export function RegistrationForm({ onClose }: { onClose: () => void }) {
     const formErrors = validateForm(formData);
     if (Object.keys(formErrors).length === 0) {
       try {
-        const response = await fetch("https://abhiyantrix-backend-puaf.vercel.app/register", {
+        const response = await fetch("https://abhiyantrixbackend.onrender.com/register", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

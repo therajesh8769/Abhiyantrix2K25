@@ -18,7 +18,7 @@ export function LoginPage({ onClose, onLoginSuccess }: LoginPageProps) {
     setError(null);
 
     try {
-      const response = await fetch('https://abhiyantrix-backend-puaf.vercel.app/auth/login', {
+      const response = await fetch('https://abhiyantrixbackend.onrender.com/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
