@@ -35,7 +35,7 @@ export function RegistrationForm({ onClose }: { onClose: () => void }) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const formErrors = validateForm(formData);
+    const formErrors = validateForm(formData,3);
     if (Object.keys(formErrors).length === 0) {
       try {
         const response = await fetch("https://abhiyantrixbackend.onrender.com/register", {
