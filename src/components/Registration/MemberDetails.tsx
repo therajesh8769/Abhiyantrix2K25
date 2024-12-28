@@ -36,8 +36,10 @@ export function MemberDetails({ formData, setFormData, errors }: MemberDetailsPr
 
   return (
     <div className="space-y-6">
+      <p className='text-gray-400 text-sm text-center'>First member will be the point of contact</p>
       {formData.members.map((member, index) => (
         <div key={index} className="relative p-4 bg-blue-900/20 rounded-lg border border-blue-500/30">
+          
           <h3 className="text-blue-400 mb-4">Member {index + 1}</h3>
           <div className="space-y-4">
             <FormInput

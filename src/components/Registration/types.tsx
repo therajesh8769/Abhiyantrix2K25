@@ -3,7 +3,18 @@ export interface Member {
     department: string;
     year: string | number;
   }
+  export type EventType = 
+  | "JAALASTRA"
+  | "CAD-A-THON"
+  | "SPACE-HEIST"
+  | "GHOOMERANG"
+  | "FLOATING-FRIENZY"
+  | "AIRBONE-ADVENTURE"
   
+  | "FLYING-ACE"
+  | "GALACTIC-QUIZ-BOWL"
+  | "AEROGAMI"
+  | "STAR-WARS";
   export interface RegistrationFormData {
     TeamName: string;
     members: Member[];

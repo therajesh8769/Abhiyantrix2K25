@@ -6,11 +6,13 @@ interface ContactDetailsProps {
   formData: RegistrationFormData;
   setFormData: React.Dispatch<React.SetStateAction<RegistrationFormData>>;
   errors: FormErrors;
+
 }
 
 export function ContactDetails({ formData, setFormData, errors }: ContactDetailsProps) {
   return (
     <div className="space-y-4">
+      <p className='text-gray-400 text-sm text-center'>Contact details of first member.</p>
       <FormInput
         label="Email"
         type="email"
@@ -27,6 +29,7 @@ export function ContactDetails({ formData, setFormData, errors }: ContactDetails
         error={errors.mobile}
         placeholder="Enter your mobile number"
       />
+      
     </div>
   );
 }
