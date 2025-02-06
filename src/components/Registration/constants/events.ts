@@ -1,83 +1,83 @@
-import { EventType } from '../types';
-import { Rocket, Code, Telescope, Orbit, Moon, Globe2, Building2, Atom, Compass, Grid } from 'lucide-react';
+// import { EventType } from '../types';
+// import { Rocket, Code, Telescope, Orbit, Moon, Globe2, Building2, Atom, Compass, Grid } from 'lucide-react';
 
-export interface EventInfo {
-  id: EventType;
-  title: string;
+// export interface EventInfo {
+//   id: EventType;
+//   title: string;
   
-  icon: typeof Rocket;
+//   icon: typeof Rocket;
   
-}
+// }
 
-export const EVENTS: EventInfo[] = [
-  {
-    id: "JAALASTRA",
-    title: "Jaalastra",
+// export const EVENTS: EventInfo[] = [
+//   {
+//     id: "JAALASTRA",
+//     title: "Jaalastra",
    
-    icon: Rocket,
+//     icon: Rocket,
     
-  },
-  {
-    id: "CAD-A-THON",
-    title: "CAD-A-THON",
+//   },
+//   {
+//     id: "CAD-A-THON",
+//     title: "CAD-A-THON",
     
-    icon: Code,
+//     icon: Code,
     
-  },
-  {
-    id: "SPACE-HEIST",
-    title: "Space Heist",
+//   },
+//   {
+//     id: "SPACE-HEIST",
+//     title: "Space Heist",
   
-    icon: Telescope,
+//     icon: Telescope,
    
-  },
-  {
-    id: "GHOOMERANG",
-    title: "Ghoomerang",
+//   },
+//   {
+//     id: "GHOOMERANG",
+//     title: "Ghoomerang",
     
-    icon: Orbit,
+//     icon: Orbit,
     
-  },
-  {
-    id: "FLOATING-FRIENZY",
-    title: "Floating Frienzy",
+//   },
+//   {
+//     id: "FLOATING-FRIENZY",
+//     title: "Floating Frienzy",
     
-    icon: Moon,
+//     icon: Moon,
    
-  },
-  {
-    id: "AIRBONE-ADVENTURE",
-    title: "Airbone Adventure",
+//   },
+//   {
+//     id: "AIRBONE-ADVENTURE",
+//     title: "Airbone Adventure",
    
-    icon: Globe2, // Changed from Planet to Globe2
+//     icon: Globe2, // Changed from Planet to Globe2
     
-  },
-  {
-    id: "FLYING-ACE",
-    title: "Flyng Ace",
+//   },
+//   {
+//     id: "FLYING-ACE",
+//     title: "Flyng Ace",
     
-    icon: Building2,
+//     icon: Building2,
     
-  },
-  {
-    id: "GALACTIC-QUIZ-BOWL",
-    title: "Glactic Quiz Bowl",
+//   },
+//   {
+//     id: "GALACTIC-QUIZ-BOWL",
+//     title: "Glactic Quiz Bowl",
     
-    icon: Atom,
+//     icon: Atom,
    
-  },
-  {
-    id: "AEROGAMI",
-    title: "Aerogami",
+//   },
+//   {
+//     id: "AEROGAMI",
+//     title: "Aerogami",
     
-    icon: Compass,
+//     icon: Compass,
     
-  },
-  {
-    id: "STAR-WARS",
-    title: "Star Wars",
+//   },
+//   {
+//     id: "STAR-WARS",
+//     title: "Star Wars",
     
-    icon: Grid,
+//     icon: Grid,
     
-  }
-];
+//   }
+// ];

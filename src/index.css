@@ -165,3 +165,16 @@ body {
     transform: translateY(-100%);
   }
 }
+.animate-twinkle {
+  animation: twinkle 4s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}

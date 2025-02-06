@@ -21,11 +21,12 @@ function App() {
           <About />
         </section>
        
-        <section id="gallery" className="relative z-10 my-20 snap-start">
-          <Gallery />
-        </section>
+        
         <section id="events" className="relative z-10 mb-20 snap-start">
           <Events />
+        </section>
+        <section id="gallery" className="relative z-10 my-20 snap-start">
+          <Gallery />
         </section>
         <section id="sponsors" className="relative z-10 mt-16 snap-start">
           <Sponsors />
