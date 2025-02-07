@@ -257,17 +257,17 @@ interface StarObject extends THREE.Mesh<THREE.SphereGeometry, THREE.MeshPhongMat
 
 export function Gallery() {
   const images = [
-        "/images/IMG_1050.jpg",
-    "/images/IMG_1062.png",
-    "/images/IMG_1196.png",
-    "/images/IMG_1214.png",
-    "/images/IMG_1285.png",
-    "/images/IMG_1327.png",
-    "/images/IMG_1379.png",
-    "/images/IMG_1398.jpg",
-    "/images/IMG_1750.png",
-    "/images/IMG_1853.png",
-    "/images/IMG_1917.png",
+        "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/images/IMG_1050-uy4csNjsna1wnPc7RTnOR5dj538k6P.jpg",
+    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/images/IMG_1062-VBBu8TJPLpKA7X8s9MDTDvvhLGz4ed.png",
+    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/images/IMG_1196-kGMsBJ3VYjXKpQwx1z4EEU3JfwPvYW.png",
+    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/images/IMG_1214-wT2Uw31Yt18JjdoJG46R9hCgInWZ1O.png",
+    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/images/IMG_1285-y2FOaOPFyX06Mk6kxD1majb31fx9bI.png",
+    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/images/IMG_1327-EvoXEQ6d8Db32CRpRTHFRl19iPMe2o.png",
+    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/images/IMG_1379-CC8D2HdeUcGBuFxdJzxvGy7ERZ8TIG.png",
+    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/images/IMG_1398-5LPXLweH2b934rGrkdMgjzWz6pyfOf.jpg",
+    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/images/IMG_1750-APdcjXsa90tgOQI0FLldisEnG7WZVD.png",
+    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/images/IMG_1853-7uP3nfSBS1vexbokFmh8BSj6WQqXaz.png",
+    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/images/IMG_1917-XiiLBrc3HVI3bB9B0wn4rkRJCBkwtb.png",
     "/images/IMG_2190.jpg",
   ];
 

@@ -411,7 +411,7 @@ export function Hero() {
           <div className="my-2 relative cursor-pointer" onMouseEnter={handleLogoHover}>
             <img
               ref={logoRef}
-              src="/images/AbhiyantrixLogo1.png"
+              src="https://vzjmqivzndfloheg.public.blob.vercel-storage.com/images/AbhiyantrixLogo1-kJow3YzgvTulxQpwJ8w6KQ6bS5Tgzf.png"
               alt="ABHIYANTRIX Logo"
               className="w-auto h-auto max-h-48 md:max-h-48 xl:max-h-48 2xl:max-h-48 mx-auto"
               style={{
@@ -449,7 +449,7 @@ export function Hero() {
                     }}
                     muted={isMuted}
                   >
-                    <source src="/images/Aero13.mp4" type="video/mp4" />
+                    <source src="https://vzjmqivzndfloheg.public.blob.vercel-storage.com/images/Aero13-TGLuvHEFXJSMP90I5huhhbguw0CYtx.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                   <button
