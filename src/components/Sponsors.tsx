@@ -162,17 +162,37 @@ export function Sponsors() {
     {
       title: "Want to Sponsor Us?",
       description: "Join our galaxy of innovative partners",
-      logo: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=200&h=200",
+      logo: "images/logo.png",
     },
     {
-      title: "Quantum Technologies",
-      description: "Pioneering the future of innovation",
-      logo: "https://images.unsplash.com/photo-1551150441-3f3828204ef0?auto=format&fit=crop&w=200&h=200",
+      title: "RED FM",
+      description: "Title Sponsor",
+      logo: "/images/red fm.png",
     },
     {
-      title: "Stellar Systems",
-      description: "Reaching for the stars in technology",
-      logo: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=200&h=200",
+      title: "ICICI BANK",
+      description: "Co-Sponsor",
+      logo: "images/icici.png",
+    },
+    {
+      title: "IITians GATE CLASSES",
+      description: "Event Sponsor",
+      logo: "/images/iitgate1.png",
+    },
+    {
+      title: "PATHAK ENTERPRISE",
+      description: "Event Sponsor",
+      logo: "images/pathak enterprises.png",
+    },
+    {
+      title: "EDUQUIS TECHNOLOGY",
+      description: "Event Sponsor",
+      logo: "/images/eduquis.png",
+    },
+    {
+      title: "Dare 2 Compete",
+      description: "Event Sponsor",
+      logo: "/images/dare to compete.jpeg",
     },
   ])
 
@@ -237,9 +257,9 @@ export function Sponsors() {
               <div className="relative group">
                 <div 
                   className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-lg blur-lg opacity-20 
-                           group-hover:opacity-40 transition-opacity duration-500"
+                           group-hover:opacity-40 transition-opacity duration-700"
                   style={{
-                    animation: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+                    animation: 'pulse 3s cubic-bezier( 0.2, 0.9, 1) infinite '
                   }}
                 />
                 
@@ -251,8 +271,8 @@ export function Sponsors() {
                       <img
                         src={sponsors[currentIndex].logo}
                         alt={`${sponsors[currentIndex].title} logo`}
-                        className="rounded-full object-cover w-full h-full relative z-10 border-2 border-blue-400/30 
-                                 transform transition-transform duration-500 group-hover:scale-105"
+                        className="rounded-full object-cover w-ful h-full relative z-10 border-2 border-blue-400/30 
+                                 transform transition-transform duration-500 group-hover:scale-105 "
                       />
                     </div>
                     
@@ -271,7 +291,7 @@ export function Sponsors() {
                           onClick={() => setIsDialogOpen(true)}
                           className="mt-4 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 
                                    hover:to-cyan-600 text-white font-semibold py-2 px-6 rounded-full 
-                                   transform hover:scale-105 transition-all duration-300 animate-pulse"
+                                   transform hover:scale-105 transition-all duration-300 "
                         >
                           Learn More
                           
