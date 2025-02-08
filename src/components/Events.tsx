@@ -577,14 +577,14 @@
 'use client'
 
 import React, { useState } from 'react';
-import { Laptop, Bot, Rocket, Plane, X } from 'lucide-react';
+import { Laptop, Bot, Rocket, Plane,Landmark, X, HelpCircle, Mic, Send, Monitor, Telescope } from 'lucide-react';
 
 interface Event {
   id: string;
   icon: React.ReactNode;
   title: string;
+  tagline: string;
   date: string;
-  time: string;
   prize: string;
   image: string;
   description: string;
@@ -594,9 +594,9 @@ const events: Event[] = [
   {
     id: '1',
     icon: <Laptop className="w-6 h-6 md:w-8 md:h-8" />,
-    title: "CAD-A-THON",
-    date: "October 15, 2024",
-    time: "10:00 AM - 4:00 PM",
+    title: "CAD-CRUSADE",
+    tagline: "'Ready your blueprints'",
+    date: "10:00 AM - 4:00 PM",
     prize: "₹10,000",
     image: "/images/cad.png",
     description: "Showcase your artistry and precision by letting your skilled hands bring complex machine designs to life in this dynamic fusion of art and engineering."
@@ -605,9 +605,9 @@ const events: Event[] = [
     id: '2',
     icon: <Bot className="w-6 h-6 md:w-8 md:h-8" />,
     title: "HOVER-HAVOC",
-    date: "March 29, 2024",
-    time: "11:00 AM - 3:00 PM",
-    prize: "₹8,000",
+    tagline: "'Ready,Set,Hover!'",
+    date: "21 March 2025",
+    prize: "₹2,000",
     image: "/images/hoverpod.png",
     description: "Dive into our charged arena of our hovercraft competition where you can show-off your speed and precision by swiftly navigating through an obstacle course."
   },
@@ -615,22 +615,74 @@ const events: Event[] = [
     id: '3',
     icon: <Rocket className="w-6 h-6 md:w-8 md:h-8" />,
     title: "JALSTRA",
-    date: "March 28, 2024",
-    time: "9:00 AM - 2:00 PM",
+    tagline: "'Launching Dreams:Soaring Heights'",
+    date: "9:00 AM - 2:00 PM",
     prize: "₹12,000",
     image: "/images/rocket.png",
-    description: "Put your creativity and innovation to test and take flight with your handcrafted rockets to touch the skies!"
+    description: "Step into the excitement of our water rocket competition, where you can test your ingenuity and precision by launching rockets through a thrilling flight challenge."
   },
   {
     id: '4',
-    icon: <Plane className="w-6 h-6 md:w-8 md:h-8" />,
-    title: "AIR-O-FOLD",
-    date: "March 28, 2024",
-    time: "1:00 PM - 5:00 PM",
+    icon: <Landmark className="w-6 h-6 md:w-8 md:h-8" />,
+    title: "DRONEACHARYA",
+    tagline: "'Take Flight,Embrace the Sky'",
+    date: "1:00 PM - 5:00 PM",
     prize: "₹5,000",
-    image: "/images/paperPlane.png",
-    description: "Showcase your mastery at origami and let your creativity take flight!"
-  }
+    image: "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/drone1-mZh8W9VCzWFEatL3RpP80xWgPRbC6d.png",
+    description: "Take on the skies in our drone competition, where you’ll show off your skills by guiding drones through a challenging and dynamic course."
+  },
+  {
+    id: '5',
+    icon: <Monitor className="w-6 h-6 md:w-8 md:h-8" />,
+    title: "FLYING ACE",
+    tagline: "'Take your wings to the skies'",
+    date: "March 21,2025",
+    prize: "₹5,000",
+    image: "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/flighsimulator-6YfqgkEnZxj1L8TzkRSDLsvNdxFjw3.png",
+    description: "Experience the thrill of aviation in our Flight Simulator event! Navigate the skies and put your piloting skills to the test."
+  },
+  {
+    id: '6',
+    icon: <Send className="w-6 h-6 md:w-8 md:h-8" />,
+    title: "AIRBORNE ADENTURE",
+    tagline: "'Fly Beyond the limits!'",
+    date: "March 21,2025",
+    prize: "₹5,000",
+    image: "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/rcplane-ObXFj0UUV4IJbkALkR9dN6rjm9XH74.png",
+    description: "Ready for the challenge? Compete in our RC Plane Competition and soar through the skies with skill and speed."
+  },
+  {
+    id: '7',
+    icon: <HelpCircle className="w-6 h-6 md:w-8 md:h-8" />,
+    title: "GALACTIC QUIZ BOWL",
+    tagline: "'Blast off with Knowledge'",
+    date: "March 21,2025",
+    prize: "₹5,000",
+    image: "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/quiz-esivLK8JYb0dwCcxnij9UFsrHngYLz.png",
+    description: "Prepare for liftoff in the Galactic Quiz Bowl! Challenge your mind and compete in a fast-paced, out-of-this-world trivia showdown."
+  },
+  {
+    id: '8',
+    icon: <Mic className="w-6 h-6 md:w-8 md:h-8" />,
+    title: "STAR WARS",
+    tagline: "'Debate.Discuss.Decide'",
+    date: "March 21,2025",
+    prize: "₹5,000",
+    image: "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/debate-LU57CVzeY32QpumCqwntXCaG5yaP5N.png",
+    description: "Prepare to debate! Showcase your skills in argumentation and critical thinking while engaging in dynamic discussions with fellow competitors."
+  },
+  {
+    id: '9',
+    icon: <Telescope className="w-6 h-6 md:w-8 md:h-8" />,
+    title: "Sky Watching",
+    tagline: "'Gaze into the infinite'",
+    date: "March 23,2025",
+    prize: "₹5,000",
+    image: "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/skyWatching-CFAPCoOhSV0BeabGClqRO8bQM9FTcy.png",
+    description: "A captivating sky-watching experience, where you can discover constellations, planets, and celestial wonders while exploring the vast beauty of the cosmos."
+  },
+
+
 ];
 
 export function Events() {
@@ -672,11 +724,11 @@ export function Events() {
                     } backdrop-blur-sm`}
                   >
                     <div className="text-blue-400 mb-4">{event.icon}</div>
-                    <h3 className="text-xl md:text-2xl font-bold text-white mb-4">{event.title}</h3>
+                    <h3 className="text-xl md:text-2xl font-bold text-white mb-1">{event.title}</h3>
 
-                    <div className="space-y-2 mb-4">
-                      <p className="text-sm text-gray-300">{event.date}</p>
-                      <p className="text-sm text-gray-300">{event.time}</p>
+                    <div className="space-y-1 mb-4">
+                      <p className="text-sm text-gray-300 font-sarif mb-6">{event.tagline}</p>
+                      <p className="text-sm text-gray-300 mb-2">{event.date}</p>
                       <p className="text-sm text-green-400 font-medium">Prize: {event.prize}</p>
                     </div>
                   </div>

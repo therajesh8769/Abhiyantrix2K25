@@ -14,7 +14,7 @@ export function About() {
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 md:mb-16">
           <span className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 
                          animate-[shimmer_3s_infinite] bg-[length:200%_100%]">
-            About Abhiyantrix 2024
+            About Abhiyantrix
           </span>
         </h2>
         
@@ -25,24 +25,24 @@ export function About() {
           <div className="relative bg-black/80 backdrop-blur-sm rounded-lg p-6 md:p-10 mb-12 
                          border border-blue-500/20 hover:border-blue-500/40 transition-colors duration-300">
             <p className="leading-relaxed text-lg md:text-xl text-gray-300 space-y-4">
-              <span className="font-orbitron text-white inline-block transform hover:scale-105 transition-transform">
+              <span className="font-mono text-white inline-block transform hover:scale-105 transition-transform">
                 ABHIYANTRIX
               </span>
-              , one of the biggest fests in West Bengal, is unique in being centered around 
+              , one of the biggest fests in West Bengal, is unique in being centered around,
               <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 
                              inline-block transform hover:scale-105 transition-transform">
-                {" Space and Technology"}
+                {"  Space and Technology"}
               </span>
               . Conducted by the Aerospace Engineers' Society of the Department of Aerospace Engineering 
               and Applied Mechanics, Indian Institute of Engineering Science and Technology, Shibpur, 
               this event stands as a beacon of innovation and collaboration.
             </p>
             <p className="mt-4 leading-relaxed text-lg md:text-xl text-gray-300">
-              <span className="font-orbitron text-white inline-block transform hover:scale-105 transition-transform">
-                Abhiyantrix 2024
+              <span className="font-mono text-white inline-block transform hover:scale-105 transition-transform">
+                Abhiyantrix 2025
               </span>{" "}
               will be held from{" "}
-              <span className="text-blue-400 font-bold">April 1 to April 3</span>. 
+              <span className="text-blue-400 font-bold">March 21 to March 23</span>. 
               The fest ignites technological curiosity, providing an inclusive platform for participants 
               to come together and contribute to groundbreaking innovations in the fields of Space and Technology.
             </p>
@@ -54,7 +54,7 @@ export function About() {
           {[
             {
               icon: <Calendar className="w-10 h-10 md:w-12 md:h-12" />,
-              title: "April 1-3, 2024",
+              title: "March 21-23, 2025",
               subtitle: "Three days of innovation"
             },
             {
