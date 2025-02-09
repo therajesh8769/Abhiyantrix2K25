@@ -541,7 +541,7 @@
 //                   <X size={24} />
 //                 </button>
 //               </div>
-              
+
 //               <div className="aspect-[16/9] w-full rounded-lg overflow-hidden mb-4">
 //                 <img
 //                   src={selectedEvent.image}
@@ -716,9 +716,8 @@ export function Events() {
           {events.map((event, index) => (
             <div
               key={event.id}
-              className={`flex flex-row items-center justify-between gap-8 md:gap-16 cursor-pointer transition-transform ${
-                hoveredEvent === event.id ? "scale-105" : "scale-100"
-              }`}
+              className={`flex flex-row items-center justify-between gap-8 md:gap-16 cursor-pointer transition-transform ${hoveredEvent === event.id ? "scale-105" : "scale-100"
+                }`}
               onClick={() => setSelectedEvent(event)}
               onMouseEnter={() => setHoveredEvent(event.id)}
               onMouseLeave={() => setHoveredEvent(null)}
@@ -733,11 +732,10 @@ export function Events() {
               <div className={`w-1/2 ${index % 2 === 0 ? "order-1" : "order-2"}`}>
                 <div className="relative">
                   <div
-                    className={`p-3 rounded-lg border ${
-                      hoveredEvent === event.id
+                    className={`p-3 rounded-lg border ${hoveredEvent === event.id
                         ? "bg-blue-500/30 border-blue-400 shadow-lg"
                         : "bg-black/60 border-blue-500/30"
-                    } backdrop-blur-sm`}
+                      } backdrop-blur-sm`}
                   >
                     <div className="text-blue-400 mb-4">{event.icon}</div>
                     <h3 className="text-xl md:text-2xl font-bold text-white mb-1">{event.title}</h3>
@@ -796,9 +794,9 @@ export function Events() {
 
               <div className="space-y-4">
                 <div className="space-y-2">
-                <p className="text-gray-300">{selectedEvent.tagline}</p>
+                  <p className="text-gray-300">{selectedEvent.tagline}</p>
                   <p className="text-gray-300">{selectedEvent.date}</p>
-                  
+
                   <p className="text-green-400 font-medium">Prize: {selectedEvent.prize}</p>
                 </div>
 
@@ -812,17 +810,17 @@ export function Events() {
                   Close
                 </button>
                 {selectedEvent?.registrationLink ? (
-  <a
-  onClick={() => window.open(selectedEvent?.registrationLink, "_blank")}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-blue-500 text-white text-sm py-1.5 px-3 rounded-full hover:bg-blue-600 transition-colors"
-  >
-    Register
-  </a>
-) : (
-  <p className="text-red-500">Registration link not available</p>
-)}
+                  <a
+                    onClick={() => window.open(selectedEvent?.registrationLink, "_blank")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-500 text-white text-sm py-1.5 px-3 rounded-full hover:bg-blue-600 transition-colors"
+                  >
+                    Register
+                  </a>
+                ) : (
+                  <p className="text-red-500">Registration link not available</p>
+                )}
               </div>
             </div>
           </div>
