@@ -574,134 +574,150 @@
 //   );
 // }
 
-'use client'
+"use client"
 
-import React, { useState } from 'react';
-import { Laptop, Bot, Rocket, Plane,Landmark, X, HelpCircle, Mic, Send, Monitor, Telescope } from 'lucide-react';
+import type React from "react"
+import { useState } from "react"
+import { Laptop, Bot, Rocket, Landmark, X, HelpCircle, Mic, Send, Monitor, Telescope } from "lucide-react"
 
 interface Event {
-  id: string;
-  icon: React.ReactNode;
-  title: string;
-  tagline: string;
-  date: string;
-  prize: string;
-  image: string;
-  description: string;
+  id: string
+  icon: React.ReactNode
+  title: string
+  tagline: string
+  date: string
+  prize: string
+  image: string
+  description: string
+  registrationLink: string
 }
 
 const events: Event[] = [
   {
-    id: '1',
+    id: "1",
     icon: <Laptop className="w-6 h-6 md:w-8 md:h-8" />,
     title: "CAD-CRUSADE",
     tagline: "'Ready your blueprints'",
     date: "10:00 AM - 4:00 PM",
     prize: "₹10,000",
     image: "/images/cad.png",
-    description: "Showcase your artistry and precision by letting your skilled hands bring complex machine designs to life in this dynamic fusion of art and engineering."
+    description:
+      "Showcase your artistry and precision by letting your skilled hands bring complex machine designs to life in this dynamic fusion of art and engineering.",
+    registrationLink: "https://unstop.com/o/poPyCLJ?lb=wCdWBIno",
   },
   {
-    id: '2',
+    id: "2",
     icon: <Bot className="w-6 h-6 md:w-8 md:h-8" />,
     title: "HOVER-HAVOC",
     tagline: "'Ready,Set,Hover!'",
     date: "21 March 2025",
     prize: "₹2,000",
     image: "/images/hoverpod.png",
-    description: "Dive into our charged arena of our hovercraft competition where you can show-off your speed and precision by swiftly navigating through an obstacle course."
+    description:
+      "Dive into our charged arena of our hovercraft competition where you can show-off your speed and precision by swiftly navigating through an obstacle course.",
+    registrationLink: "https://unstop.com/o/XSaM1pj?lb=wCdWBIno",
   },
   {
-    id: '3',
+    id: "3",
     icon: <Rocket className="w-6 h-6 md:w-8 md:h-8" />,
     title: "JALSTRA",
     tagline: "'Launching Dreams:Soaring Heights'",
     date: "9:00 AM - 2:00 PM",
     prize: "₹12,000",
     image: "/images/rocket.png",
-    description: "Step into the excitement of our water rocket competition, where you can test your ingenuity and precision by launching rockets through a thrilling flight challenge."
+    description:
+      "Step into the excitement of our water rocket competition, where you can test your ingenuity and precision by launching rockets through a thrilling flight challenge.",
+    registrationLink: "https://unstop.com/o/9WMc5Tu?lb=wCdWBIno",
   },
   {
-    id: '4',
+    id: "4",
     icon: <Landmark className="w-6 h-6 md:w-8 md:h-8" />,
     title: "DRONEACHARYA",
     tagline: "'Take Flight,Embrace the Sky'",
     date: "1:00 PM - 5:00 PM",
     prize: "₹5,000",
     image: "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/drone1-mZh8W9VCzWFEatL3RpP80xWgPRbC6d.png",
-    description: "Take on the skies in our drone competition, where you’ll show off your skills by guiding drones through a challenging and dynamic course."
+    description:
+      "Take on the skies in our drone competition, where you’ll show off your skills by guiding drones through a challenging and dynamic course.",
+    registrationLink: "https://unstop.com/o/5aHmhex?lb=wCdWBIno",
   },
   {
-    id: '5',
+    id: "5",
     icon: <Monitor className="w-6 h-6 md:w-8 md:h-8" />,
     title: "FLYING ACE",
     tagline: "'Take your wings to the skies'",
     date: "March 21,2025",
     prize: "₹5,000",
     image: "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/flighsimulator-6YfqgkEnZxj1L8TzkRSDLsvNdxFjw3.png",
-    description: "Experience the thrill of aviation in our Flight Simulator event! Navigate the skies and put your piloting skills to the test."
+    description:
+      "Experience the thrill of aviation in our Flight Simulator event! Navigate the skies and put your piloting skills to the test.",
+    registrationLink: "https://unstop.com/o/oYyvbxk?lb=wCdWBIno",
   },
   {
-    id: '6',
+    id: "6",
     icon: <Send className="w-6 h-6 md:w-8 md:h-8" />,
     title: "AIRBORNE ADENTURE",
     tagline: "'Fly Beyond the limits!'",
     date: "March 21,2025",
     prize: "₹5,000",
     image: "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/rcplane-ObXFj0UUV4IJbkALkR9dN6rjm9XH74.png",
-    description: "Ready for the challenge? Compete in our RC Plane Competition and soar through the skies with skill and speed."
+    description:
+      "Ready for the challenge? Compete in our RC Plane Competition and soar through the skies with skill and speed.",
+    registrationLink: "https://unstop.com/o/vUAkDp8?lb=wCdWBIno",
   },
   {
-    id: '7',
+    id: "7",
     icon: <HelpCircle className="w-6 h-6 md:w-8 md:h-8" />,
     title: "GALACTIC QUIZ BOWL",
     tagline: "'Blast off with Knowledge'",
     date: "March 21,2025",
     prize: "₹5,000",
     image: "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/quiz-esivLK8JYb0dwCcxnij9UFsrHngYLz.png",
-    description: "Prepare for liftoff in the Galactic Quiz Bowl! Challenge your mind and compete in a fast-paced, out-of-this-world trivia showdown."
+    description:
+      "Prepare for liftoff in the Galactic Quiz Bowl! Challenge your mind and compete in a fast-paced, out-of-this-world trivia showdown.",
+    registrationLink: "https://unstop.com/o/by8A6nw?lb=wCdWBIno",
   },
   {
-    id: '8',
+    id: "8",
     icon: <Mic className="w-6 h-6 md:w-8 md:h-8" />,
     title: "STAR WARS",
     tagline: "'Debate.Discuss.Decide'",
     date: "March 21,2025",
     prize: "₹5,000",
     image: "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/debate-LU57CVzeY32QpumCqwntXCaG5yaP5N.png",
-    description: "Prepare to debate! Showcase your skills in argumentation and critical thinking while engaging in dynamic discussions with fellow competitors."
+    description:
+      "Prepare to debate! Showcase your skills in argumentation and critical thinking while engaging in dynamic discussions with fellow competitors.",
+    registrationLink: "https://unstop.com/o/SFnwqI0?lb=wCdWBIno",
   },
   {
-    id: '9',
+    id: "9",
     icon: <Telescope className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Sky Watching",
     tagline: "'Gaze into the infinite'",
     date: "March 23,2025",
     prize: "₹5,000",
     image: "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/skyWatching-CFAPCoOhSV0BeabGClqRO8bQM9FTcy.png",
-    description: "A captivating sky-watching experience, where you can discover constellations, planets, and celestial wonders while exploring the vast beauty of the cosmos."
+    description:
+      "A captivating sky-watching experience, where you can discover constellations, planets, and celestial wonders while exploring the vast beauty of the cosmos.",
+    registrationLink: "https://unstop.com/o/2mGjNXp?lb=wCdWBIno",
   },
-
-
-];
+]
 
 export function Events() {
-  const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
-  const [hoveredEvent, setHoveredEvent] = useState<string | null>(null);
+  const [selectedEvent, setSelectedEvent] = useState<Event | null>(null)
+  const [hoveredEvent, setHoveredEvent] = useState<string | null>(null)
 
   return (
     <div className="relative inset-0 bg-cover bg-center opacity-70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 md:py-20">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-10 md:mb-20">
-          Featured Events
-        </h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-10 md:mb-20">Featured Events</h2>
 
         <div className="space-y-16 md:space-y-32">
           {events.map((event, index) => (
             <div
               key={event.id}
               className={`flex flex-row items-center justify-between gap-8 md:gap-16 cursor-pointer transition-transform ${
-                hoveredEvent === event.id ? 'scale-105' : 'scale-100'
+                hoveredEvent === event.id ? "scale-105" : "scale-100"
               }`}
               onClick={() => setSelectedEvent(event)}
               onMouseEnter={() => setHoveredEvent(event.id)}
@@ -709,18 +725,18 @@ export function Events() {
               role="button"
               tabIndex={0}
               onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                  setSelectedEvent(event);
+                if (e.key === "Enter" || e.key === " ") {
+                  setSelectedEvent(event)
                 }
               }}
             >
-              <div className={`w-1/2 ${index % 2 === 0 ? 'order-1' : 'order-2'}`}>
+              <div className={`w-1/2 ${index % 2 === 0 ? "order-1" : "order-2"}`}>
                 <div className="relative">
                   <div
                     className={`p-3 rounded-lg border ${
                       hoveredEvent === event.id
-                        ? 'bg-blue-500/30 border-blue-400 shadow-lg'
-                        : 'bg-black/60 border-blue-500/30'
+                        ? "bg-blue-500/30 border-blue-400 shadow-lg"
+                        : "bg-black/60 border-blue-500/30"
                     } backdrop-blur-sm`}
                   >
                     <div className="text-blue-400 mb-4">{event.icon}</div>
@@ -731,14 +747,23 @@ export function Events() {
                       <p className="text-sm text-gray-300 mb-2">{event.date}</p>
                       <p className="text-sm text-green-400 font-medium">Prize: {event.prize}</p>
                     </div>
+                    <a
+                      href={event.registrationLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block mt-4 bg-blue-500 text-white text-sm py-1.5 px-3 rounded-full hover:bg-blue-600 transition-colors"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Register
+                    </a>
                   </div>
                 </div>
               </div>
 
-              <div className={`w-1/2 ${index % 2 === 0 ? 'order-2' : 'order-1'}`}>
+              <div className={`w-1/2 ${index % 2 === 0 ? "order-2" : "order-1"}`}>
                 <div className="aspect-[4/3] w-full rounded-lg overflow-hidden">
                   <img
-                    src={event.image}
+                    src={event.image || "/placeholder.svg"}
                     alt={event.title}
                     className="w-full h-full object-cover"
                   />
@@ -756,17 +781,14 @@ export function Events() {
                   {selectedEvent.icon}
                   <h3 className="text-2xl font-bold text-white">{selectedEvent.title}</h3>
                 </div>
-                <button
-                  onClick={() => setSelectedEvent(null)}
-                  className="text-gray-400 hover:text-white"
-                >
+                <button onClick={() => setSelectedEvent(null)} className="text-gray-400 hover:text-white">
                   <X size={24} />
                 </button>
               </div>
 
               <div className="aspect-[16/9] w-full rounded-lg overflow-hidden mb-4">
                 <img
-                  src={selectedEvent.image}
+                  src={selectedEvent.image || "/placeholder.svg"}
                   alt={selectedEvent.title}
                   className="w-full h-full object-cover"
                 />
@@ -775,23 +797,33 @@ export function Events() {
               <div className="space-y-4">
                 <div className="space-y-2">
                   <p className="text-gray-300">{selectedEvent.date}</p>
-                  <p className="text-gray-300">{selectedEvent.time}</p>
+                  <p className="text-gray-300"></p>
                   <p className="text-green-400 font-medium">Prize: {selectedEvent.prize}</p>
                 </div>
 
                 <p className="text-gray-300">{selectedEvent.description}</p>
               </div>
-
-              <button
-                className="mt-6 w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors"
-                onClick={() => setSelectedEvent(null)}
-              >
-                Close
-              </button>
+              <div className="flex justify-between items-center mt-6">
+                <button
+                  className="bg-gray-500 text-white text-sm py-1.5 px-3 rounded-full hover:bg-gray-600 transition-colors"
+                  onClick={() => setSelectedEvent(null)}
+                >
+                  Close
+                </button>
+                <a
+                  href={selectedEvent.registrationLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-500 text-white text-sm py-1.5 px-3 rounded-full hover:bg-blue-600 transition-colors"
+                >
+                  Register
+                </a>
+              </div>
             </div>
           </div>
         )}
       </div>
     </div>
-  );
+  )
 }
+
