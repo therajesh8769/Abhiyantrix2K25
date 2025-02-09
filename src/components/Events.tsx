@@ -796,8 +796,9 @@ export function Events() {
 
               <div className="space-y-4">
                 <div className="space-y-2">
+                <p className="text-gray-300">{selectedEvent.tagline}</p>
                   <p className="text-gray-300">{selectedEvent.date}</p>
-                  <p className="text-gray-300"></p>
+                  
                   <p className="text-green-400 font-medium">Prize: {selectedEvent.prize}</p>
                 </div>
 
@@ -810,14 +811,18 @@ export function Events() {
                 >
                   Close
                 </button>
-                <a
-                  href={selectedEvent.registrationLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-blue-500 text-white text-sm py-1.5 px-3 rounded-full hover:bg-blue-600 transition-colors"
-                >
-                  Register
-                </a>
+                {selectedEvent?.registrationLink ? (
+  <a
+  onClick={() => window.open(selectedEvent?.registrationLink, "_blank")}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-blue-500 text-white text-sm py-1.5 px-3 rounded-full hover:bg-blue-600 transition-colors"
+  >
+    Register
+  </a>
+) : (
+  <p className="text-red-500">Registration link not available</p>
+)}
               </div>
             </div>
           </div>
