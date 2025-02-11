@@ -18,7 +18,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-6 mb-6">
             {/* Logo and About Section */}
             <div className="flex flex-col items-center md:items-start md:w-2/5">
-              <img src="https://vzjmqivzndfloheg.public.blob.vercel-storage.com/AbhiyantrixLogo2-pVB6fkjLJsOcp8ybf5ZRbUOVw2VY36.png" alt="ABHIYANTRIX Logo" className="h-16 w-auto " />
+              <img src="/images/AbhiyantrixLogo2.png" alt="https://vzjmqivzndfloheg.public.blob.vercel-storage.com/AbhiyantrixLogo2-pVB6fkjLJsOcp8ybf5ZRbUOVw2VY36.png" className="h-16 w-auto " />
               <p className="text-gray-400 text-sm text-center md:text-left leading-relaxed">
                 Join us for the most innovative technical festival that pushes the boundaries of technology and creativity.
               </p>

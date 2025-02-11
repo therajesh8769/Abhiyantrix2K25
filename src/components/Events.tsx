@@ -636,7 +636,7 @@ const events: Event[] = [
     tagline: "'Take Flight,Embrace the Sky'",
     date: "1:00 PM - 5:00 PM",
     prize: "₹5,000",
-    image: "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/drone1-mZh8W9VCzWFEatL3RpP80xWgPRbC6d.png",
+    image: "/images/drone1.png",
     description:
       "Take on the skies in our drone competition, where you’ll show off your skills by guiding drones through a challenging and dynamic course.",
     registrationLink: "https://unstop.com/o/5aHmhex?lb=wCdWBIno",
@@ -648,7 +648,7 @@ const events: Event[] = [
     tagline: "'Take your wings to the skies'",
     date: "March 21,2025",
     prize: "₹5,000",
-    image: "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/flighsimulator-6YfqgkEnZxj1L8TzkRSDLsvNdxFjw3.png",
+    image: "/images/flighsimulator.png",
     description:
       "Experience the thrill of aviation in our Flight Simulator event! Navigate the skies and put your piloting skills to the test.",
     registrationLink: "https://unstop.com/o/oYyvbxk?lb=wCdWBIno",
@@ -660,7 +660,7 @@ const events: Event[] = [
     tagline: "'Fly Beyond the limits!'",
     date: "March 21,2025",
     prize: "₹5,000",
-    image: "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/rcplane-ObXFj0UUV4IJbkALkR9dN6rjm9XH74.png",
+    image: "/images/rcplane.png",
     description:
       "Ready for the challenge? Compete in our RC Plane Competition and soar through the skies with skill and speed.",
     registrationLink: "https://unstop.com/o/vUAkDp8?lb=wCdWBIno",
@@ -672,7 +672,7 @@ const events: Event[] = [
     tagline: "'Blast off with Knowledge'",
     date: "March 21,2025",
     prize: "₹5,000",
-    image: "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/quiz-esivLK8JYb0dwCcxnij9UFsrHngYLz.png",
+    image: "/images/quiz.png",
     description:
       "Prepare for liftoff in the Galactic Quiz Bowl! Challenge your mind and compete in a fast-paced, out-of-this-world trivia showdown.",
     registrationLink: "https://unstop.com/o/by8A6nw?lb=wCdWBIno",
@@ -684,7 +684,7 @@ const events: Event[] = [
     tagline: "'Debate.Discuss.Decide'",
     date: "March 21,2025",
     prize: "₹5,000",
-    image: "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/debate-LU57CVzeY32QpumCqwntXCaG5yaP5N.png",
+    image: "/images/debate.png",
     description:
       "Prepare to debate! Showcase your skills in argumentation and critical thinking while engaging in dynamic discussions with fellow competitors.",
     registrationLink: "https://unstop.com/o/SFnwqI0?lb=wCdWBIno",
@@ -696,7 +696,7 @@ const events: Event[] = [
     tagline: "'Gaze into the infinite'",
     date: "March 23,2025",
     prize: "₹5,000",
-    image: "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/skyWatching-CFAPCoOhSV0BeabGClqRO8bQM9FTcy.png",
+    image: "/images/skyWatching.png",
     description:
       "A captivating sky-watching experience, where you can discover constellations, planets, and celestial wonders while exploring the vast beauty of the cosmos.",
     registrationLink: "https://unstop.com/o/2mGjNXp?lb=wCdWBIno",
@@ -786,7 +786,7 @@ export function Events() {
 
               <div className="aspect-[16/9] w-full rounded-lg overflow-hidden mb-4">
                 <img
-                  src={selectedEvent.image || "/placeholder.svg"}
+                  src={selectedEvent.image }
                   alt={selectedEvent.title}
                   className="w-full h-full object-cover"
                 />

@@ -411,8 +411,8 @@ export function Hero() {
           <div className="my-2 relative cursor-pointer" onMouseEnter={handleLogoHover}>
             <img
               ref={logoRef}
-              src="https://vzjmqivzndfloheg.public.blob.vercel-storage.com/AbhiyantrixLogo2-pVB6fkjLJsOcp8ybf5ZRbUOVw2VY36.png"
-              alt="ABHIYANTRIX Logo"
+              src="/images/AbhiyantrixLogo2.png"
+              alt="https://vzjmqivzndfloheg.public.blob.vercel-storage.com/AbhiyantrixLogo2-pVB6fkjLJsOcp8ybf5ZRbUOVw2VY36.png"
               className="w-auto h-auto max-h-48 md:max-h-48 xl:max-h-48 2xl:max-h-48 mx-auto"
               style={{
                 filter: "drop-shadow(0 0 20px rgba(96, 165, 250, 0.3))",
@@ -465,7 +465,7 @@ export function Hero() {
 
           {/* Coming soon text with animated dots */}
           <div className="relative mt-16 mb-16">
-            <p className="text-xl md:text-2xl lg:text-3xl text-blue-200 font-light tracking-widest">LAUNCHING SOON</p>
+            <p className="text-xl font-sarif md:text-2xl lg:text-3xl text-blue-200 font-light tracking-widest">EXPLORE THE SPACE</p>
             <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2 mb12">
               {[0, 1, 2].map((i) => (
                 <div

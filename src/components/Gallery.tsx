@@ -257,18 +257,18 @@ interface StarObject extends THREE.Mesh<THREE.SphereGeometry, THREE.MeshPhongMat
 
 export function Gallery() {
   const images = [
-    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/IMG_1050%20(1)-JWEtZveW9qmbe2Q1kBpJaWb2pyj2b7.jpg",
-    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/IMG_1062-CJNU11Fz04ZrWgLdO9TXsPofGKXibv.jpg",
-    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/IMG1337-b5FWM9u2WC3dlqvdxhm2ihqx6p5z90.jpg",
-    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/IMG1214-SRCU64ZP2gIHsZc0cpYcvrI5ts57qY.jpg",
-    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/IMG1285-wfwZ3mUzMdslyOICTDlG4o2nBDU5tP.jpg",
-    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/IMG1327-RCVRVP8IniVOI4xfilouojDiqqG1ER.jpg",
-    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/IMG_1379-BzVxkqznUyDUeQBpIcPpQZVD1kGTUr.jpg",
-    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/IMG1397-Xjnmkm7r7tWJdZMOYtoqgBC4cFem7v.jpg",
-    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/IMG1750-tRN5KCUhcsdqb7sAEMHnV1uePkVAlA.jpg",
-    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/IMG1853-W8TMbV8SYfBJO3q4wobASo4e0Z6Wgk.jpg",
-    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/IMG1917-RUlwbqLHUf3EiImT4XsHIrV3NTsOM7.jpg",
-    "https://vzjmqivzndfloheg.public.blob.vercel-storage.com/IMG2190-gdDBp2kNBG914mDWhkvYTPMDdwOuyO.jpg",
+    "/images/IMG_1050.jpg",
+    "/images/IMG_1062.jpg",
+    "/images/IMG1196.jpg",
+    "/images/IMG1214.jpg",
+    "/images/IMG1285.jpg",
+    "/images/IMG1327.jpg",
+    "/images/IMG_1379.jpg",
+    
+    "/images/IMG1750.jpg",
+    "/images/IMG1853.jpg",
+   
+    "/images/IMG1337.jpg",
   ];
 
   const canvasRef = useRef<HTMLCanvasElement>(null);

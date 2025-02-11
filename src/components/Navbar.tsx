@@ -84,8 +84,8 @@ export function Navbar() {
         <div className="flex items-center justify-between h-14 md:h-16">
           <div className="flex-shrink-0">
             <img
-              src="https://vzjmqivzndfloheg.public.blob.vercel-storage.com/AbhiyantrixLogo2-pVB6fkjLJsOcp8ybf5ZRbUOVw2VY36.png"
-              alt="ABHIYANTRIX Logo"
+              src="/images/AbhiyantrixLogo2.png"
+              alt="https://vzjmqivzndfloheg.public.blob.vercel-storage.com/AbhiyantrixLogo2-pVB6fkjLJsOcp8ybf5ZRbUOVw2VY36.png"
               width={90}
               height={30}
               className="w-auto h-12 md:h-34"></img>
