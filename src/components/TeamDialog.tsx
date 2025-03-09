@@ -69,6 +69,7 @@ export function TeamDialog({ isOpen, onClose, teamName, members }: TeamDialogPro
                     href={currentMember.social.github}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
                     className="p-1.5 bg-blue-500/10 rounded-full hover:bg-blue-500/20 transition-colors"
                   >
                     <Github className="w-3.5 h-3.5 text-blue-400" />
@@ -76,17 +77,20 @@ export function TeamDialog({ isOpen, onClose, teamName, members }: TeamDialogPro
                 )}
                 {currentMember.social.linkedin && (
                   <a
-                    href={currentMember.social.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-1.5 bg-blue-500/10 rounded-full hover:bg-blue-500/20 transition-colors"
-                  >
-                    <Linkedin className="w-3.5 h-3.5 text-blue-400" />
-                  </a>
+                  href={currentMember.social.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  style={{ pointerEvents: "auto" }}
+                  className="p-1.5 bg-blue-500/10 rounded-full hover:bg-blue-500/20 transition-colors"
+                >
+                  <Linkedin className="w-3.5 h-3.5 text-blue-400" />
+                </a>
                 )}
                 {currentMember.social.email && (
                   <a
                     href={`mailto:${currentMember.social.email}`}
+                    onClick={(e) => e.stopPropagation()}
                     className="p-1.5 bg-blue-500/10 rounded-full hover:bg-blue-500/20 transition-colors"
                   >
                     <Mail className="w-3.5 h-3.5 text-blue-400" />

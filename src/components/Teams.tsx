@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { TeamDialog } from './TeamDialog';
-import { Users, Megaphone, Briefcase, CalendarClock, Truck, Users2, Palette } from 'lucide-react';
+import { Users, Megaphone, Briefcase, CalendarClock, Truck, Users2, Palette,Banknote,Music } from 'lucide-react';
 
 const teams = [
   {
@@ -10,67 +10,103 @@ const teams = [
       {
         name: 'Rajesh Yadav',
         position: 'Tech Lead',
-        image: '',
+        image: './images/teams/rajesh1.jpg',
         social: {
-          github: 'https://github.com',
-          linkedin: 'https://linkedin.com',
-          email: 'alex@abhiyantrix.com'
+          github: 'https://www.github.com/therajesh8769',
+          linkedin: 'https://www.linkedin.com/in/hyraj26',
+          email: 'rajesh8769.works@gmail.com'
         }
       },
-    //   {
-    //     name: 'Sarah Chen',
-    //     position: 'Full Stack Developer',
-    //     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330',
-    //     social: {
-    //       github: 'https://github.com',
-    //       linkedin: 'https://linkedin.com',
-    //       email: 'sarah@abhiyantrix.com'
-    //     }
-    //   },
-    //   {
-    //     name: 'Michael Park',
-    //     position: 'Backend Developer',
-    //     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e',
-    //     social: {
-    //       github: 'https://github.com',
-    //       linkedin: 'https://linkedin.com',
-    //       email: 'michael@abhiyantrix.com'
-    //     }
-    //   },
-    //   {
-    //     name: 'Emma Wilson',
-    //     position: 'UI/UX Developer',
-    //     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80',
-    //     social: {
-    //       github: 'https://github.com',
-    //       linkedin: 'https://linkedin.com',
-    //       email: 'emma@abhiyantrix.com'
-    //     }
-    //   }
+      {
+        name: 'Manish Pawar',
+        position: '2nd Year',
+        image: '',
+        social: {
+          github: '',
+          linkedin: '',
+          email: ''
+        }
+      },
+     
+      
     ]
   },
   {
-    name: 'Publicity',
+    name: 'Publicity and Social Media',
     icon: <Megaphone className="w-5 h-5" />,
     members: [
       {
-        name: 'David Kim',
-        position: 'PR Head',
-        image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e',
+        name: 'Udayan Das',
+        position: '4th Year',
+        image: '',
         social: {
-          linkedin: 'https://linkedin.com',
-          email: 'david@abhiyantrix.com'
+          linkedin: '',
+          email: ''
         }
       },
       {
-        name: 'Lisa Wang',
-        position: 'Social Media Manager',
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2',
+        name: 'Soumik Mondal',
+        position: '4th Year',
+        image: '',
         social: {
-          linkedin: 'https://linkedin.com',
-          email: 'lisa@abhiyantrix.com'
+          linkedin: '',
+          email: ''
         }
-      }
+      },
+      {
+        name: 'Nurzaman Hoque',
+        position: '3rd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Shahina Nigar',
+        position: '3rd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Biswajit Sardar',
+        position: '3rd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Dipam Nayak',
+        position: '2nd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Akash Boxi',
+        position: '2nd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Nitya Srivastav',
+        position: '2nd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
     ]
   },
   {
@@ -78,29 +114,113 @@ const teams = [
     icon: <Briefcase className="w-5 h-5" />,
     members: [
       {
-        name: 'John Smith',
-        position: 'Sponsorship Head',
-        image: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef',
+        name: 'Bikash Koiri',
+        position: '4th Year',
+        image: '',
         social: {
-          linkedin: 'https://linkedin.com',
-          email: 'john@abhiyantrix.com'
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Yaswanth P',
+        position: '3rd Year',
+        image: './images/teams/yashwanth.jpg',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Abhirup Bhandari',
+        position: '3rd Year',
+        image: './images/teams/abhirup.JPG',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Navonil Chatterjee',
+        position: '3rd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
         }
       }
+
+
     ]
   },
   {
-    name: 'Event Management',
+    name: 'Event',
     icon: <CalendarClock className="w-5 h-5" />,
     members: [
       {
-        name: 'Rachel Green',
-        position: 'Event Coordinator',
-        image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb',
+        name: 'Sahil Nikam',
+        position: '4th Year',
+        image: '',
         social: {
-          linkedin: 'https://linkedin.com',
-          email: 'rachel@abhiyantrix.com'
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Arya Jain',
+        position: '4th Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Saurav Kumar',
+        position: '3rd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Satish Gupta',
+        position: '3rd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'B Ramprasad',
+        position: '3rd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Anurag Singh',
+        position: '2nd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Mandeep Datta',
+        position: '2nd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
         }
       }
+
     ]
   },
   {
@@ -108,45 +228,199 @@ const teams = [
     icon: <Truck className="w-5 h-5" />,
     members: [
       {
-        name: 'Tom Wilson',
-        position: 'Logistics Head',
-        image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d',
+        name: 'Aryan Agarwal',
+        position: '4th Year',
+        image: '',
         social: {
-          linkedin: 'https://linkedin.com',
-          email: 'tom@abhiyantrix.com'
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Aditya Didolkar',
+        position: '4th Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Adiptya Gosh',
+        position: '3rd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Jyotiranjan Maholiya',
+        position: '2nd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Samarth',
+        position: '2nd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
         }
       }
+
+
+
+
+
     ]
   },
   {
-    name: 'Business and Alumni Meet',
+    name: 'Industrial Alumni Meet',
     icon: <Users2 className="w-5 h-5" />,
     members: [
       {
-        name: 'Maya Patel',
-        position: 'Alumni Relations',
-        image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f',
+        name: 'Arnait Ghosh',
+        position: '4th Year',
+        image: '',
         social: {
-          linkedin: 'https://linkedin.com',
-          email: 'maya@abhiyantrix.com'
+          linkedin: '',
+          email: ''
         }
-      }
+      },
+      {
+        name: 'Arghya Pal',
+        position: '4th Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Sadhan Das',
+        position: '3rd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Vaishanvi Devigre',
+        position: '3rd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Tamal Mahanty',
+        position: '3rd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Rohit Chaurasia',
+        position: '2nd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+
     ]
   },
   {
-    name: 'Design Team',
+    name: 'Design and Content',
     icon: <Palette className="w-5 h-5" />,
     members: [
       {
-        name: 'Chris Lee',
-        position: 'Lead Designer',
-        image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d',
+        name: 'Adityadev',
+        position: '3rd Year',
+        image: '',
         social: {
-          github: 'https://github.com',
-          linkedin: 'https://linkedin.com',
-          email: 'chris@abhiyantrix.com'
+          linkedin: '',
+          email: ''
         }
-      }
+      },
+      {
+        name: 'Ankita Kumari',
+        position: '2nd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Utpanna',
+        position: '2nd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+    ]
+  },
+  {
+    name: 'Cultural',
+    icon: <Music className="w-5 h-5" />,
+    members: [
+      {
+        name: 'Sayani Biswas',
+        position: '3rd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'Namita Binu',
+        position: '2nd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      
+    ]
+  },
+  {
+    name: 'Finance',
+    icon: <Banknote className="w-5 h-5" />,
+    members: [
+      {
+        name: 'Nithin P',
+        position: '4th Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      {
+        name: 'M L Narasimha',
+        position: '3rd Year',
+        image: '',
+        social: {
+          linkedin: '',
+          email: ''
+        }
+      },
+      
     ]
   }
 ];
