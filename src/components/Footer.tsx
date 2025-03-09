@@ -24,14 +24,14 @@ export function Footer() {
             </p>
             <ul className="space-y-4">
               <li className="flex items-center space-x-3 justify-center md:justify-end group hover:text-blue-400 transition-colors">
-                <h6 className="font-orbitron text-xl mb-4 text-blue-400 font-semibold ">Secretary</h6>
+                <h6 className="font-orbitron text-md mb-4 text-blue-400 font-semibold ">Secretary</h6>
 
 
 
                 <p className="text-gray-400 group-hover:text-blue-400">Sahil Nikam:+91 7498605149</p>
               </li>
               <li className="flex items-center space-x-3 justify-center md:justify-end group hover:text-blue-400 transition-colors">
-                <h6 className="font-orbitron text-xl mb-4 text-blue-400 font-semibold tracking-wide">Assistant Secretary</h6>
+                <h6 className="font-orbitron text-md mb-4 text-blue-400 font-semibold tracking-wide">Assistant Secretary</h6>
 
 
                 <p className="text-gray-400 group-hover:text-blue-400">Yaswanth P :+91 7095788562</p>
