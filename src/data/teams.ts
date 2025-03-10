@@ -278,7 +278,7 @@ export interface TeamMember {
         },
         {
           name: "Manish Pawar",
-          position: "2nd Year",
+          position: "Associate",
           image: "./images/teams/manish.JPG",
           social: {
             github: "",

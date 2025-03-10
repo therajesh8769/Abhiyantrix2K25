@@ -16,9 +16,9 @@ export function TeamModal({ isOpen, onClose, teams }: TeamModalProps) {
   const coordinators = [
     {
       name: "Rohan Das",
-      position: "Main Coordinator",
+      position: "Coordinator",
       phone: "+91 6290759839",
-      image: "./images/teams/general.jpg",
+      image: "./images/teams/rohan.jpg",
       social: { linkedin: "#", email: "coordinator@example.com" },
     },
     {
@@ -91,7 +91,7 @@ export function TeamModal({ isOpen, onClose, teams }: TeamModalProps) {
 
           {/* Leadership Section */}
           <div className="mb-10">
-            <h3 className="font-orbitron text-xl text-blue-400 mb-4">Leadership</h3>
+            <h3 className="font-orbitron text-xl text-blue-400 mb-4"></h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
               {coordinators.map((person, index) => (
                 <div

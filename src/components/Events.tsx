@@ -701,6 +701,18 @@ const events: Event[] = [
       "A captivating sky-watching experience, where you can discover constellations, planets, and celestial wonders while exploring the vast beauty of the cosmos.",
     registrationLink: "https://unstop.com/o/2mGjNXp?lb=wCdWBIno",
   },
+  {
+    id: "10",
+    icon: <Send className="w-6 h-6 md:w-8 md:h-8" />,
+    title: "Glider",
+    tagline: "'Soar. Glide. Conquer. Repeat.'",
+    date: "Time:to be announced",
+    prize: "Open event",
+    image: "/images/glider.png",
+    description:
+      "A captivating sky-watching experience, where you can discover constellations, planets, and celestial wonders while exploring the vast beauty of the cosmos.",
+    registrationLink: "https://unstop.com/o/z7GtI24?lb=wCdWBIno",
+  },
 ]
 
 export function Events() {
