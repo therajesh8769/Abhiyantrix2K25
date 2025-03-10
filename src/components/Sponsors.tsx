@@ -233,7 +233,7 @@ export function Sponsors() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300">
-            Our Sponsors
+            Our Past Sponsors
           </span>
         </h2>
 

@@ -31,7 +31,7 @@ export function About() {
               , one of the biggest fests in West Bengal, is unique in being centered around,
               <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 
                              inline-block transform hover:scale-105 transition-transform">
-                {"  Space and Technology"}
+                {"Space and Technology"}
               </span>
               . Conducted by the Aerospace Engineers' Society of the Department of Aerospace Engineering 
               and Applied Mechanics, Indian Institute of Engineering Science and Technology, Shibpur, 
@@ -59,8 +59,8 @@ export function About() {
             },
             {
               icon: <MapPin className="w-10 h-10 md:w-12 md:h-12" />,
-              title: "Main Building, IIEST Shibpur",
-              subtitle: "Netaji Bhawan"
+              title: "1st floor,2nd lobby, IIEST Shibpur",
+              subtitle: "Main building"
             },
             {
               icon: <Users className="w-10 h-10 md:w-12 md:h-12" />,
