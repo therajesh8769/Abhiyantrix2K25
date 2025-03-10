@@ -22,7 +22,7 @@ export interface TeamMember {
       members: [
         {
           name: "Nithin P",
-          position: "4th Year",
+          position: "Finance Head",
           image: "./images/teams/Nithin.jpg",
           social: {
             linkedin: "",
@@ -31,7 +31,7 @@ export interface TeamMember {
         },
         {
           name: "M L Narasimha",
-          position: "3rd Year",
+          position: "Finance Team",
           image: "./images/teams/narshima.jpg",
           social: {
             linkedin: "",
@@ -46,7 +46,7 @@ export interface TeamMember {
       members: [
         {
           name: "Bikash Koiri",
-          position: "4th Year",
+          position: "Sponsorship Head",
           image: "./images/teams/Bikash.jpg",
           social: {
             linkedin: "",
@@ -55,7 +55,7 @@ export interface TeamMember {
         },
         {
           name: "Yaswanth P",
-          position: "3rd Year",
+          position: "Sponsorship Team",
           image: "./images/teams/yaswanth.JPG",
           social: {
             linkedin: "",
@@ -64,7 +64,7 @@ export interface TeamMember {
         },
         {
           name: "Abhirup Bhandari",
-          position: "3rd Year",
+          position: "Sponsorship Team",
           image: "./images/teams/abhirup.JPG",
           social: {
             linkedin: "",
@@ -73,7 +73,7 @@ export interface TeamMember {
         },
         {
           name: "Navonil Chatterjee",
-          position: "3rd Year",
+          position: "Sponsorship Team",
           image: "./images/teams/navonil.jpg",
           social: {
             linkedin: "",
@@ -82,7 +82,7 @@ export interface TeamMember {
         },
         {
             name: "Shlok Vyas",
-            position: "2nd Year",
+            position: "Sponsorship Team",
             image: "./images/teams/shlok.jpg",
             social: {
               linkedin: "",
@@ -91,8 +91,8 @@ export interface TeamMember {
           },
           {
             name: "Mehul Mehta",
-            position: "2nd Year",
-            image: "./images/teams/general.jpg",
+            position: "Sponsorship Team",
+            image: "./images/teams/mehul.jpg",
             social: {
               linkedin: "",
               email: "",
@@ -107,7 +107,7 @@ export interface TeamMember {
       members: [
         {
           name: "Sahil Nikam",
-          position: "4th Year",
+          position: "Event Head",
           image: "./images/teams/sahil.png",
           social: {
             linkedin: "",
@@ -116,7 +116,7 @@ export interface TeamMember {
         },
         {
           name: "Arya Jain",
-          position: "4th Year",
+          position: "Event Head",
           image: "./images/teams/arya.jpg",
           social: {
             linkedin: "",
@@ -125,7 +125,7 @@ export interface TeamMember {
         },
         {
           name: "Saurav Kumar",
-          position: "3rd Year",
+          position: "Event Team",
           image: "./images/teams/saurav.jpg",
           social: {
             linkedin: "",
@@ -134,7 +134,7 @@ export interface TeamMember {
         },
         {
           name: "Satish Gupta",
-          position: "3rd Year",
+          position: "Event Team",
           image: "./images/teams/satish.jpg",
           social: {
             linkedin: "",
@@ -143,7 +143,7 @@ export interface TeamMember {
         },
         {
           name: "B Ramprasad",
-          position: "3rd Year",
+          position: "Event Team",
           image: "./images/teams/ram.jpg",
           social: {
             linkedin: "",
@@ -152,7 +152,7 @@ export interface TeamMember {
         },
         {
           name: "Anurag Singh",
-          position: "2nd Year",
+          position: "Event Team",
           image: "./images/teams/general.jpg",
           social: {
             linkedin: "",
@@ -161,8 +161,8 @@ export interface TeamMember {
         },
         {
           name: "Mandeep Datta",
-          position: "2nd Year",
-          image:"./images/teams/general.jpg",
+          position: "Event Team",
+          image:"./images/teams/mandeep.jpg",
           social: {
             linkedin: "",
             email: "",
@@ -176,7 +176,7 @@ export interface TeamMember {
       members: [
         {
           name: "Aryan Agarwal",
-          position: "4th Year",
+          position: "Travel and Logistics Head",
           image:"./images/teams/general.jpg",
           social: {
             linkedin: "",
@@ -185,7 +185,7 @@ export interface TeamMember {
         },
         {
           name: "Aditya Didolkar",
-          position: "4th Year",
+          position: "Travel and Logistics Head",
           image: "./images/teams/general.jpg",
           social: {
             linkedin: "",
@@ -194,7 +194,7 @@ export interface TeamMember {
         },
         {
           name: "Adiptya Gosh",
-          position: "3rd Year",
+          position: "Travel and Logistics Team",
           image: "./images/teams/adiptya.jpg",
           social: {
             linkedin: "",
@@ -203,7 +203,7 @@ export interface TeamMember {
         },
         {
           name: "Jyotiranjan Maholiya",
-          position: "2nd Year",
+          position: "Travel and Logistics Team",
           image: "./images/teams/jyoti.JPG",
           social: {
             linkedin: "",
@@ -212,8 +212,8 @@ export interface TeamMember {
         },
         {
           name: "Samarth",
-          position: "2nd Year",
-          image: "./images/teams/general.jpg",
+          position: "Travel and Logistics Team",
+          image: "./images/teams/samarth.png",
           social: {
             linkedin: "",
             email: "",
@@ -227,8 +227,8 @@ export interface TeamMember {
       members: [
         {
           name: "Arnajit Ghosh",
-          position: "4th Year",
-          image: "./images/teams/general.jpg",
+          position: "Industrial Alumni Meet Head",
+          image: "./images/teams/arnajit.jpg",
           social: {
             linkedin: "",
             email: "",
@@ -236,7 +236,7 @@ export interface TeamMember {
         },
         {
           name: "Arghya Pal",
-          position: "4th Year",
+          position: "Industrial Alumni Meet Head",
           image: "./images/teams/general.jpg",
           social: {
             linkedin: "",
@@ -245,7 +245,7 @@ export interface TeamMember {
         },
         {
           name: "Sadhan Das",
-          position: "3rd Year",
+          position: "Industrial Alumni Meet Team",
           image:"./images/teams/sadhan.jpg",
           social: {
             linkedin: "",
@@ -254,7 +254,7 @@ export interface TeamMember {
         },
         {
           name: "Vaishanvi Devigre",
-          position: "3rd Year",
+          position: "Industrial Alumni Meet Team",
           image: "./images/teams/general.jpg",
           social: {
             linkedin: "",
@@ -263,7 +263,7 @@ export interface TeamMember {
         },
         {
           name: "Tamal Mahanty",
-          position: "3rd Year",
+          position: "Industrial Alumni Meet Team",
           image: "./images/teams/tamal.jpg",
           social: {
             linkedin: "",
@@ -272,7 +272,7 @@ export interface TeamMember {
         },
         {
           name: "Rohit Chaurasia",
-          position: "2nd Year",
+          position: "Industrial Alumni Meet Team",
           image: "./images/teams/rohit.jpg",
           social: {
             linkedin: "",
@@ -297,7 +297,7 @@ export interface TeamMember {
         },
         {
           name: "Manish Pawar",
-          position: "Associate",
+          position: "Tech Team",
           image: "./images/teams/manish.JPG",
           social: {
             github: "",
@@ -313,7 +313,7 @@ export interface TeamMember {
       members: [
         {
           name: "Udayan Das",
-          position: "4th Year",
+          position: "Publicity and Social Media Head",
           image: "./images/teams/general.jpg",
           social: {
             linkedin: "",
@@ -322,7 +322,7 @@ export interface TeamMember {
         },
         {
           name: "Soumik Mondal",
-          position: "4th Year",
+          position: "Publicity and Social Media Head",
           image: "./images/teams/general.jpg",
           social: {
             linkedin: "",
@@ -331,7 +331,7 @@ export interface TeamMember {
         },
         {
           name: "Nurzaman Hoque",
-          position: "3rd Year",
+          position: "Publicity and Social Media Team",
           image: "./images/teams/nur.jpg",
           social: {
             linkedin: "",
@@ -340,7 +340,7 @@ export interface TeamMember {
         },
         {
           name: "Shahina Nigar",
-          position: "3rd Year",
+          position: "Publicity and Social Media Team",
           image: "./images/teams/sahina.jpg",
           social: {
             linkedin: "",
@@ -349,7 +349,7 @@ export interface TeamMember {
         },
         {
           name: "Biswajit Sardar",
-          position: "3rd Year",
+          position: "Publicity and Social Media Team",
           image:"./images/teams/biswajit.jpg",
           social: {
             linkedin: "",
@@ -358,7 +358,7 @@ export interface TeamMember {
         },
         {
           name: "Dipam Nayak",
-          position: "2nd Year",
+          position: "Publicity and Social Media Team",
           image:"./images/teams/general.jpg",
           social: {
             linkedin: "",
@@ -367,7 +367,7 @@ export interface TeamMember {
         },
         {
           name: "Akash Boxi",
-          position: "2nd Year",
+          position: "Publicity and Social Media Team",
           image:"./images/teams/general.jpg",
           social: {
             linkedin: "",
@@ -376,7 +376,7 @@ export interface TeamMember {
         },
         {
           name: "Nitya Srivastav",
-          position: "2nd Year",
+          position: "Publicity and Social Media Team",
           image:"./images/teams/general.jpg",
           social: {
             linkedin: "",
@@ -391,7 +391,7 @@ export interface TeamMember {
       members: [
         {
           name: "Adityadev",
-          position: "3rd Year",
+          position: "Design and Content Head",
           image: "./images/teams/adityadev.jpg",
           social: {
             linkedin: "",
@@ -400,7 +400,7 @@ export interface TeamMember {
         },
         {
           name: "Ankita Kumari",
-          position: "2nd Year",
+          position: "Design and Content Team",
           image: "./images/teams/general.jpg",
           social: {
             linkedin: "",
@@ -409,7 +409,7 @@ export interface TeamMember {
         },
         {
           name: "Utpanna",
-          position: "2nd Year",
+          position: "Design and Content Team",
           image: "./images/teams/general.jpg",
           social: {
             linkedin: "",
@@ -424,7 +424,7 @@ export interface TeamMember {
       members: [
         {
           name: "Sayani Biswas",
-          position: "3rd Year",
+          position: "Cultural Head",
           image: "./images/teams/sayani.webp",
           social: {
             linkedin: "",
@@ -433,7 +433,7 @@ export interface TeamMember {
         },
         {
           name: "Namita Binu",
-          position: "2nd Year",
+          position: "Cultural Team",
           image: "./images/teams/general.jpg",
           social: {
             linkedin: "",
