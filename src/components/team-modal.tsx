@@ -120,7 +120,7 @@ export function TeamModal({ isOpen, onClose, teams }: TeamModalProps) {
             <div key={teamIndex} className="mb-10">
               <h3 className="font-orbitron text-xl text-blue-400 flex items-center gap-2 mb-4">
                 {renderIcon(team.iconName)}
-                <span>{team.name} Team</span>
+                <span>{team.name} </span>
               </h3>
 
               <div className="relative">

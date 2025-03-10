@@ -596,7 +596,7 @@ const events: Event[] = [
   {
     id: "1",
     icon: <Laptop className="w-6 h-6 md:w-8 md:h-8" />,
-    title: "CAD-CRUSADE",
+    title: "Atoms Of Pixels",
     tagline: "'Ready your blueprints'",
     date: "Time:to be announced",
     prize: "Worth  ₹3,000",
@@ -608,7 +608,7 @@ const events: Event[] = [
   {
     id: "2",
     icon: <Bot className="w-6 h-6 md:w-8 md:h-8" />,
-    title: "HOVER-HAVOC",
+    title: "Zero Gravity",
     tagline: "'Ready,Set,Hover!'",
     date: "Time:to be announced",
     prize: "Worth ₹8,000",
@@ -656,7 +656,7 @@ const events: Event[] = [
   {
     id: "6",
     icon: <Send className="w-6 h-6 md:w-8 md:h-8" />,
-    title: "AIRBORNE ADENTURE",
+    title: "Fligt Mode",
     tagline: "'Fly Beyond the limits!'",
     date: "Time:to be announced",
     prize: "Worth ₹8,000",
@@ -680,7 +680,7 @@ const events: Event[] = [
   {
     id: "8",
     icon: <Mic className="w-6 h-6 md:w-8 md:h-8" />,
-    title: "STAR WARS",
+    title: "StarWars",
     tagline: "'Debate.Discuss.Decide'",
     date: "Time:to be announced",
     prize: "Worth ₹2,000",
@@ -704,13 +704,13 @@ const events: Event[] = [
   {
     id: "10",
     icon: <Send className="w-6 h-6 md:w-8 md:h-8" />,
-    title: "Glider",
+    title: "Still up",
     tagline: "'Soar. Glide. Conquer. Repeat.'",
     date: "Time:to be announced",
     prize: "Open event",
     image: "/images/glider.png",
     description:
-      "A captivating sky-watching experience, where you can discover constellations, planets, and celestial wonders while exploring the vast beauty of the cosmos.",
+      "A captivating sky-t experience, where you can discover constellations, planets, and celestial wonders while exploring the vast beauty of the cosmos.",
     registrationLink: "https://unstop.com/o/z7GtI24?lb=wCdWBIno",
   },
 ]

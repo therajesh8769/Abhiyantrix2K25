@@ -80,6 +80,25 @@ export interface TeamMember {
             email: "",
           },
         },
+        {
+            name: "Shlok Vyas",
+            position: "2nd Year",
+            image: "./images/teams/general.jpg",
+            social: {
+              linkedin: "",
+              email: "",
+            },
+          },
+          {
+            name: "Mehul Mehta",
+            position: "2nd Year",
+            image: "./images/teams/general.jpg",
+            social: {
+              linkedin: "",
+              email: "",
+            },
+          },
+
       ],
     },
     {
@@ -207,7 +226,7 @@ export interface TeamMember {
       iconName: "Users2",
       members: [
         {
-          name: "Arnait Ghosh",
+          name: "Arnajit Ghosh",
           position: "4th Year",
           image: "./images/teams/general.jpg",
           social: {
@@ -263,7 +282,7 @@ export interface TeamMember {
       ],
     },
     {
-      name: "Tech Team",
+      name: "Tech",
       iconName: "Users",
       members: [
         {
