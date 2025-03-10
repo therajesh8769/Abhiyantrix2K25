@@ -47,7 +47,7 @@ export interface TeamMember {
         {
           name: "Bikash Koiri",
           position: "4th Year",
-          image: "./images/teams/general.jpg",
+          image: "./images/teams/Bikash.jpg",
           social: {
             linkedin: "",
             email: "",
@@ -83,7 +83,7 @@ export interface TeamMember {
         {
             name: "Shlok Vyas",
             position: "2nd Year",
-            image: "./images/teams/general.jpg",
+            image: "./images/teams/shlok.jpg",
             social: {
               linkedin: "",
               email: "",
@@ -117,7 +117,7 @@ export interface TeamMember {
         {
           name: "Arya Jain",
           position: "4th Year",
-          image: "./images/teams/general.jpg",
+          image: "./images/teams/arya.jpg",
           social: {
             linkedin: "",
             email: "",
@@ -204,7 +204,7 @@ export interface TeamMember {
         {
           name: "Jyotiranjan Maholiya",
           position: "2nd Year",
-          image: "./images/teams/general.jpg",
+          image: "./images/teams/jyoti.JPG",
           social: {
             linkedin: "",
             email: "",
@@ -246,7 +246,7 @@ export interface TeamMember {
         {
           name: "Sadhan Das",
           position: "3rd Year",
-          image:"./images/teams/general.jpg",
+          image:"./images/teams/sadhan.jpg",
           social: {
             linkedin: "",
             email: "",
@@ -273,7 +273,7 @@ export interface TeamMember {
         {
           name: "Rohit Chaurasia",
           position: "2nd Year",
-          image: "./images/teams/general.jpg",
+          image: "./images/teams/rohit.jpg",
           social: {
             linkedin: "",
             email: "",
@@ -350,7 +350,7 @@ export interface TeamMember {
         {
           name: "Biswajit Sardar",
           position: "3rd Year",
-          image:"./images/teams/general.jpg",
+          image:"./images/teams/biswajit.jpg",
           social: {
             linkedin: "",
             email: "",
