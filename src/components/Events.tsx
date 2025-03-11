@@ -656,7 +656,7 @@ const events: Event[] = [
   {
     id: "6",
     icon: <Monitor className="w-6 h-6 md:w-8 md:h-8" />,
-    title: "FLYING ACE",
+    title: "Flying Ace",
     tagline: "'Take your wings to the skies'",
     date: "Time:to be announced",
     prize: "Open event",
@@ -681,10 +681,10 @@ const events: Event[] = [
   {
     id: "8",
     icon: <HelpCircle className="w-6 h-6 md:w-8 md:h-8" />,
-    title: "GALACTIC QUIZ BOWL",
+    title: "Galactic Quiz Bowl",
     tagline: "'Blast off with Knowledge'",
     date: "Time:to be announced",
-    prize: "Worth ₹2,000",
+    prize: "Worth ₹3,000",
     image: "/images/quiz.png",
     description:
       "Prepare for liftoff in the Galactic Quiz Bowl! Challenge your mind and compete in a fast-paced, out-of-this-world trivia showdown.",
