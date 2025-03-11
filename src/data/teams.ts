@@ -186,7 +186,7 @@ export interface TeamMember {
         {
           name: "Aditya Didolkar",
           position: "Travel and Logistics Head",
-          image: "./images/teams/general.jpg",
+          image: "./images/teams/aditya.jpg",
           social: {
             linkedin: "",
             email: "",
