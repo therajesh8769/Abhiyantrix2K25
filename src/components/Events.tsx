@@ -578,7 +578,7 @@
 
 import type React from "react"
 import { useState } from "react"
-import { Laptop, Bot, Rocket, Landmark, X, HelpCircle, Mic, Send, Monitor, Telescope } from "lucide-react"
+import { Laptop, Bot, Rocket, Landmark, X, HelpCircle, Mic, Send, Monitor, Telescope,SmilePlus,Users } from "lucide-react"
 
 interface Event {
   id: string
@@ -596,7 +596,7 @@ const events: Event[] = [
   {
     id: "1",
     icon: <Laptop className="w-6 h-6 md:w-8 md:h-8" />,
-    title: "Atoms Of Pixels",
+    title: "CAD-Crusade",
     tagline: "'Ready your blueprints'",
     date: "Time:to be announced",
     prize: "Worth  ₹3,000",
@@ -608,7 +608,7 @@ const events: Event[] = [
   {
     id: "2",
     icon: <Bot className="w-6 h-6 md:w-8 md:h-8" />,
-    title: "Zero Gravity",
+    title: "Floating Frenzy",
     tagline: "'Ready,Set,Hover!'",
     date: "Time:to be announced",
     prize: "Worth ₹8,000",
@@ -619,8 +619,20 @@ const events: Event[] = [
   },
   {
     id: "3",
+    icon: <Send className="w-6 h-6 md:w-8 md:h-8" />,
+    title: "Airborne Adventure",
+    tagline: "'Fly Beyond the limits!'",
+    date: "Time:to be announced",
+    prize: "Worth ₹8,000",
+    image: "/images/rcplane.png",
+    description:
+      "Ready for the challenge? Compete in our RC Plane Competition and soar through the skies with skill and speed.",
+    registrationLink: "https://unstop.com/o/vUAkDp8?lb=wCdWBIno",
+  },
+  {
+    id: "4",
     icon: <Rocket className="w-6 h-6 md:w-8 md:h-8" />,
-    title: "JALSTRA",
+    title: "JALAASTRA",
     tagline: "'Launching Dreams:Soaring Heights'",
     date: "Time:to be announced",
     prize: "Worth ₹4,000",
@@ -630,19 +642,19 @@ const events: Event[] = [
     registrationLink: "https://unstop.com/o/9WMc5Tu?lb=wCdWBIno",
   },
   {
-    id: "4",
-    icon: <Landmark className="w-6 h-6 md:w-8 md:h-8" />,
-    title: "DRONEACHARYA",
-    tagline: "'Take Flight,Embrace the Sky'",
+    id: "5",
+    icon: <Send className="w-6 h-6 md:w-8 md:h-8" />,
+    title: "Falcon's Flight",
+    tagline: "'Soar. Glide. Conquer. Repeat.'",
     date: "Time:to be announced",
-    prize: "₹5,000",
-    image: "/images/drone1.png",
+    prize: "Open event",
+    image: "/images/glider.png",
     description:
-      "Take on the skies in our drone competition, where you’ll show off your skills by guiding drones through a challenging and dynamic course.",
-    registrationLink: "https://unstop.com/o/5aHmhex?lb=wCdWBIno",
+      "Unleash your inner engineer and let your creation take flight! Build a glider that embodies innovation and soar to new heights in our challenge.",
+    registrationLink: "https://unstop.com/o/z7GtI24?lb=wCdWBIno",
   },
   {
-    id: "5",
+    id: "6",
     icon: <Monitor className="w-6 h-6 md:w-8 md:h-8" />,
     title: "FLYING ACE",
     tagline: "'Take your wings to the skies'",
@@ -653,20 +665,21 @@ const events: Event[] = [
       "Experience the thrill of aviation in our Flight Simulator event! Navigate the skies and put your piloting skills to the test.",
     registrationLink: "https://unstop.com/o/oYyvbxk?lb=wCdWBIno",
   },
-  {
-    id: "6",
-    icon: <Send className="w-6 h-6 md:w-8 md:h-8" />,
-    title: "Fligt Mode",
-    tagline: "'Fly Beyond the limits!'",
-    date: "Time:to be announced",
-    prize: "Worth ₹8,000",
-    image: "/images/rcplane.png",
-    description:
-      "Ready for the challenge? Compete in our RC Plane Competition and soar through the skies with skill and speed.",
-    registrationLink: "https://unstop.com/o/vUAkDp8?lb=wCdWBIno",
-  },
+  
   {
     id: "7",
+    icon: <Telescope className="w-6 h-6 md:w-8 md:h-8" />,
+    title: "Steller Odyssey",
+    tagline: "'Gaze into the infinite'",
+    date: "Time:to be announced",
+    prize: "Open event",
+    image: "/images/skyWatching.png",
+    description:
+      "A captivating sky-watching experience, where you can discover constellations, planets, and celestial wonders while exploring the vast beauty of the cosmos.",
+    registrationLink: "https://unstop.com/o/2mGjNXp?lb=wCdWBIno",
+  },
+  {
+    id: "8",
     icon: <HelpCircle className="w-6 h-6 md:w-8 md:h-8" />,
     title: "GALACTIC QUIZ BOWL",
     tagline: "'Blast off with Knowledge'",
@@ -678,9 +691,9 @@ const events: Event[] = [
     registrationLink: "https://unstop.com/o/by8A6nw?lb=wCdWBIno",
   },
   {
-    id: "8",
+    id: "9",
     icon: <Mic className="w-6 h-6 md:w-8 md:h-8" />,
-    title: "StarWars",
+    title: "Star Wars",
     tagline: "'Debate.Discuss.Decide'",
     date: "Time:to be announced",
     prize: "Worth ₹2,000",
@@ -689,30 +702,22 @@ const events: Event[] = [
       "Prepare to debate! Showcase your skills in argumentation and critical thinking while engaging in dynamic discussions with fellow competitors.",
     registrationLink: "https://unstop.com/o/SFnwqI0?lb=wCdWBIno",
   },
-  {
-    id: "9",
-    icon: <Telescope className="w-6 h-6 md:w-8 md:h-8" />,
-    title: "Sky Watching",
-    tagline: "'Gaze into the infinite'",
-    date: "Time:to be announced",
-    prize: "Open event",
-    image: "/images/skyWatching.png",
-    description:
-      "A captivating sky-watching experience, where you can discover constellations, planets, and celestial wonders while exploring the vast beauty of the cosmos.",
-    registrationLink: "https://unstop.com/o/2mGjNXp?lb=wCdWBIno",
-  },
+  
   {
     id: "10",
-    icon: <Send className="w-6 h-6 md:w-8 md:h-8" />,
-    title: "Still up",
-    tagline: "'Soar. Glide. Conquer. Repeat.'",
+    icon: <SmilePlus className="w-6 h-6 md:w-8 md:h-8" />,
+    title: "Mach Meme",
+    tagline: "'Got Memes? Prove It!'",
     date: "Time:to be announced",
     prize: "Open event",
-    image: "/images/glider.png",
+    image: "/images/meme.png",
     description:
-      "A captivating sky-t experience, where you can discover constellations, planets, and celestial wonders while exploring the vast beauty of the cosmos.",
-    registrationLink: "https://unstop.com/o/z7GtI24?lb=wCdWBIno",
+      "Join the ultimate showdown of wit and humor! Submit your best memes and battle for the title of Meme Master in a fun, fast-paced competition.",
+    registrationLink: "https://unstop.com/o/YKOtfRg?lb=wCdWBIno",
   },
+ 
+  
+  
 ]
 
 export function Events() {

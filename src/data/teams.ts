@@ -153,7 +153,7 @@ export interface TeamMember {
         {
           name: "Anurag Singh",
           position: "Event Team",
-          image: "./images/teams/general.jpg",
+          image: "./images/teams/anurag.jpg",
           social: {
             linkedin: "",
             email: "",
@@ -177,7 +177,7 @@ export interface TeamMember {
         {
           name: "Aryan Agarwal",
           position: "Travel and Logistics Head",
-          image:"./images/teams/general.jpg",
+          image:"./images/teams/aryan.jpg",
           social: {
             linkedin: "",
             email: "",
@@ -237,7 +237,7 @@ export interface TeamMember {
         {
           name: "Arghya Pal",
           position: "Industrial Alumni Meet Head",
-          image: "./images/teams/general.jpg",
+          image: "./images/teams/arghya.jpg",
           social: {
             linkedin: "",
             email: "",
@@ -255,7 +255,7 @@ export interface TeamMember {
         {
           name: "Vaishanvi Devigre",
           position: "Industrial Alumni Meet Team",
-          image: "./images/teams/general.jpg",
+          image: "./images/teams/vaishanvi.jpg",
           social: {
             linkedin: "",
             email: "",
@@ -314,7 +314,7 @@ export interface TeamMember {
         {
           name: "Udayan Das",
           position: "Publicity and Social Media Head",
-          image: "./images/teams/general.jpg",
+          image: "./images/teams/Udayan.jpg",
           social: {
             linkedin: "",
             email: "",
@@ -323,7 +323,7 @@ export interface TeamMember {
         {
           name: "Soumik Mondal",
           position: "Publicity and Social Media Head",
-          image: "./images/teams/general.jpg",
+          image: "./images/teams/soumik.jpg",
           social: {
             linkedin: "",
             email: "",
@@ -359,7 +359,7 @@ export interface TeamMember {
         {
           name: "Dipam Nayak",
           position: "Publicity and Social Media Team",
-          image:"./images/teams/general.jpg",
+          image:"./images/teams/dipam.jpg",
           social: {
             linkedin: "",
             email: "",
@@ -401,7 +401,7 @@ export interface TeamMember {
         {
           name: "Ankita Kumari",
           position: "Design and Content Team",
-          image: "./images/teams/general.jpg",
+          image: "./images/teams/ankita.jpg",
           social: {
             linkedin: "",
             email: "",
@@ -434,7 +434,7 @@ export interface TeamMember {
         {
           name: "Namita Binu",
           position: "Cultural Team",
-          image: "./images/teams/general.jpg",
+          image: "./images/teams/namita.jpg",
           social: {
             linkedin: "",
             email: "",
