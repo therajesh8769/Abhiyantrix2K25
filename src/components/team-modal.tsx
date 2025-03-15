@@ -1,8 +1,22 @@
 
 "use client"
 
-import { useState } from "react"
-import { X, Github, Linkedin, Mail, ChevronLeft, ChevronRight, Banknote, Briefcase, CalendarClock, Truck, Users2, Users, Palette, Megaphone, Music } from 'lucide-react'
+import { useEffect } from "react"
+import {
+  X,
+  Github,
+  Linkedin,
+  Mail,
+  Banknote,
+  Briefcase,
+  CalendarClock,
+  Truck,
+  Users2,
+  Users,
+  Palette,
+  Megaphone,
+  Music,
+} from "lucide-react"
 import type { TeamData } from "../data/teams"
 
 interface TeamModalProps {
@@ -12,32 +26,63 @@ interface TeamModalProps {
 }
 
 export function TeamModal({ isOpen, onClose, teams }: TeamModalProps) {
+  // Prevent body scrolling when modal is open
+  useEffect(() => {
+    if (isOpen) {
+      // Save the current scroll position
+      const scrollY = window.scrollY
+
+      // Prevent scrolling on the body
+      document.body.style.position = "fixed"
+      document.body.style.top = `-${scrollY}px`
+      document.body.style.width = "100%"
+    } else {
+      // Restore scrolling and position when modal closes
+      const scrollY = document.body.style.top
+      document.body.style.position = ""
+      document.body.style.top = ""
+      document.body.style.width = ""
+
+      // Scroll back to the original position
+      if (scrollY) {
+        window.scrollTo(0, Number.parseInt(scrollY || "0", 10) * -1)
+      }
+    }
+
+    return () => {
+      // Cleanup in case component unmounts while modal is open
+      document.body.style.position = ""
+      document.body.style.top = ""
+      document.body.style.width = ""
+    }
+  }, [isOpen])
+
   // Main coordinators and secretary details
   const coordinators = [
     {
       name: "Rohan Das",
-      position: "Coordinator",
+      position: "Main Coordinator",
       phone: "+91 6290759839",
       image: "./images/teams/rohan.jpg",
       social: { linkedin: "#", email: "coordinator@example.com" },
     },
     {
       name: "Sandeep Sankuru",
-      position: "Joint Coordinator",
+      position: "Main Coordinator",
       phone: "+91 9062906676",
       image: "./images/teams/sandeep.jpg",
       social: { linkedin: "#", email: "coordinator@example.com" },
     },
     {
       name: "Sahil Nikam",
-      position: "Secretary",
+      position: "Secretary-AES",
       phone: "+91 7498605149",
       image: "./images/teams/sec.jpg",
       social: { linkedin: "#", email: "secretary@example.com" },
     },
     {
-      name: "Yaswanth P",
-      position: "Assistant Secretary",
+      name: "Yaswanth Pedapudi",
+      position: "Assistant Secretary-AES",
       phone: "+91 7095788562",
       image: "./images/teams/yaswanth.JPG",
       social: { linkedin: "#", email: "assistant@example.com" },
@@ -45,8 +90,6 @@ export function TeamModal({ isOpen, onClose, teams }: TeamModalProps) {
   ]
 
   if (!isOpen) return null
-
-  // No need for activeTeam since we'll show all teams
 
   // Function to render the appropriate icon based on iconName
   const renderIcon = (iconName: string) => {
@@ -75,14 +118,28 @@ export function TeamModal({ isOpen, onClose, teams }: TeamModalProps) {
   }
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto">
+    <div
+      className="fixed inset-0 z-50 overflow-y-auto"
+      aria-modal="true"
+      role="dialog"
+      onClick={(e) => {
+        // Only close if the backdrop was clicked directly
+        if (e.target === e.currentTarget) {
+          onClose()
+        }
+      }}
+    >
       <div className="min-h-screen px-4 flex items-center justify-center">
         <div className="fixed inset-0 bg-black/70 backdrop-blur-sm" onClick={onClose} />
 
-        <div className="relative bg-gradient-to-b from-blue-900/40 to-black/90 rounded-lg p-6 w-full max-w-6xl border border-blue-500/30 max-h-[85vh] overflow-y-auto">
+        <div
+          className="relative bg-gradient-to-b from-blue-900/40 to-black/90 rounded-lg p-6 w-full max-w-6xl border border-blue-500/30 max-h-[85vh] overflow-y-auto"
+          onClick={(e) => e.stopPropagation()}
+        >
           <button
             onClick={onClose}
             className="absolute right-4 top-4 p-1 rounded-full hover:bg-blue-500/20 transition-colors"
+            aria-label="Close modal"
           >
             <X className="w-6 h-6 text-blue-400" />
           </button>
@@ -109,7 +166,6 @@ export function TeamModal({ isOpen, onClose, teams }: TeamModalProps) {
                   <h4 className="font-orbitron text-base text-white mb-0.5 truncate">{person.name}</h4>
                   <p className="text-blue-400 text-xs mb-1 truncate">{person.position}</p>
                   <p className="text-gray-400 text-xs mb-2 truncate">{person.phone}</p>
-                  
                 </div>
               ))}
             </div>
@@ -184,3 +240,5 @@ export function TeamModal({ isOpen, onClose, teams }: TeamModalProps) {
     </div>
   )
 }
+
+

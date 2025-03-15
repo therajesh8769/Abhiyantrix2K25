@@ -38,7 +38,7 @@ export function Footer() {
                 
 
 
-                <p className="text-gray-400 group-hover:text-blue-400">Yaswanth P :+91 7095788562</p>
+                <p className="text-gray-400 group-hover:text-blue-400">Yaswanth Pedapudi :+91 7095788562</p>
               </li>
               
             </ul>

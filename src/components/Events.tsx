@@ -647,7 +647,7 @@ const events: Event[] = [
     title: "Falcon's Flight",
     tagline: "'Soar. Glide. Conquer. Repeat.'",
     date: "Time:to be announced",
-    prize: "Open event",
+    prize: "To be decided",
     image: "/images/glider.png",
     description:
       "Unleash your inner engineer and let your creation take flight! Build a glider that embodies innovation and soar to new heights in our challenge.",
@@ -709,7 +709,7 @@ const events: Event[] = [
     title: "Mach Meme",
     tagline: "'Got Memes? Prove It!'",
     date: "Time:to be announced",
-    prize: "Open event",
+    prize: "Worth ₹1,000",
     image: "/images/meme.png",
     description:
       "Join the ultimate showdown of wit and humor! Submit your best memes and battle for the title of Meme Master in a fun, fast-paced competition.",
