@@ -586,6 +586,7 @@ interface Event {
   title: string
   tagline: string
   date: string
+  time:string
   prize: string
   image: string
   description: string
@@ -598,7 +599,8 @@ const events: Event[] = [
     icon: <Laptop className="w-6 h-6 md:w-8 md:h-8" />,
     title: "CAD-Crusade",
     tagline: "'Ready your blueprints'",
-    date: "Time:to be announced",
+    date: "Round-1:22nd March,2025,5:30 PM",
+    time: "Round-2:23rd March,2025,5:00 PM",
     prize: "Worth  ₹3,000",
     image: "/images/cad.png",
     description:
@@ -610,7 +612,8 @@ const events: Event[] = [
     icon: <Bot className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Floating Frenzy",
     tagline: "'Ready,Set,Hover!'",
-    date: "Time:to be announced",
+    date: "Round-1:22nd March,2025,7:00 PM",
+    time: "Round-2:23rd March,2025,6:00 PM",
     prize: "Worth ₹8,000",
     image: "/images/hoverpod.png",
     description:
@@ -622,7 +625,8 @@ const events: Event[] = [
     icon: <Send className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Airborne Adventure",
     tagline: "'Fly Beyond the limits!'",
-    date: "Time:to be announced",
+    date: "Round-1:22nd March, 2025,10:00am",
+    time: "Round-2:22nd March, 2025,1:30pm",
     prize: "Worth ₹8,000",
     image: "/images/rcplane.png",
     description:
@@ -634,7 +638,8 @@ const events: Event[] = [
     icon: <Rocket className="w-6 h-6 md:w-8 md:h-8" />,
     title: "JALAASTRA",
     tagline: "'Launching Dreams:Soaring Heights'",
-    date: "Time:to be announced",
+    date: "Round-1:22nd March,2025,11:30 AM",
+    time:"Round-2:22nd March,2025,3:00 PM",
     prize: "Worth ₹4,000",
     image: "/images/rocket.png",
     description:
@@ -646,7 +651,8 @@ const events: Event[] = [
     icon: <Send className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Falcon's Flight",
     tagline: "'Soar. Glide. Conquer. Repeat.'",
-    date: "Time:to be announced",
+    date: "22nd March,2025,4:30 PM",
+    time: "",
     prize: "To be decided",
     image: "/images/glider.png",
     description:
@@ -658,7 +664,8 @@ const events: Event[] = [
     icon: <Monitor className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Flying Ace",
     tagline: "'Take your wings to the skies'",
-    date: "Time:to be announced",
+    date: "",
+    time: "",
     prize: "Open event",
     image: "/images/flighsimulator.png",
     description:
@@ -671,7 +678,8 @@ const events: Event[] = [
     icon: <Telescope className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Steller Odyssey",
     tagline: "'Gaze into the infinite'",
-    date: "Time:to be announced",
+    date: "23rd March,2025",
+    time: "6:00 PM:8:00 PM",
     prize: "Open event",
     image: "/images/skyWatching.png",
     description:
@@ -683,7 +691,8 @@ const events: Event[] = [
     icon: <HelpCircle className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Galactic Quiz Bowl",
     tagline: "'Blast off with Knowledge'",
-    date: "Time:to be announced",
+    date: "Round-1:21st March, 2025,7:00 PM",
+    time: "Round-2:21st March, 2025,8:00 PM",
     prize: "Worth ₹3,000",
     image: "/images/quiz.png",
     description:
@@ -695,7 +704,9 @@ const events: Event[] = [
     icon: <Mic className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Star Wars",
     tagline: "'Debate.Discuss.Decide'",
-    date: "Time:to be announced",
+    date: "Round-1:23rd March,2025,3:00 PM",
+    time: "Round-2:23rd March,2025,4:00 PM",
+
     prize: "Worth ₹2,000",
     image: "/images/debate.png",
     description:
@@ -708,7 +719,8 @@ const events: Event[] = [
     icon: <SmilePlus className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Mach Meme",
     tagline: "'Got Memes? Prove It!'",
-    date: "Time:to be announced",
+    date: "Online submission",
+    time: "",
     prize: "Worth ₹1,000",
     image: "/images/meme.png",
     description:
@@ -760,6 +772,7 @@ export function Events() {
                     <div className="space-y-1 mb-4">
                       <p className="text-sm text-gray-300 font-sarif mb-6">{event.tagline}</p>
                       <p className="text-sm text-gray-300 mb-2">{event.date}</p>
+                      <p className="text-sm text-gray-300 mb-2">{event.time}</p>
                       <p className="text-sm text-green-400 font-medium">Prize: {event.prize}</p>
                     </div>
                     <a
@@ -813,6 +826,7 @@ export function Events() {
                 <div className="space-y-2">
                   <p className="text-gray-300">{selectedEvent.tagline}</p>
                   <p className="text-gray-300">{selectedEvent.date}</p>
+                  <p className="text-gray-300">{selectedEvent.time}</p>
 
                   <p className="text-green-400 font-medium">Prize: {selectedEvent.prize}</p>
                 </div>
