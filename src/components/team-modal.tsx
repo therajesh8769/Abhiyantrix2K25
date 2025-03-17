@@ -77,7 +77,7 @@ export function TeamModal({ isOpen, onClose, teams }: TeamModalProps) {
       name: "Sahil Nikam",
       position: "Secretary-AES",
       phone: "+91 7498605149",
-      image: "./images/teams/sec.jpg",
+      image: "./images/teams/sec3.jpg",
       social: { linkedin: "#", email: "secretary@example.com" },
     },
     {
