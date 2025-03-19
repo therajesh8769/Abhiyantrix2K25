@@ -725,7 +725,7 @@ const events: Event[] = [
     image: "/images/meme.png",
     description:
       "Join the ultimate showdown of wit and humor! Submit your best memes and battle for the title of Meme Master in a fun, fast-paced competition.",
-    registrationLink: "https://unstop.com/o/YKOtfRg?lb=wCdWBIno",
+    registrationLink: "https://unstop.com/o/gdjNrby?lb=wCdWBInohttps://unstop.com/o/gdjNrby?lb=wCdWBIno",
   },
  
   
