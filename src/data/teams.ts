@@ -410,7 +410,7 @@ export interface TeamMember {
         {
           name: "Utpanna",
           position: "Design and Content Team",
-          image: "./images/teams/general.jpg",
+          image: "./images/teams/utpanna.jpg",
           social: {
             linkedin: "",
             email: "",
