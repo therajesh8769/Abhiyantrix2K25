@@ -587,6 +587,7 @@ interface Event {
   tagline: string
   date: string
   time:string
+  venue:string
   prize: string
   image: string
   description: string
@@ -601,6 +602,7 @@ const events: Event[] = [
     tagline: "'Ready your blueprints'",
     date: "Round-1:22nd March,2025,5:30 PM",
     time: "Round-2:23rd March,2025,5:00 PM",
+    venue:"Gallery-3",
     prize: "Worth  ₹3,000",
     image: "/images/cad.png",
     description:
@@ -614,6 +616,7 @@ const events: Event[] = [
     tagline: "'Ready,Set,Hover!'",
     date: "Round-1:22nd March,2025,7:00 PM",
     time: "Round-2:23rd March,2025,6:00 PM",
+    venue:"Parade Ground",
     prize: "Worth ₹8,000",
     image: "/images/hoverpod.png",
     description:
@@ -627,6 +630,7 @@ const events: Event[] = [
     tagline: "'Fly Beyond the limits!'",
     date: "Round-1:22nd March, 2025,10:00am",
     time: "Round-2:22nd March, 2025,1:30pm",
+    venue:"Lords Ground",
     prize: "Worth ₹8,000",
     image: "/images/rcplane.png",
     description:
@@ -640,6 +644,7 @@ const events: Event[] = [
     tagline: "'Launching Dreams:Soaring Heights'",
     date: "Round-1:22nd March,2025,11:30 AM",
     time:"Round-2:22nd March,2025,3:00 PM",
+    venue:"Lords Ground",
     prize: "Worth ₹4,000",
     image: "/images/rocket.png",
     description:
@@ -653,6 +658,7 @@ const events: Event[] = [
     tagline: "'Soar. Glide. Conquer. Repeat.'",
     date: "22nd March,2025,4:30 PM",
     time: "",
+    venue:"Lords Ground",
     prize: "To be decided",
     image: "/images/glider.png",
     description:
@@ -666,6 +672,7 @@ const events: Event[] = [
     tagline: "'Take your wings to the skies'",
     date: "",
     time: "",
+    venue:"Parade Ground",
     prize: "Open event",
     image: "/images/flighsimulator.png",
     description:
@@ -680,6 +687,7 @@ const events: Event[] = [
     tagline: "'Gaze into the infinite'",
     date: "23rd March,2025",
     time: "6:00 PM:8:00 PM",
+    venue:"BEC-Modal Ground",
     prize: "Open event",
     image: "/images/skyWatching.png",
     description:
@@ -693,6 +701,7 @@ const events: Event[] = [
     tagline: "'Blast off with Knowledge'",
     date: "Round-1:21st March, 2025,7:00 PM",
     time: "Round-2:21st March, 2025,8:00 PM",
+    venue:"Gallery-3",
     prize: "Worth ₹3,000",
     image: "/images/quiz.png",
     description:
@@ -706,7 +715,7 @@ const events: Event[] = [
     tagline: "'Debate.Discuss.Decide'",
     date: "Round-1:23rd March,2025,3:00 PM",
     time: "Round-2:23rd March,2025,4:00 PM",
-
+     venue:"Gallery-3",
     prize: "Worth ₹2,000",
     image: "/images/debate.png",
     description:
@@ -721,6 +730,7 @@ const events: Event[] = [
     tagline: "'Got Memes? Prove It!'",
     date: "Online submission",
     time: "",
+    venue:"Online",
     prize: "Worth ₹1,000",
     image: "/images/meme.png",
     description:
@@ -771,8 +781,9 @@ export function Events() {
 
                     <div className="space-y-1 mb-4">
                       <p className="text-sm text-gray-300 font-sarif mb-6">{event.tagline}</p>
-                      <p className="text-sm text-gray-300 mb-2">{event.date}</p>
+                      {/* <p className="text-sm text-gray-300 mb-2">{event.date}</p>
                       <p className="text-sm text-gray-300 mb-2">{event.time}</p>
+                      <p className="text-sm text-sky-300 mb-2">Venue:{event.venue}</p> */}
                       <p className="text-sm text-green-400 font-medium">Prize: {event.prize}</p>
                     </div>
                     <a
@@ -827,6 +838,7 @@ export function Events() {
                   <p className="text-gray-300">{selectedEvent.tagline}</p>
                   <p className="text-gray-300">{selectedEvent.date}</p>
                   <p className="text-gray-300">{selectedEvent.time}</p>
+                  <p className="text-sky-300">Venue:{selectedEvent.venue}</p>
 
                   <p className="text-green-400 font-medium">Prize: {selectedEvent.prize}</p>
                 </div>
