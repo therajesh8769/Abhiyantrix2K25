@@ -659,7 +659,7 @@ const events: Event[] = [
     date: "22nd March,2025,4:30 PM",
     time: "",
     venue:"Lords Ground",
-    prize: "To be decided",
+    prize: "Worth ₹2,000",
     image: "/images/glider.png",
     description:
       "Unleash your inner engineer and let your creation take flight! Build a glider that embodies innovation and soar to new heights in our challenge.",
