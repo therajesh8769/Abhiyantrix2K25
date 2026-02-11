@@ -7,6 +7,8 @@ import {
   Github,
   Linkedin,
   Mail,
+  Crown,
+  Code,
   Banknote,
   Briefcase,
   CalendarClock,
@@ -60,32 +62,32 @@ export function TeamModal({ isOpen, onClose, teams }: TeamModalProps) {
   // Main coordinators and secretary details
   const coordinators = [
     {
-      name: "Rohan Das",
-      position: "Main Coordinator",
-      phone: "+91 6290759839",
-      image: "./images/teams/rohan.jpg",
-      social: { linkedin: "#", email: "coordinator@example.com" },
+      name: "Dr. Indrajit Mukherjee",
+      position: "Convener",
+      phone: "",
+      image: "./images/teams/general.jpg",
+      social: { linkedin: "", email: "" },
     },
     {
       name: "Sandeep Sankuru",
-      position: "Main Coordinator",
-      phone: "+91 9062906676",
-      image: "./images/teams/sandeep.jpg",
-      social: { linkedin: "#", email: "coordinator@example.com" },
+      position: "Main Coordinator (4th Year)",
+      phone: "",
+      image: "./images/teams/general.jpg",
+      social: { linkedin: "", email: "" },
     },
     {
-      name: "Sahil Nikam",
+      name: "Mehul Mehta",
+      position: "Main Coordinator (3rd Year)",
+      phone: "",
+      image: "./images/teams/general.jpg",
+      social: { linkedin: "", email: "" },
+    },
+    {
+      name: "Navonil Chatterjee",
       position: "Secretary-AES",
-      phone: "+91 7498605149",
-      image: "./images/teams/sec3.jpg",
-      social: { linkedin: "#", email: "secretary@example.com" },
-    },
-    {
-      name: "Yaswanth Pedapudi",
-      position: "Assistant Secretary-AES",
-      phone: "+91 7095788562",
-      image: "./images/teams/yaswanth.JPG",
-      social: { linkedin: "#", email: "assistant@example.com" },
+      phone: "",
+      image: "./images/teams/general.jpg",
+      social: { linkedin: "", email: "" },
     },
   ]
 
@@ -94,6 +96,10 @@ export function TeamModal({ isOpen, onClose, teams }: TeamModalProps) {
   // Function to render the appropriate icon based on iconName
   const renderIcon = (iconName: string) => {
     switch (iconName) {
+      case "Crown":
+        return <Crown className="w-5 h-5 text-blue-400" />
+      case "Code":
+        return <Code className="w-5 h-5 text-blue-400" />
       case "Banknote":
         return <Banknote className="w-5 h-5 text-blue-400" />
       case "Briefcase":
