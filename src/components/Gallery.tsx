@@ -257,8 +257,8 @@ interface StarObject extends THREE.Mesh<THREE.SphereGeometry, THREE.MeshPhongMat
 
 export function Gallery() {
   const images = [
-    "/images/IMG_1050.jpg",
-    "/images/IMG_1062.jpg",
+    "/images/mehul.jpeg",
+    "/images/abx.jpeg",
     "/images/IMG1196.jpg",
     "/images/IMG1214.jpg",
     "/images/IMG1285.jpg",
