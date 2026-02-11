@@ -257,18 +257,18 @@ interface StarObject extends THREE.Mesh<THREE.SphereGeometry, THREE.MeshPhongMat
 
 export function Gallery() {
   const images = [
-    "/images/IMG_1050.jpg",
-    "/images/IMG_1062.jpg",
-    "/images/IMG1196.jpg",
-    "/images/IMG1214.jpg",
-    "/images/IMG1285.jpg",
-    "/images/IMG1327.jpg",
-    "/images/IMG_1379.jpg",
+    "/images/mehul.jpeg",
+    "/images/abx.jpeg",
+    "/images/grnd.jpeg",
+    "/images/image copy 4.png",
+    "/images/grp.jpeg",
+    "/images/image.png",
+    "/images/image copy.png",
     
-    "/images/IMG1750.jpg",
-    "/images/IMG1853.jpg",
+    "/images/image copy 2.png",
+    "/images/image copy 3.png",
    
-    "/images/IMG1337.jpg",
+    "/images/image copy 5.png",
   ];
 
   const canvasRef = useRef<HTMLCanvasElement>(null);

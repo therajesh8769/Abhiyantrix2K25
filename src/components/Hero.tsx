@@ -69,7 +69,7 @@ export function Hero() {
 
           {/* Teaser Video */}
           {isVideoPlaying && (
-            <div className="relative mt-8 mb-16 perspective-1000 transition-all duration-300 ease-in-out">
+            <div className="relative mt-8 mb-45 perspective-1000 transition-all duration-300 ease-in-out">
               <div
                 className="relative w-full max-w-4xl mx-auto transform transition-transform duration-1000 animate-float flex items-center justify-center"
                 onMouseEnter={() => {
@@ -79,10 +79,10 @@ export function Hero() {
                   }
                 }}
               >
-                <div className="relative w-full pt-[40%] overflow-hidden rounded-lg">
+                <div className="relative w-full pt-[60%] overflow-hidden rounded-lg">
                   <video
                     ref={videoRef}
-                    className="absolute top-0 left-0 w-full h-80vh object-cover"
+                    className="absolute top-0 left-0 w-full h-full object-contain"
                     playsInline
                     onEnded={() => {
                       if (videoRef.current) {
