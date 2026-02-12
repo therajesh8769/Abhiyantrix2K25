@@ -39,10 +39,10 @@ export function About() {
             </p>
             <p className="mt-4 leading-relaxed text-lg md:text-xl text-gray-300">
               <span className="font-mono text-white inline-block transform hover:scale-105 transition-transform">
-                Abhiyantrix 2025
+                Abhiyantrix 2026
               </span>{" "}
               will be held from{" "}
-              <span className="text-blue-400 font-bold">March 21 to March 23</span>. 
+              <span className="text-blue-400 font-bold">March 6 to March 8</span>. 
               The fest ignites technological curiosity, providing an inclusive platform for participants 
               to come together and contribute to groundbreaking innovations in the fields of Space and Technology.
             </p>
@@ -54,7 +54,7 @@ export function About() {
           {[
             {
               icon: <Calendar className="w-10 h-10 md:w-12 md:h-12" />,
-              title: "March 21-23, 2025",
+              title: "March 6-8, 2026",
               subtitle: "Three days of innovation"
             },
             {

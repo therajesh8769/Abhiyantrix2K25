@@ -18,7 +18,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-6 mb-6">
           {/* Logo and About Section */}
           <div className="flex flex-col items-center md:items-start md:w-2/5">
-            <img src="/images/AbhiyantrixLogo2.png" alt="https://vzjmqivzndfloheg.public.blob.vercel-storage.com/AbhiyantrixLogo2-pVB6fkjLJsOcp8ybf5ZRbUOVw2VY36.png" className="h-16 w-auto " />
+            <img src="/images/abh2.png" alt="https://vzjmqivzndfloheg.public.blob.vercel-storage.com/AbhiyantrixLogo2-pVB6fkjLJsOcp8ybf5ZRbUOVw2VY36.png" className="h-16 w-auto " />
             <p className="text-gray-400 text-sm text-center md:text-left leading-relaxed">
               Join us for the most innovative technical festival that pushes the boundaries of technology and creativity.
             </p>
@@ -29,7 +29,7 @@ export function Footer() {
                
 
 
-                <p className="text-gray-400 group-hover:text-blue-400">Sahil Nikam:+91 7498605149</p>
+                <p className="text-gray-400 group-hover:text-blue-400">Navonil Chatterjee:+91 7364897566</p>
               </li>
               </ul>
               <ul className="">
@@ -38,7 +38,7 @@ export function Footer() {
                 
 
 
-                <p className="text-gray-400 group-hover:text-blue-400">Yaswanth Pedapudi :+91 7095788562</p>
+                <p className="text-gray-400 group-hover:text-blue-400">Shlok Vyas :+91 7779017229</p>
               </li>
               
             </ul>
@@ -50,15 +50,15 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-center space-x-3 justify-center md:justify-end group hover:text-blue-400 transition-colors">
                 <Phone className="w-5 h-5 text-blue-400 group-hover:text-blue-300" />
-                <span className="text-gray-400 group-hover:text-blue-400">Rohan Das:+91 6290759839</span>
+                <span className="text-gray-400 group-hover:text-blue-400">Sandeep Sankuru:+91 9062906676</span>
               </li>
               <li className="flex items-center space-x-3 justify-center md:justify-end group hover:text-blue-400 transition-colors">
                 <Phone className="w-5 h-5 text-blue-400 group-hover:text-blue-300" />
-                <span className="text-gray-400 group-hover:text-blue-400">Sandeep Sankuru:+91 9062906676</span>
+                <span className="text-gray-400 group-hover:text-blue-400">Mehul Mehta:+91 7973924794</span>
               </li>
               
               <li>
-              <p className="text-gray-400 group-hover:text-blue-400">Email:abhiyantrix2025@gmail.com</p>
+              <p className="text-gray-400 group-hover:text-blue-400">Email: abhiyantrix.aes.iiest@gmail.com</p>
               </li>
               <li className="flex items-center space-x-3 justify-center md:justify-end group hover:text-blue-400 transition-colors">
                 <MapPin className="w-5 h-5 text-blue-400 group-hover:text-blue-300" />
@@ -90,7 +90,7 @@ export function Footer() {
             
 
             {/* Copyright */}
-            <p className="text-gray-400 text-xs">© All rights reserved by Abhiyantrix 2025</p>
+            <p className="text-gray-400 text-xs">© All rights reserved by Abhiyantrix 2026</p>
             
             <a
               href="#"
