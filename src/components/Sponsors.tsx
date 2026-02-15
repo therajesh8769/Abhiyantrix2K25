@@ -1,336 +1,188 @@
-
-// import React, { useState, useCallback } from 'react';
-// import { ChevronLeft, ChevronRight } from 'lucide-react';
-
-// interface Sponsor {
-//     title: string;
-//     description: string;
-//     logo: string;
-// }
-
-// export function Sponsors() {
-//     const [sponsors] = useState<Sponsor[]>([
-//         {
-//             title: "Quantum Technologies",
-//             description: "Pioneering the future of innovation",
-//             logo: "https://images.unsplash.com/photo-1551150441-3f3828204ef0?auto=format&fit=crop&w=200&h=200",
-//         },
-//         {
-//             title: "Stellar Systems",
-//             description: "Reaching for the stars in technology",
-//             logo: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=200&h=200",
-//         },
-//         {
-//             title: "Nova Dynamics",
-//             description: "Illuminating the path to progress",
-//             logo: "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&w=200&h=200",
-//         },
-//     ]);
-
-//     const [currentIndex, setCurrentIndex] = useState(0);
-//     const [isAnimating, setIsAnimating] = useState(false);
-//     const [slideDirection, setSlideDirection] = useState<'left' | 'right'>('right');
-
-//     const changeSponsor = useCallback((direction: 'left' | 'right') => {
-//         if (isAnimating) return;
-        
-//         setIsAnimating(true);
-//         setSlideDirection(direction);
-        
-//         const newIndex = direction === 'right'
-//             ? (currentIndex + 1) % sponsors.length
-//             : (currentIndex - 1 + sponsors.length) % sponsors.length;
-
-//         // Use requestAnimationFrame for smoother animation
-//         requestAnimationFrame(() => {
-//             setTimeout(() => {
-//                 setCurrentIndex(newIndex);
-//                 requestAnimationFrame(() => {
-//                     setTimeout(() => {
-//                         setIsAnimating(false);
-//                     }, 50);
-//                 });
-//             }, 300);
-//         });
-//     }, [currentIndex, isAnimating, sponsors.length]);
-
-//     return (
-//         <section className="min-h-screen  text-white py-16 md:py-24 relative overflow-hidden">
-//             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,123,255,0.1)_0%,transparent_70%)]" />
-            
-//             <div className="max-w-6xl mx-auto px-4 sm:px-6">
-//                 <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-//                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300">
-//                         Our Sponsors
-//                     </span>
-//                 </h2>
-
-//                 <div className="relative h-[400px] perspective-3000">
-//                     <div className="absolute inset-0 flex items-center justify-center">
-//                         <div 
-//                             className={`
-//                                 relative w-full max-w-lg transform transition-all duration-300 ease-out
-//                                 ${isAnimating 
-//                                     ? slideDirection === 'right'
-//                                         ? 'translate-x-[100%] opacity-0 rotate-y-90'
-//                                         : '-translate-x-[100%] opacity-0 -rotate-y-90'
-//                                     : 'translate-x-0 opacity-100 rotate-y-0'
-//                                 }
-//                             `}
-//                             style={{
-//                                 transformStyle: 'preserve-3d',
-//                                 backfaceVisibility: 'hidden'
-//                             }}
-//                         >
-//                             <div className="relative group">
-//                                 {/* Animated glow effect */}
-//                                 <div 
-//                                     className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-lg blur-lg opacity-20 
-//                                              group-hover:opacity-40 transition-opacity duration-500"
-//                                     style={{
-//                                         animation: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
-//                                     }}
-//                                 />
-                                
-//                                 <div className="relative p-8 bg-gradient-to-b from-blue-900/40 to-black/80 backdrop-blur-xl rounded-lg 
-//                                             border border-blue-500/20 shadow-2xl transform hover:scale-105 transition-transform duration-500">
-//                                     <div className="flex flex-col items-center space-y-6">
-//                                         <div className="w-32 h-32 relative">
-//                                             <div className="absolute inset-0 bg-blue-500/20 rounded-full animate-pulse" />
-//                                             <img
-//                                                 src={sponsors[currentIndex].logo}
-//                                                 alt={`${sponsors[currentIndex].title} logo`}
-//                                                 className="rounded-full object-cover w-full h-full relative z-10 border-2 border-blue-400/30 
-//                                                          transform transition-transform duration-500 group-hover:scale-105"
-//                                             />
-//                                         </div>
-                                        
-//                                         <div className="text-center space-y-3">
-//                                             <h3 className="text-2xl font-orbitron text-blue-400 font-bold 
-//                                                        transform transition-all duration-500 group-hover:text-blue-300">
-//                                                 {sponsors[currentIndex].title}
-//                                             </h3>
-//                                             <p className="text-gray-300 transition-colors duration-500 group-hover:text-gray-200">
-//                                                 {sponsors[currentIndex].description}
-//                                             </p>
-//                                         </div>
-//                                     </div>
-//                                 </div>
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </div>
-
-//                 <div className="flex justify-center mt-12 space-x-6">
-//                     <button 
-//                         onClick={() => changeSponsor('left')}
-//                         disabled={isAnimating}
-//                         className="p-3 rounded-full bg-gradient-to-r from-blue-900/40 to-blue-800/40 hover:from-blue-800/60 hover:to-blue-700/60 
-//                                  border border-blue-500/30 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed
-//                                  focus:outline-none focus:ring-2 focus:ring-blue-500/50 group transform hover:scale-105"
-//                         aria-label="Previous sponsor"
-//                     >
-//                         <ChevronLeft className="w-6 h-6 text-blue-400 group-hover:text-blue-300" />
-//                     </button>
-//                     <button 
-//                         onClick={() => changeSponsor('right')}
-//                         disabled={isAnimating}
-//                         className="p-3 rounded-full bg-gradient-to-r from-blue-900/40 to-blue-800/40 hover:from-blue-800/60 hover:to-blue-700/60 
-//                                  border border-blue-500/30 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed
-//                                  focus:outline-none focus:ring-2 focus:ring-blue-500/50 group transform hover:scale-105"
-//                         aria-label="Next sponsor"
-//                     >
-//                         <ChevronRight className="w-6 h-6 text-blue-400 group-hover:text-blue-300" />
-//                     </button>
-//                 </div>
-//             </div>
-//         </section>
-//     );
-// }
-import React, { useState, useCallback } from 'react'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { useState } from 'react'
 import { SponsorDialog } from './SponsorDialog'
 
 interface Sponsor {
   title: string
-  description: string
+  tier: string
   logo: string
 }
 
-export function Sponsors() {
-  const [sponsors] = useState<Sponsor[]>([
-    {
-      title: "Want to Sponsor Us?",
-      description: "Join our galaxy of innovative partners",
-      logo: "images/logo.png",
-    },
-    {
-      title: "RED FM",
-      description: "Title Sponsor",
-      logo: "/images/red fm.png",
-    },
-    {
-      title: "ICICI BANK",
-      description: "Co-Sponsor",
-      logo: "images/icici.png",
-    },
-    {
-      title: "IITians GATE CLASSES",
-      description: "Event Sponsor",
-      logo: "/images/iitgate1.png",
-    },
-    {
-      title: "PATHAK ENTERPRISE",
-      description: "Event Sponsor",
-      logo: "images/pathak enterprises.png",
-    },
-    {
-      title: "EDUQUIS TECHNOLOGY",
-      description: "Event Sponsor",
-      logo: "/images/eduquis.png",
-    },
-    {
-      title: "Dare 2 Compete",
-      description: "Event Sponsor",
-      logo: "/images/dare to compete.jpeg",
-    },
-  ])
+const sponsors: Sponsor[] = [
+  {
+    title: 'RED FM',
+    tier: 'Title Sponsor',
+    logo: '/images/red fm.png',
+  },
+  {
+    title: 'ICICI BANK',
+    tier: 'Co-Sponsor',
+    logo: '/images/icici.png',
+  },
+  {
+    title: 'IITians GATE CLASSES',
+    tier: 'Event Sponsor',
+    logo: '/images/iitgate1.png',
+  },
+  {
+    title: 'PATHAK ENTERPRISE',
+    tier: 'Event Sponsor',
+    logo: '/images/pathak enterprises.png',
+  },
+  {
+    title: 'EDUQUIS TECHNOLOGY',
+    tier: 'Event Sponsor',
+    logo: '/images/eduquis.png',
+  },
+  {
+    title: 'Dare 2 Compete',
+    tier: 'Event Sponsor',
+    logo: '/images/dare to compete.jpeg',
+  },
+]
 
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [isAnimating, setIsAnimating] = useState(false)
-  const [slideDirection, setSlideDirection] = useState<'left' | 'right'>('right')
-  const [isDialogOpen, setIsDialogOpen] = useState(false)
+// Split into two rows
+const row1 = sponsors.slice(0, Math.ceil(sponsors.length / 2))
+const row2 = sponsors.slice(Math.ceil(sponsors.length / 2))
 
-  const changeSponsor = useCallback((direction: 'left' | 'right') => {
-    if (isAnimating) return
-    
-    setIsAnimating(true)
-    setSlideDirection(direction)
-    
-    const newIndex = direction === 'right'
-      ? (currentIndex + 1) % sponsors.length
-      : (currentIndex - 1 + sponsors.length) % sponsors.length
-
-    requestAnimationFrame(() => {
-      setTimeout(() => {
-        setCurrentIndex(newIndex)
-        requestAnimationFrame(() => {
-          setTimeout(() => {
-            setIsAnimating(false)
-          }, 50)
-        })
-      }, 300)
-    })
-  }, [currentIndex, isAnimating, sponsors.length])
+function SponsorCard({ sponsor }: { sponsor: Sponsor }) {
+  const tierColor =
+    sponsor.tier === 'Title Sponsor'
+      ? 'from-amber-400 to-yellow-600'
+      : sponsor.tier === 'Co-Sponsor'
+        ? 'from-violet-400 to-purple-600'
+        : 'from-cyan-400 to-blue-600'
 
   return (
-    <section className="min-h-screen text-white py-16 md:py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,123,255,0.1)_0%,transparent_70%)]">
-        <div className="stars" />
-        <div className="twinkling" />
-      </div>
-      
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300">
-            Our Past Sponsors
-          </span>
-        </h2>
+    <div className="group relative flex-shrink-0 w-[260px] mx-4">
+      {/* Glow */}
+      <div
+        className={`absolute -inset-[2px] rounded-2xl bg-gradient-to-r ${tierColor} opacity-0 group-hover:opacity-40 blur-xl transition-opacity duration-500`}
+      />
 
-        <div className="relative h-[400px] perspective-3000">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div 
-              className={`
-                relative w-full max-w-lg transform transition-all duration-300 ease-out
-                ${isAnimating 
-                  ? slideDirection === 'right'
-                    ? 'translate-x-[100%] opacity-0 rotate-y-90'
-                    : '-translate-x-[100%] opacity-0 -rotate-y-90'
-                  : 'translate-x-0 opacity-100 rotate-y-0'
-                }
-              `}
-              style={{
-                transformStyle: 'preserve-3d',
-                backfaceVisibility: 'hidden'
-              }}
-            >
-              <div className="relative group">
-                <div 
-                  className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-lg blur-lg opacity-20 
-                           group-hover:opacity-40 transition-opacity duration-700"
-                  style={{
-                    animation: 'pulse 3s cubic-bezier( 0.2, 0.9, 1) infinite '
-                  }}
-                />
-                
-                <div className="relative p-8 bg-gradient-to-b from-blue-900/40 to-black/80 backdrop-blur-xl rounded-lg 
-                          border border-blue-500/20 shadow-2xl transform hover:scale-105 transition-transform duration-500">
-                  <div className="flex flex-col items-center space-y-6">
-                    <div className="w-32 h-32 relative">
-                      <div className="absolute inset-0 bg-blue-500/20 rounded-full animate-pulse" />
-                      <img
-                        src={sponsors[currentIndex].logo}
-                        alt={`${sponsors[currentIndex].title} logo`}
-                        className="rounded-full object-cover w-ful h-full relative z-10 border-2 border-blue-400/30 
-                                 transform transition-transform duration-500 group-hover:scale-105 "
-                      />
-                    </div>
-                    
-                    <div className="text-center space-y-3">
-                      <h3 className="text-2xl font-bold text-blue-400 
-                                 transform transition-all duration-500 group-hover:text-blue-300">
-                        {sponsors[currentIndex].title}
-                      </h3>
-                      <p className="text-gray-300 transition-colors duration-500 group-hover:text-gray-200">
-                        {sponsors[currentIndex].description}
-                      </p>
-                      
-                      {currentIndex === 0 && (
-                        <>
-                        <button
-                          onClick={() => setIsDialogOpen(true)}
-                          className="mt-4 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 
-                                   hover:to-cyan-600 text-white font-semibold py-2 px-6 rounded-full 
-                                   transform hover:scale-105 transition-all duration-300 "
-                        >
-                          Learn More
-                          
-                        </button>
-                        <p>click next for past sponsors</p>
-                        </>
-                       
-                        
-                      )}
-                      
-                    
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div
+        className="relative flex flex-col items-center gap-4 rounded-2xl p-6
+                    bg-white/[0.04] backdrop-blur-md border border-white/10
+                    hover:border-white/25 hover:bg-white/[0.08]
+                    transition-all duration-500 hover:scale-[1.05]"
+      >
+        {/* Logo */}
+        <div className="w-20 h-20 rounded-full bg-white/10 p-2 flex items-center justify-center overflow-hidden ring-2 ring-white/10 group-hover:ring-white/30 transition-all duration-500">
+          <img
+            src={sponsor.logo}
+            alt={`${sponsor.title} logo`}
+            className="w-full h-full object-contain rounded-full"
+          />
         </div>
 
-        <div className="flex justify-center mt-12 space-x-6">
-          <button 
-            onClick={() => changeSponsor('left')}
-            disabled={isAnimating}
-            className="p-3 rounded-full bg-gradient-to-r from-blue-900/40 to-blue-800/40 hover:from-blue-800/60 hover:to-blue-700/60 
-                 border border-blue-500/30 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed
-                 focus:outline-none focus:ring-2 focus:ring-blue-500/50 group transform hover:scale-105"
-            aria-label="Previous sponsor"
+        {/* Info */}
+        <div className="text-center space-y-2">
+          <h3 className="text-base font-semibold text-white/90 group-hover:text-white transition-colors">
+            {sponsor.title}
+          </h3>
+          <span
+            className={`inline-block text-xs font-medium px-3 py-1 rounded-full bg-gradient-to-r ${tierColor} text-white/90`}
           >
-            <ChevronLeft className="w-6 h-6 text-blue-400 group-hover:text-blue-300" />
-          </button>
-          <button 
-            onClick={() => changeSponsor('right')}
-            disabled={isAnimating}
-            className="p-3 rounded-full bg-gradient-to-r from-blue-900/40 to-blue-800/40 hover:from-blue-800/60 hover:to-blue-700/60 
-                     border border-blue-500/30 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed
-                     focus:outline-none focus:ring-2 focus:ring-blue-500/50 group transform hover:scale-105"
-            aria-label="Next sponsor"
+            {sponsor.tier}
+          </span>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function MarqueeRow({
+  items,
+  direction = 'left',
+  speed = 30,
+}: {
+  items: Sponsor[]
+  direction?: 'left' | 'right'
+  speed?: number
+}) {
+  // Duplicate the list enough times to fill the viewport
+  const duplicated = [...items, ...items, ...items, ...items]
+
+  const animName = direction === 'left' ? 'marquee-scroll-left' : 'marquee-scroll-right'
+  const fromX = direction === 'left' ? '0%' : '-50%'
+  const toX = direction === 'left' ? '-50%' : '0%'
+
+  return (
+    <div className="relative overflow-hidden py-4 group/marquee">
+      <style>{`
+        @keyframes ${animName} {
+          0%   { transform: translateX(${fromX}); }
+          100% { transform: translateX(${toX}); }
+        }
+      `}</style>
+
+      {/* Fade masks on both edges */}
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10 bg-gradient-to-r from-black to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-24 z-10 bg-gradient-to-l from-black to-transparent" />
+
+      <div
+        className="flex w-max"
+        style={{
+          animation: `${animName} ${speed}s linear infinite`,
+        }}
+        onMouseEnter={(e) => { e.currentTarget.style.animationPlayState = 'paused' }}
+        onMouseLeave={(e) => { e.currentTarget.style.animationPlayState = 'running' }}
+      >
+        {duplicated.map((sponsor, i) => (
+          <SponsorCard key={`${sponsor.title}-${i}`} sponsor={sponsor} />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export function Sponsors() {
+  const [isDialogOpen, setIsDialogOpen] = useState(false)
+
+  return (
+    <section className="relative py-20 md:py-28 overflow-hidden text-white">
+      {/* Background */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(56,100,220,0.12)_0%,transparent_70%)]" />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4">
+        {/* Heading */}
+        <div className="text-center mb-14">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-400">
+              Our Past Sponsors
+            </span>
+          </h2>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            Proudly supported by industry leaders who share our vision
+          </p>
+        </div>
+
+        {/* Marquee rows */}
+        <div className="space-y-6">
+          <MarqueeRow items={row1} direction="left" speed={25} />
+          <MarqueeRow items={row2} direction="right" speed={30} />
+        </div>
+
+        {/* CTA */}
+        <div className="mt-16 flex justify-center">
+          <button
+            onClick={() => setIsDialogOpen(true)}
+            className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full
+                       bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold text-lg
+                       shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40
+                       hover:scale-105 active:scale-100 transition-all duration-300"
           >
-            <ChevronRight className="w-6 h-6 text-blue-400 group-hover:text-blue-300" />
+            <span className="relative z-10">Become a Sponsor</span>
+            <svg
+              className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+            {/* Button glow */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 blur-lg opacity-40 group-hover:opacity-60 transition-opacity" />
           </button>
         </div>
       </div>
@@ -339,4 +191,3 @@ export function Sponsors() {
     </section>
   )
 }
-
