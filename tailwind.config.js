@@ -31,6 +31,8 @@ export default {
         'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'shimmer': 'shimmer 3s infinite linear',
         'tilt': 'tilt 10s infinite linear',
+        'scroll-left': 'scroll-left 30s linear infinite',
+        'scroll-right': 'scroll-right 30s linear infinite',
       },
       keyframes: {
         pulse: {
@@ -56,6 +58,14 @@ export default {
           '50%': {
             transform: 'rotate(1deg)',
           },
+        },
+        'scroll-left': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        'scroll-right': {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0)' },
         },
       },
     },
