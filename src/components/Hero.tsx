@@ -53,7 +53,7 @@ export function Hero() {
           <div className="my-2 relative cursor-pointer" onMouseEnter={handleLogoHover}>
             <img
               ref={logoRef}
-              src="/images/AbhiyantrixLogo2.png"
+              src="/images/abh2.png"
               alt="https://vzjmqivzndfloheg.public.blob.vercel-storage.com/AbhiyantrixLogo2-pVB6fkjLJsOcp8ybf5ZRbUOVw2VY36.png"
               className="w-auto h-auto max-h-48 md:max-h-48 xl:max-h-48 2xl:max-h-48 mx-auto"
               style={{
