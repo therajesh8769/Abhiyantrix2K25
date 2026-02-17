@@ -99,11 +99,11 @@ export function Footer() {
               className="p-2 bg-blue-500/10 text-gray-300 text-xs rounded-full hover:bg-blue-800/20 transition"
               onClick={(e) => {
                 e.preventDefault();
-                window.open('https://www.linkedin.com/in/hyraj26', '_blank', 'noopener,noreferrer');
+                window.open('https://www.linkedin.com/in/jit-malakar/', '_blank', 'noopener,noreferrer');
                 
               }}
             >
-              Meet the developer
+              Maintained by
             </a>
             
           </div>
