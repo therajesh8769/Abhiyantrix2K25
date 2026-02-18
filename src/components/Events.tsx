@@ -578,7 +578,9 @@
 
 import type React from "react"
 import { useState } from "react"
-import { Laptop, Bot, Rocket, Landmark, X, HelpCircle, Mic, Send, Monitor, Telescope, SmilePlus, Users } from "lucide-react"
+import { Laptop, Bot, Rocket, Landmark, X, HelpCircle, Mic, Send, Monitor, Telescope, SmilePlus, Users, Calendar, MapPin, Trophy } from "lucide-react"
+import { motion, AnimatePresence } from "framer-motion"
+import { EventCard } from "./EventCard"
 
 interface Event {
   id: string
@@ -744,132 +746,137 @@ const events: Event[] = [
 
 export function Events() {
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null)
-  const [hoveredEvent, setHoveredEvent] = useState<string | null>(null)
 
   return (
-    <div className="relative inset-0 bg-cover bg-center opacity-70">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 md:py-20">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-10 md:mb-20">Featured Events</h2>
+    <div className="relative inset-0 bg-cover bg-center">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 md:py-20">
+        {/* Section Title */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-12 md:mb-20"
+        >
+          <h2 className="text-3xl md:text-5xl font-bold font-orbitron tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-500 mb-3">
+            Featured Events
+          </h2>
+          <p className="text-gray-400 text-sm tracking-widest uppercase">
+            Compete • Innovate • Win
+          </p>
+        </motion.div>
 
-        <div className="space-y-16 md:space-y-32">
+        {/* Event Cards Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
           {events.map((event, index) => (
-            <div
+            <EventCard
               key={event.id}
-              className={`flex flex-row items-center justify-between gap-8 md:gap-16 cursor-pointer transition-transform ${hoveredEvent === event.id ? "scale-105" : "scale-100"
-                }`}
-              onClick={() => setSelectedEvent(event)}
-              onMouseEnter={() => setHoveredEvent(event.id)}
-              onMouseLeave={() => setHoveredEvent(null)}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => {
-                if (e.key === "Enter" || e.key === " ") {
-                  setSelectedEvent(event)
-                }
-              }}
-            >
-              <div className={`w-1/2 ${index % 2 === 0 ? "order-1" : "order-2"}`}>
-                <div className="relative">
-                  <div
-                    className={`p-3 rounded-lg border ${hoveredEvent === event.id
-                      ? "bg-blue-500/30 border-blue-400 shadow-lg"
-                      : "bg-black/60 border-blue-500/30"
-                      } backdrop-blur-sm`}
-                  >
-                    <div className="text-blue-400 mb-4">{event.icon}</div>
-                    <h3 className="text-xl md:text-2xl font-bold text-white mb-1">{event.title}</h3>
-
-                    <div className="space-y-1 mb-4">
-                      <p className="text-sm text-gray-300 font-sarif mb-6">{event.tagline}</p>
-                      {/* <p className="text-sm text-gray-300 mb-2">{event.date}</p>
-                      <p className="text-sm text-gray-300 mb-2">{event.time}</p>
-                      <p className="text-sm text-sky-300 mb-2">Venue:{event.venue}</p> */}
-                      <p className="text-sm text-green-400 font-medium">Prize: {event.prize}</p>
-                    </div>
-                    <a
-                      href={event.registrationLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block mt-4 bg-blue-500 text-white text-sm py-1.5 px-3 rounded-full hover:bg-blue-600 transition-colors"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      Register
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className={`w-1/2 ${index % 2 === 0 ? "order-2" : "order-1"}`}>
-                <div className="aspect-[4/3] w-full rounded-lg overflow-hidden">
-                  <img
-                    src={event.image || "/placeholder.svg"}
-                    alt={event.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            </div>
+              event={event}
+              index={index}
+              onViewDetails={() => setSelectedEvent(event)}
+            />
           ))}
         </div>
 
-        {selectedEvent && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-2 z-50">
-            <div className="bg-black/80 backdrop-blur-sm border border-blue-500/30 rounded-lg p-6 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center gap-2">
-                  {selectedEvent.icon}
-                  <h3 className="text-2xl font-bold text-white">{selectedEvent.title}</h3>
-                </div>
-                <button onClick={() => setSelectedEvent(null)} className="text-gray-400 hover:text-white">
-                  <X size={24} />
-                </button>
-              </div>
-
-              <div className="aspect-[16/9] w-full rounded-lg overflow-hidden mb-4">
-                <img
-                  src={selectedEvent.image}
-                  alt={selectedEvent.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-
-              <div className="space-y-4">
-                <div className="space-y-2">
-                  <p className="text-gray-300">{selectedEvent.tagline}</p>
-                  <p className="text-gray-300">{selectedEvent.date}</p>
-                  <p className="text-gray-300">{selectedEvent.time}</p>
-                  <p className="text-sky-300">Venue:{selectedEvent.venue}</p>
-
-                  <p className="text-green-400 font-medium">Prize: {selectedEvent.prize}</p>
+        {/* Modal */}
+        <AnimatePresence>
+          {selectedEvent && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setSelectedEvent(null)}
+              className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 z-50"
+            >
+              <motion.div
+                initial={{ scale: 0.92, opacity: 0, y: 20 }}
+                animate={{ scale: 1, opacity: 1, y: 0 }}
+                exit={{ scale: 0.92, opacity: 0, y: 20 }}
+                transition={{ type: 'spring', damping: 25, stiffness: 300 }}
+                onClick={(e) => e.stopPropagation()}
+                className="bg-gray-900/95 backdrop-blur-xl border border-blue-500/30 rounded-2xl p-0 max-w-3xl w-full max-h-[90vh] overflow-hidden flex flex-col md:flex-row shadow-2xl shadow-blue-500/10"
+              >
+                {/* Modal Image */}
+                <div className="w-full md:w-2/5 h-56 md:h-auto relative flex-shrink-0">
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent md:bg-gradient-to-r z-10" />
+                  <img src={selectedEvent.image} alt={selectedEvent.title} className="w-full h-full object-cover" />
+                  <div className="absolute bottom-4 left-4 z-20 p-2.5 bg-blue-500/20 backdrop-blur-md rounded-xl text-blue-400 border border-blue-400/30 md:hidden">
+                    {selectedEvent.icon}
+                  </div>
                 </div>
 
-                <p className="text-gray-300">{selectedEvent.description}</p>
-              </div>
-              <div className="flex justify-between items-center mt-6">
-                <button
-                  className="bg-gray-500 text-white text-sm py-1.5 px-3 rounded-full hover:bg-gray-600 transition-colors"
-                  onClick={() => setSelectedEvent(null)}
-                >
-                  Close
-                </button>
-                {selectedEvent?.registrationLink ? (
-                  <a
-                    onClick={() => window.open(selectedEvent?.registrationLink, "_blank")}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-blue-500 text-white text-sm py-1.5 px-3 rounded-full hover:bg-blue-600 transition-colors"
-                  >
-                    Register
-                  </a>
-                ) : (
-                  <p className="text-red-500">Registration link not available</p>
-                )}
-              </div>
-            </div>
-          </div>
-        )}
+                {/* Modal Content */}
+                <div className="flex-1 p-6 md:p-8 overflow-y-auto flex flex-col">
+                  <div className="flex justify-between items-start mb-5">
+                    <div className="flex items-center gap-3">
+                      <div className="hidden md:block p-2 bg-blue-500/10 rounded-lg text-blue-400">
+                        {selectedEvent.icon}
+                      </div>
+                      <div>
+                        <h3 className="text-xl md:text-2xl font-bold text-white font-orbitron">{selectedEvent.title}</h3>
+                        <p className="text-gray-400 text-sm italic">{selectedEvent.tagline}</p>
+                      </div>
+                    </div>
+                    <button onClick={() => setSelectedEvent(null)} className="text-gray-400 hover:text-white transition-colors flex-shrink-0 ml-2">
+                      <X size={22} />
+                    </button>
+                  </div>
+
+                  {/* Info Cards */}
+                  <div className="grid grid-cols-2 gap-3 text-sm mb-5">
+                    <div className="bg-white/5 p-3 rounded-lg border border-white/10 flex items-center gap-2">
+                      <Calendar size={14} className="text-blue-400 flex-shrink-0" />
+                      <div>
+                        <p className="text-gray-400 text-[10px] uppercase tracking-wider">Date</p>
+                        <p className="text-white font-medium text-xs">{selectedEvent.date}</p>
+                      </div>
+                    </div>
+                    <div className="bg-white/5 p-3 rounded-lg border border-white/10 flex items-center gap-2">
+                      <MapPin size={14} className="text-blue-400 flex-shrink-0" />
+                      <div>
+                        <p className="text-gray-400 text-[10px] uppercase tracking-wider">Venue</p>
+                        <p className="text-white font-medium text-xs">{selectedEvent.venue}</p>
+                      </div>
+                    </div>
+                    <div className="bg-white/5 p-3 rounded-lg border border-white/10 col-span-2 flex items-center gap-2">
+                      <Trophy size={14} className="text-yellow-400 flex-shrink-0" />
+                      <div>
+                        <p className="text-gray-400 text-[10px] uppercase tracking-wider">Prize Pool</p>
+                        <p className="text-yellow-400 font-bold">{selectedEvent.prize}</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mb-6">
+                    <h4 className="text-blue-400 font-medium mb-2 uppercase text-xs tracking-wider">About</h4>
+                    <p className="text-gray-300 leading-relaxed text-sm">{selectedEvent.description}</p>
+                  </div>
+
+                  {/* Modal CTAs */}
+                  <div className="mt-auto pt-4 border-t border-white/10 flex gap-3">
+                    <button
+                      className="flex-1 px-4 py-2.5 rounded-lg bg-white/5 hover:bg-white/10 text-white text-sm font-medium transition-colors border border-white/10"
+                      onClick={() => setSelectedEvent(null)}
+                    >
+                      Close
+                    </button>
+                    {selectedEvent.registrationLink && (
+                      <a
+                        href={selectedEvent.registrationLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 px-4 py-2.5 rounded-lg bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white font-bold text-sm text-center transition-all shadow-md shadow-blue-500/20 flex items-center justify-center gap-2"
+                      >
+                        <Rocket size={16} />
+                        Register Now
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   )
 }
-
