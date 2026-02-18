@@ -796,9 +796,9 @@ export function Events() {
                 className="bg-gray-900/95 backdrop-blur-xl border border-blue-500/30 rounded-2xl p-0 max-w-3xl w-full max-h-[90vh] overflow-hidden flex flex-col md:flex-row shadow-2xl shadow-blue-500/10"
               >
                 {/* Modal Image */}
-                <div className="w-full md:w-2/5 h-56 md:h-auto relative flex-shrink-0">
+                <div className="w-full md:w-2/5 h-64 md:h-auto relative flex-shrink-0 bg-black/50">
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent md:bg-gradient-to-r z-10" />
-                  <img src={selectedEvent.image} alt={selectedEvent.title} className="w-full h-full object-cover" />
+                  <img src={selectedEvent.image} alt={selectedEvent.title} className="w-full h-full object-contain" />
                   <div className="absolute bottom-4 left-4 z-20 p-2.5 bg-blue-500/20 backdrop-blur-md rounded-xl text-blue-400 border border-blue-400/30 md:hidden">
                     {selectedEvent.icon}
                   </div>

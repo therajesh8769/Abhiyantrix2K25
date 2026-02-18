@@ -139,7 +139,7 @@ export function Sponsors() {
   const [isDialogOpen, setIsDialogOpen] = useState(false)
 
   return (
-    <section className="relative py-20 md:py-28 overflow-hidden text-white">
+    <section className="relative pt-8 pb-20 md:pt-12 md:pb-28 overflow-hidden text-white">
       {/* Background */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(56,100,220,0.12)_0%,transparent_70%)]" />
 
