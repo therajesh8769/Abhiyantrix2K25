@@ -578,7 +578,7 @@
 
 import type React from "react"
 import { useState } from "react"
-import { Laptop, Bot, Rocket, Landmark, X, HelpCircle, Mic, Send, Monitor, Telescope,SmilePlus,Users } from "lucide-react"
+import { Laptop, Bot, Rocket, Landmark, X, HelpCircle, Mic, Send, Monitor, Telescope, SmilePlus, Users } from "lucide-react"
 
 interface Event {
   id: string
@@ -586,8 +586,8 @@ interface Event {
   title: string
   tagline: string
   date: string
-  time:string
-  venue:string
+  time: string
+  venue: string
   prize: string
   image: string
   description: string
@@ -602,12 +602,12 @@ const events: Event[] = [
     tagline: "'Ready your blueprints'",
     date: "Round-1:22nd March,2025,5:30 PM",
     time: "Round-2:23rd March,2025,5:00 PM",
-    venue:"Gallery-3",
+    venue: "Gallery-3",
     prize: "Worth  ₹3,000",
     image: "/images/cad.png",
     description:
       "Showcase your artistry and precision by letting your skilled hands bring complex machine designs to life in this dynamic fusion of art and engineering.",
-    registrationLink: "https://unstop.com/o/poPyCLJ?lb=wCdWBIno",
+    registrationLink: "https://unstop.com/p/cad-crusade-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644138",
   },
   {
     id: "2",
@@ -616,12 +616,12 @@ const events: Event[] = [
     tagline: "'Ready,Set,Hover!'",
     date: "Round-1:22nd March,2025,7:00 PM",
     time: "Round-2:23rd March,2025,6:00 PM",
-    venue:"Parade Ground",
+    venue: "Parade Ground",
     prize: "Worth ₹8,000",
     image: "/images/hoverpod.png",
     description:
       "Dive into our charged arena of our hovercraft competition where you can show-off your speed and precision by swiftly navigating through an obstacle course.",
-    registrationLink: "https://unstop.com/o/XSaM1pj?lb=wCdWBIno",
+    registrationLink: "https://unstop.com/p/hover-havoc-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644155",
   },
   {
     id: "3",
@@ -630,12 +630,12 @@ const events: Event[] = [
     tagline: "'Fly Beyond the limits!'",
     date: "Round-1:22nd March, 2025,10:00am",
     time: "Round-2:22nd March, 2025,1:30pm",
-    venue:"Lords Ground",
+    venue: "Lords Ground",
     prize: "Worth ₹8,000",
     image: "/images/rcplane.png",
     description:
       "Ready for the challenge? Compete in our RC Plane Competition and soar through the skies with skill and speed.",
-    registrationLink: "https://unstop.com/o/vUAkDp8?lb=wCdWBIno",
+    registrationLink: "https://unstop.com/p/airborne-adventure-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644175",
   },
   {
     id: "4",
@@ -643,13 +643,13 @@ const events: Event[] = [
     title: "JALAASTRA",
     tagline: "'Launching Dreams:Soaring Heights'",
     date: "Round-1:22nd March,2025,11:30 AM",
-    time:"Round-2:22nd March,2025,3:00 PM",
-    venue:"Lords Ground",
+    time: "Round-2:22nd March,2025,3:00 PM",
+    venue: "Lords Ground",
     prize: "Worth ₹4,000",
     image: "/images/rocket.png",
     description:
       "Step into the excitement of our water rocket competition, where you can test your ingenuity and precision by launching rockets through a thrilling flight challenge.",
-    registrationLink: "https://unstop.com/o/9WMc5Tu?lb=wCdWBIno",
+    registrationLink: "https://unstop.com/p/jalastra-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644181",
   },
   {
     id: "5",
@@ -658,12 +658,12 @@ const events: Event[] = [
     tagline: "'Soar. Glide. Conquer. Repeat.'",
     date: "22nd March,2025,4:30 PM",
     time: "",
-    venue:"Lords Ground",
+    venue: "Lords Ground",
     prize: "Worth ₹2,000",
     image: "/images/glider.png",
     description:
       "Unleash your inner engineer and let your creation take flight! Build a glider that embodies innovation and soar to new heights in our challenge.",
-    registrationLink: "https://unstop.com/o/z7GtI24?lb=wCdWBIno",
+    registrationLink: "https://unstop.com/p/falcons-flight-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644166",
   },
   {
     id: "6",
@@ -672,14 +672,14 @@ const events: Event[] = [
     tagline: "'Take your wings to the skies'",
     date: "",
     time: "",
-    venue:"Parade Ground",
+    venue: "Parade Ground",
     prize: "Open event",
     image: "/images/flighsimulator.png",
     description:
       "Experience the thrill of aviation in our Flight Simulator event! Navigate the skies and put your piloting skills to the test.",
     registrationLink: "https://unstop.com/o/oYyvbxk?lb=wCdWBIno",
   },
-  
+
   {
     id: "7",
     icon: <Telescope className="w-6 h-6 md:w-8 md:h-8" />,
@@ -687,7 +687,7 @@ const events: Event[] = [
     tagline: "'Gaze into the infinite'",
     date: "23rd March,2025",
     time: "6:00 PM:8:00 PM",
-    venue:"BEC-Modal Ground",
+    venue: "BEC-Modal Ground",
     prize: "Open event",
     image: "/images/skyWatching.png",
     description:
@@ -701,12 +701,12 @@ const events: Event[] = [
     tagline: "'Blast off with Knowledge'",
     date: "Round-1:21st March, 2025,7:00 PM",
     time: "Round-2:21st March, 2025,8:00 PM",
-    venue:"Gallery-3",
+    venue: "Gallery-3",
     prize: "Worth ₹3,000",
     image: "/images/quiz.png",
     description:
       "Prepare for liftoff in the Galactic Quiz Bowl! Challenge your mind and compete in a fast-paced, out-of-this-world trivia showdown.",
-    registrationLink: "https://unstop.com/o/by8A6nw?lb=wCdWBIno",
+    registrationLink: "https://unstop.com/p/galactic-quiz-bowl-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644172",
   },
   {
     id: "9",
@@ -715,14 +715,14 @@ const events: Event[] = [
     tagline: "'Debate.Discuss.Decide'",
     date: "Round-1:23rd March,2025,3:00 PM",
     time: "Round-2:23rd March,2025,4:00 PM",
-     venue:"Gallery-3",
+    venue: "Gallery-3",
     prize: "Worth ₹2,000",
     image: "/images/debate.png",
     description:
       "Prepare to debate! Showcase your skills in argumentation and critical thinking while engaging in dynamic discussions with fellow competitors.",
-    registrationLink: "https://unstop.com/o/SFnwqI0?lb=wCdWBIno",
+    registrationLink: "https://unstop.com/p/star-wars-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644145",
   },
-  
+
   {
     id: "10",
     icon: <SmilePlus className="w-6 h-6 md:w-8 md:h-8" />,
@@ -730,16 +730,16 @@ const events: Event[] = [
     tagline: "'Got Memes? Prove It!'",
     date: "Online submission",
     time: "",
-    venue:"Online",
+    venue: "Online",
     prize: "Worth ₹1,000",
     image: "/images/meme.png",
     description:
       "Join the ultimate showdown of wit and humor! Submit your best memes and battle for the title of Meme Master in a fun, fast-paced competition.",
     registrationLink: "https://unstop.com/o/gdjNrby?lb=wCdWBInohttps://unstop.com/o/gdjNrby?lb=wCdWBIno",
   },
- 
-  
-  
+
+
+
 ]
 
 export function Events() {
@@ -772,8 +772,8 @@ export function Events() {
                 <div className="relative">
                   <div
                     className={`p-3 rounded-lg border ${hoveredEvent === event.id
-                        ? "bg-blue-500/30 border-blue-400 shadow-lg"
-                        : "bg-black/60 border-blue-500/30"
+                      ? "bg-blue-500/30 border-blue-400 shadow-lg"
+                      : "bg-black/60 border-blue-500/30"
                       } backdrop-blur-sm`}
                   >
                     <div className="text-blue-400 mb-4">{event.icon}</div>
@@ -827,7 +827,7 @@ export function Events() {
 
               <div className="aspect-[16/9] w-full rounded-lg overflow-hidden mb-4">
                 <img
-                  src={selectedEvent.image }
+                  src={selectedEvent.image}
                   alt={selectedEvent.title}
                   className="w-full h-full object-cover"
                 />
