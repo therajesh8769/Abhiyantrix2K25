@@ -23,7 +23,7 @@ export const teams: TeamData[] = [
       {
         name: "Sandeep Sankuru",
         position: "Main Coordinator (4th Year)",
-        image: "./images/teams/sandeep.jpg",
+        image: "./images/teams/san.jpeg",
         social: {
           linkedin: "",
           email: "",
@@ -74,7 +74,7 @@ export const teams: TeamData[] = [
       {
         name: "Shreyansh Jharaniya",
         position: "Finance Team (3rd Year)",
-        image: "./images/teams/shreyansh.jpg",
+        image: "./images/teams/sreya.jpeg",
         social: {
           linkedin: "",
           email: "",
@@ -143,7 +143,7 @@ export const teams: TeamData[] = [
       {
         name: "Sontu Gaurav",
         position: "Sponsorship Team (2nd Year)",
-        image: "./images/teams/general.jpg",
+        image: "./images/teams/gau.jpeg",
         social: {
           linkedin: "",
           email: "",
@@ -203,7 +203,7 @@ export const teams: TeamData[] = [
       {
         name: "Bikram Patir",
         position: "Event Team (2nd Year)",
-        image: "./images/teams/general.jpg",
+        image: "./images/teams/bik.jpeg",
         social: {
           linkedin: "",
           email: "",
@@ -263,7 +263,7 @@ export const teams: TeamData[] = [
       {
         name: "Hami Riyas",
         position: "Travel and Logistics Team (2nd Year)",
-        image: "./images/teams/general.jpg",
+        image: "./images/teams/hami.HEIC",
         social: {
           linkedin: "",
           email: "",
@@ -347,7 +347,7 @@ export const teams: TeamData[] = [
       {
         name: "Deboja Das",
         position: "Design and Content Team (2nd Year)",
-        image: "./images/teams/general.jpg",
+        image: "./images/teams/debo.jpeg",
         social: {
           linkedin: "",
           email: "",
@@ -416,7 +416,7 @@ export const teams: TeamData[] = [
       {
         name: "Anchal Chaudhury",
         position: "Publicity and Social Media Team (2nd Year)",
-        image: "./images/teams/general.jpg",
+        image: "./images/teams/anch.jpeg",
         social: {
           linkedin: "",
           email: "",
@@ -458,7 +458,7 @@ export const teams: TeamData[] = [
       {
         name: "Pushpika Patel",
         position: "Industrial Alumni Meet Team (2nd Year)",
-        image: "./images/teams/general.jpg",
+        image: "./images/teams/push.jpeg",
         social: {
           linkedin: "",
           email: "",
@@ -467,7 +467,7 @@ export const teams: TeamData[] = [
       {
         name: "Anamika Roy",
         position: "Industrial Alumni Meet Team (2nd Year)",
-        image: "./images/teams/general.jpg",
+        image: "./images/teams/anamika.jpeg",
         social: {
           linkedin: "",
           email: "",
@@ -528,6 +528,15 @@ export const teams: TeamData[] = [
         name: "Anjala",
         position: "Web Development Team (2nd Year)",
         image: "./images/teams/general.jpg",
+        social: {
+          linkedin: "",
+          email: "",
+        },
+      },
+      {
+        name: "Jit Malakar",
+        position: "Web Development Team (3rd Year)",
+        image: "./images/teams/jit.jpeg",
         social: {
           linkedin: "",
           email: "",
