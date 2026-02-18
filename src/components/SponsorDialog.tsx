@@ -190,28 +190,25 @@ export function SponsorDialog({ isOpen, onClose }: SponsorDialogProps) {
 
                 {/* Footer */}
                 <div className="bg-black px-6 py-4 flex items-center justify-between rounded-b-lg">
-  {/* Contact Information */}
-  <div className="text-gray-300 text-sm space-y-1">
-    <p>
-      <p><span className='text-blue-400'>contact:</span></p>
-      <span className="font-medium">Sahil Nikam:</span> +91 7498605149
-    </p>
-    <p>
-      <span className="font-medium">Rohan Das:</span> +91 6290759839
-    </p>
-  </div>
+                  {/* Contact Information */}
+                  <div className="text-gray-300 text-sm space-y-1">
+                    <p>
+                      <p><span className='text-blue-400'>contact:</span></p>
+                      <span className="font-medium">Yashwanth Pedapudi:</span> +91 7095788562
+                    </p>
+                  </div>
 
-  {/* Close Button */}
-  <button
-    type="button"
-    onClick={onClose}
-    className="px-6 py-2 bg-blue-600 text-white text-sm font-medium rounded-md
+                  {/* Close Button */}
+                  <button
+                    type="button"
+                    onClick={onClose}
+                    className="px-6 py-2 bg-blue-600 text-white text-sm font-medium rounded-md
                hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2
                transition-colors duration-200 shadow-md"
-  >
-    Close
-  </button>
-</div>
+                  >
+                    Close
+                  </button>
+                </div>
 
               </motion.div>
             </div>
