@@ -42,7 +42,7 @@ export function About() {
                 Abhiyantrix 2026
               </span>{" "}
               will be held from{" "}
-              <span className="text-blue-400 font-bold">March 6 to March 8</span>. 
+              <span className="text-blue-400 font-bold">March 5 to March 7</span>. 
               The fest ignites technological curiosity, providing an inclusive platform for participants 
               to come together and contribute to groundbreaking innovations in the fields of Space and Technology.
             </p>
@@ -54,7 +54,7 @@ export function About() {
           {[
             {
               icon: <Calendar className="w-10 h-10 md:w-12 md:h-12" />,
-              title: "March 6-8, 2026",
+              title: "March 5-7, 2026",
               subtitle: "Three days of innovation"
             },
             {
