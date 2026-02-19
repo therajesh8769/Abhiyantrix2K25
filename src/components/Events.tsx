@@ -737,7 +737,7 @@ const events: Event[] = [
     image: "/images/meme.png",
     description:
       "Join the ultimate showdown of wit and humor! Submit your best memes and battle for the title of Meme Master in a fun, fast-paced competition.",
-    registrationLink: "https://unstop.com/o/gdjNrby?lb=wCdWBInohttps://unstop.com/o/gdjNrby?lb=wCdWBIno",
+    registrationLink: "https://unstop.com/p/mach-meme-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644250",
   },
 
 
