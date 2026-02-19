@@ -660,7 +660,7 @@ const events: Event[] = [
     tagline: "'Soar. Glide. Conquer. Repeat.'",
     date: "To be Notified",
     time: "",
-    venue: "Lords Ground",
+    venue: "To be Notified",
     prize: "Worth ₹2,000",
     image: "/images/glider.png",
     description:
