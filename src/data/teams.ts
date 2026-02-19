@@ -263,7 +263,7 @@ export const teams: TeamData[] = [
       {
         name: "Hami Riyas",
         position: "Travel and Logistics Team (2nd Year)",
-        image: "./images/teams/hami.HEIC",
+        image: "./images/teams/hami.jpg",
         social: {
           linkedin: "",
           email: "",
@@ -491,7 +491,7 @@ export const teams: TeamData[] = [
       {
         name: "Pritam Saha",
         position: "Web Development Team (3rd Year)",
-        image: "./images/teams/general.jpg",
+        image: "./images/teams/pritam.jpeg",
         social: {
           linkedin: "",
           email: "",
