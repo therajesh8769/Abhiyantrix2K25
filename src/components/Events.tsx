@@ -799,26 +799,26 @@ export function Events() {
                 <div className="w-full md:w-2/5 h-64 md:h-auto relative flex-shrink-0 bg-black/50">
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent md:bg-gradient-to-r z-10" />
                   <img src={selectedEvent.image} alt={selectedEvent.title} className="w-full h-full object-contain" />
-                  <div className="absolute bottom-4 left-4 z-20 p-2.5 bg-blue-500/20 backdrop-blur-md rounded-xl text-blue-400 border border-blue-400/30 md:hidden">
+                  {/* <div className="absolute bottom-4 left-4 z-20 p-2.5 bg-blue-500/20 backdrop-blur-md rounded-xl text-blue-400 border border-blue-400/30 md:hidden">
                     {selectedEvent.icon}
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Modal Content */}
                 <div className="flex-1 p-6 md:p-8 overflow-y-auto flex flex-col">
                   <div className="flex justify-between items-start mb-5">
                     <div className="flex items-center gap-3">
-                      <div className="hidden md:block p-2 bg-blue-500/10 rounded-lg text-blue-400">
+                      {/* <div className="hidden md:block p-2 bg-blue-500/10 rounded-lg text-blue-400">
                         {selectedEvent.icon}
-                      </div>
+                      </div> */}
                       <div>
                         <h3 className="text-xl md:text-2xl font-bold text-white font-orbitron">{selectedEvent.title}</h3>
                         <p className="text-gray-400 text-sm italic">{selectedEvent.tagline}</p>
                       </div>
                     </div>
-                    <button onClick={() => setSelectedEvent(null)} className="text-gray-400 hover:text-white transition-colors flex-shrink-0 ml-2">
+                    {/* <button onClick={() => setSelectedEvent(null)} className="text-gray-400 hover:text-white transition-colors flex-shrink-0 ml-2">
                       <X size={22} />
-                    </button>
+                    </button> */}
                   </div>
 
                   {/* Info Cards */}
