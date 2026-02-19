@@ -22,7 +22,7 @@ function App() {
         </section>
 
 
-        <section id="events" className="relative z-10 mb-20 snap-start">
+        <section id="events" className="relative mb-20 snap-start">
           <Events />
         </section>
         <section id="gallery" className="relative z-10 mt-20 snap-start">
