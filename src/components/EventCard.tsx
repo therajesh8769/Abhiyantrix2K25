@@ -54,11 +54,11 @@ export const EventCard: React.FC<EventCardProps> = ({ event, index, onViewDetail
                 style={{ boxShadow: "inset 0 0 30px rgba(59,130,246,0.08), 0 0 40px rgba(59,130,246,0.06)" }} />
 
             {/* LEFT: Image + Badge */}
-            <div className="relative w-full sm:w-48 md:w-56 h-48 sm:h-auto flex-shrink-0 overflow-hidden">
+            <div className="relative w-full sm:w-48 md:w-56 h-52 sm:h-auto flex-shrink-0 overflow-hidden bg-black/40">
                 <img
                     src={event.image}
                     alt={event.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-contain sm:object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
