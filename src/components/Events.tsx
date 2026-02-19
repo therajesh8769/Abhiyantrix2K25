@@ -602,10 +602,10 @@ const events: Event[] = [
     icon: <Laptop className="w-6 h-6 md:w-8 md:h-8" />,
     title: "CAD-Crusade",
     tagline: "'Ready your blueprints'",
-    date: "Round-1:22nd March,2025,5:30 PM",
-    time: "Round-2:23rd March,2025,5:00 PM",
-    venue: "Gallery-3",
-    prize: "Worth  ₹3,000",
+    date: "To be Notified",
+    time: "To be Notified",
+    venue: "To be Notified",
+    prize: "To be Notified",
     image: "/images/cad.png",
     description:
       "Showcase your artistry and precision by letting your skilled hands bring complex machine designs to life in this dynamic fusion of art and engineering.",
@@ -616,9 +616,9 @@ const events: Event[] = [
     icon: <Bot className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Floating Frenzy",
     tagline: "'Ready,Set,Hover!'",
-    date: "Round-1:22nd March,2025,7:00 PM",
-    time: "Round-2:23rd March,2025,6:00 PM",
-    venue: "Parade Ground",
+    date: "To be Notified",
+    time: "To be Notified",
+    venue: "To be Notified",
     prize: "Worth ₹8,000",
     image: "/images/hoverpod.png",
     description:
@@ -630,10 +630,10 @@ const events: Event[] = [
     icon: <Send className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Airborne Adventure",
     tagline: "'Fly Beyond the limits!'",
-    date: "Round-1:22nd March, 2025,10:00am",
-    time: "Round-2:22nd March, 2025,1:30pm",
+    date: "To be Notified",
+    time: "To be Notified",
     venue: "Lords Ground",
-    prize: "Worth ₹8,000",
+    prize: "To be Notified",
     image: "/images/rcplane.png",
     description:
       "Ready for the challenge? Compete in our RC Plane Competition and soar through the skies with skill and speed.",
@@ -644,8 +644,8 @@ const events: Event[] = [
     icon: <Rocket className="w-6 h-6 md:w-8 md:h-8" />,
     title: "JALAASTRA",
     tagline: "'Launching Dreams:Soaring Heights'",
-    date: "Round-1:22nd March,2025,11:30 AM",
-    time: "Round-2:22nd March,2025,3:00 PM",
+    date: "To be Notified",
+    time: "To be Notified",
     venue: "Lords Ground",
     prize: "Worth ₹4,000",
     image: "/images/rocket.png",
@@ -658,7 +658,7 @@ const events: Event[] = [
     icon: <Send className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Falcon's Flight",
     tagline: "'Soar. Glide. Conquer. Repeat.'",
-    date: "22nd March,2025,4:30 PM",
+    date: "To be Notified",
     time: "",
     venue: "Lords Ground",
     prize: "Worth ₹2,000",
@@ -687,8 +687,8 @@ const events: Event[] = [
     icon: <Telescope className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Steller Odyssey",
     tagline: "'Gaze into the infinite'",
-    date: "23rd March,2025",
-    time: "6:00 PM:8:00 PM",
+    date: "To be Notified",
+    time: "To be Notified",
     venue: "BEC-Modal Ground",
     prize: "Open event",
     image: "/images/skyWatching.png",
@@ -701,10 +701,10 @@ const events: Event[] = [
     icon: <HelpCircle className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Galactic Quiz Bowl",
     tagline: "'Blast off with Knowledge'",
-    date: "Round-1:21st March, 2025,7:00 PM",
-    time: "Round-2:21st March, 2025,8:00 PM",
-    venue: "Gallery-3",
-    prize: "Worth ₹3,000",
+    date: "To be Notified",
+    time: "To be Notified",
+    venue: "To be Notified",
+    prize: "To be Notified",
     image: "/images/quiz.png",
     description:
       "Prepare for liftoff in the Galactic Quiz Bowl! Challenge your mind and compete in a fast-paced, out-of-this-world trivia showdown.",
@@ -715,8 +715,8 @@ const events: Event[] = [
     icon: <Mic className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Star Wars",
     tagline: "'Debate.Discuss.Decide'",
-    date: "Round-1:23rd March,2025,3:00 PM",
-    time: "Round-2:23rd March,2025,4:00 PM",
+    date: "To be Notified",
+    time: "To be Notified",
     venue: "Gallery-3",
     prize: "Worth ₹2,000",
     image: "/images/debate.png",
@@ -799,26 +799,26 @@ export function Events() {
                 <div className="w-full md:w-2/5 h-64 md:h-auto relative flex-shrink-0 bg-black/50">
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent md:bg-gradient-to-r z-10" />
                   <img src={selectedEvent.image} alt={selectedEvent.title} className="w-full h-full object-contain" />
-                  <div className="absolute bottom-4 left-4 z-20 p-2.5 bg-blue-500/20 backdrop-blur-md rounded-xl text-blue-400 border border-blue-400/30 md:hidden">
+                  {/* <div className="absolute bottom-4 left-4 z-20 p-2.5 bg-blue-500/20 backdrop-blur-md rounded-xl text-blue-400 border border-blue-400/30 md:hidden">
                     {selectedEvent.icon}
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Modal Content */}
                 <div className="flex-1 p-6 md:p-8 overflow-y-auto flex flex-col">
                   <div className="flex justify-between items-start mb-5">
                     <div className="flex items-center gap-3">
-                      <div className="hidden md:block p-2 bg-blue-500/10 rounded-lg text-blue-400">
+                      {/* <div className="hidden md:block p-2 bg-blue-500/10 rounded-lg text-blue-400">
                         {selectedEvent.icon}
-                      </div>
+                      </div> */}
                       <div>
                         <h3 className="text-xl md:text-2xl font-bold text-white font-orbitron">{selectedEvent.title}</h3>
                         <p className="text-gray-400 text-sm italic">{selectedEvent.tagline}</p>
                       </div>
                     </div>
-                    <button onClick={() => setSelectedEvent(null)} className="text-gray-400 hover:text-white transition-colors flex-shrink-0 ml-2">
+                    {/* <button onClick={() => setSelectedEvent(null)} className="text-gray-400 hover:text-white transition-colors flex-shrink-0 ml-2">
                       <X size={22} />
-                    </button>
+                    </button> */}
                   </div>
 
                   {/* Info Cards */}

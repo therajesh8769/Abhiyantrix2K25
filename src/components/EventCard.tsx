@@ -64,9 +64,9 @@ export const EventCard: React.FC<EventCardProps> = ({ event, index, onViewDetail
                 <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
 
                 {/* Icon circle */}
-                <div className="absolute top-3 left-3 p-2.5 bg-blue-500/20 backdrop-blur-md rounded-xl border border-blue-400/30 text-blue-400">
+                {/* <div className="absolute top-3 left-3 p-2.5 bg-blue-500/20 backdrop-blur-md rounded-xl border border-blue-400/30 text-blue-400">
                     {event.icon}
-                </div>
+                </div> */}
 
                 {/* Category badge */}
                 <div className="absolute bottom-3 left-3 px-3 py-1 bg-blue-600/80 backdrop-blur-sm rounded-full text-[11px] font-bold uppercase tracking-widest text-white">
