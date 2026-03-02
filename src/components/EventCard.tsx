@@ -14,7 +14,7 @@ interface Event {
     image: string;
     description: string;
     registrationLink: string;
-    coordinators?: { name: string; year: string }[];
+    coordinators?: { name: string; year: string; phone?: string }[];
 }
 
 interface EventCardProps {

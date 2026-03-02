@@ -369,7 +369,7 @@ export const teams: TeamData[] = [
     iconName: "Megaphone",
     members: [
       {
-        name: "Nurjaman Hoque",
+        name: "Nurzaman Hoque",
         position: "Publicity and Social Media Head (4th Year)",
         image: "./images/teams/nur.jpg",
         social: {

@@ -594,7 +594,7 @@ interface Event {
   image: string
   description: string
   registrationLink: string
-  coordinators?: { name: string; year: string }[]
+  coordinators?: { name: string; year: string; phone?: string }[]
 }
 
 const events: Event[] = [
@@ -611,7 +611,7 @@ const events: Event[] = [
     description:
       "Showcase your artistry and precision by letting your skilled hands bring complex machine designs to life in this dynamic fusion of art and engineering.",
     registrationLink: "https://unstop.com/p/cad-crusade-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644138",
-    coordinators: [{ name: "Abhirup Bandari", year: "4th Year" }, { name: "Shlok Vyas", year: "3rd Year" }],
+    coordinators: [{ name: "Abhirup Bhandari", year: "4th Year", phone: "+91 86175 49879" }, { name: "Shlok Vyas", year: "3rd Year", phone: "+91 77790 17229" }],
   },
   {
     id: "2",
@@ -626,7 +626,7 @@ const events: Event[] = [
     description:
       "Dive into our charged arena of our hovercraft competition where you can show-off your speed and precision by swiftly navigating through an obstacle course.",
     registrationLink: "https://unstop.com/p/hover-havoc-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644155",
-    coordinators: [{ name: "Satish Gupta", year: "4th Year" }, { name: "Jit Malakar", year: "3rd Year" }],
+    coordinators: [{ name: "Satish Gupta", year: "4th Year", phone: "+91 90386 08012" }, { name: "Jit Malakar", year: "3rd Year", phone: "+91 83359 38070" }],
   },
   {
     id: "3",
@@ -641,7 +641,7 @@ const events: Event[] = [
     description:
       "Ready for the challenge? Compete in our RC Plane Competition and soar through the skies with skill and speed.",
     registrationLink: "https://unstop.com/p/airborne-adventure-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644175",
-    coordinators: [{ name: "Nurjaman Hoque", year: "4th Year" }, { name: "Mehul Mehta", year: "3rd Year" }],
+    coordinators: [{ name: "Nurzaman Hoque", year: "4th Year", phone: "+91 85977 93207" }, { name: "Mehul Mehta", year: "3rd Year", phone: "+91 79739 24794" }],
   },
   {
     id: "4",
@@ -656,7 +656,7 @@ const events: Event[] = [
     description:
       "Step into the excitement of our water rocket competition, where you can test your ingenuity and precision by launching rockets through a thrilling flight challenge.",
     registrationLink: "https://unstop.com/p/jalastra-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644181",
-    coordinators: [{ name: "Navonil Chatterjee", year: "4th Year" }, { name: "Pratham Patel", year: "3rd Year" }],
+    coordinators: [{ name: "Navonil Chatterjee", year: "4th Year", phone: "+91 73648 97566" }, { name: "Pratham Patel", year: "3rd Year", phone: "+91 98256 34117" }],
   },
   {
     id: "5",
@@ -671,7 +671,7 @@ const events: Event[] = [
     description:
       "Unleash your inner engineer and let your creation take flight! Build a glider that embodies innovation and soar to new heights in our challenge.",
     registrationLink: "https://unstop.com/p/falcons-flight-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644166",
-    coordinators: [{ name: "Saurav Kumar", year: "4th Year" }, { name: "Jyotiranjan Maholiya", year: "3rd Year" }],
+    coordinators: [{ name: "Saurav Kumar", year: "4th Year", phone: "+91 62011 09581" }, { name: "Jyotiranjan Maholiya", year: "3rd Year", phone: "+91 94145 84738" }],
   },
   {
     id: "6",
@@ -686,7 +686,7 @@ const events: Event[] = [
     description:
       "Experience the thrill of aviation in our Flight Simulator event! Navigate the skies and put your piloting skills to the test.",
     registrationLink: "https://unstop.com/o/oYyvbxk?lb=wCdWBIno",
-    coordinators: [{ name: "Ramprasad Badana", year: "4th Year" }, { name: "Samarth Kumar", year: "3rd Year" }],
+    coordinators: [{ name: "Ramprasad Badana", year: "4th Year", phone: "+91 70930 30575" }, { name: "Samarth Kumar", year: "3rd Year", phone: "+91 89208 59432" }],
   },
 
   {
@@ -702,7 +702,7 @@ const events: Event[] = [
     description:
       "A captivating sky-watching experience, where you can discover constellations, planets, and celestial wonders while exploring the vast beauty of the cosmos.",
     registrationLink: "https://unstop.com/o/2mGjNXp?lb=wCdWBIno",
-    coordinators: [{ name: "Pragya Mondal", year: "4th Year" }, { name: "Pritam Saha", year: "3rd Year" }],
+    coordinators: [{ name: "Pragya Mondal", year: "4th Year", phone: "+91 62907 40271" }, { name: "Pritam Saha", year: "3rd Year", phone: "+91 90026 60605" }],
   },
   {
     id: "8",
@@ -717,7 +717,7 @@ const events: Event[] = [
     description:
       "Prepare for liftoff in the Galactic Quiz Bowl! Challenge your mind and compete in a fast-paced, out-of-this-world trivia showdown.",
     registrationLink: "https://unstop.com/p/galactic-quiz-bowl-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644172",
-    coordinators: [{ name: "Adiptya Ghosh", year: "4th Year" }, { name: "Anurag Rajeshkumar Singh", year: "3rd Year" }],
+    coordinators: [{ name: "Adiptya Ghosh", year: "4th Year", phone: "+91 97489 27557" }, { name: "Anurag Singh", year: "3rd Year", phone: "+91 81696 87574" }],
   },
   {
     id: "9",
@@ -732,7 +732,7 @@ const events: Event[] = [
     description:
       "Prepare to debate! Showcase your skills in argumentation and critical thinking while engaging in dynamic discussions with fellow competitors.",
     registrationLink: "https://unstop.com/p/star-wars-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644145",
-    coordinators: [{ name: "Sadhan Das", year: "4th Year" }, { name: "Aditya Jhunjhunwala", year: "3rd Year" }],
+    coordinators: [{ name: "Sadhan Das", year: "4th Year", phone: "+91 82502 74898" }, { name: "Aditya Jhunjhunwala", year: "3rd Year", phone: "+91 9330940740" }],
   },
 
   {
@@ -748,7 +748,7 @@ const events: Event[] = [
     description:
       "Join the ultimate showdown of wit and humor! Submit your best memes and battle for the title of Meme Master in a fun, fast-paced competition.",
     registrationLink: "https://unstop.com/p/mach-meme-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644250",
-    coordinators: [{ name: "Yaswanth Pedapudi", year: "4th Year" }, { name: "Manish Pawar", year: "3rd Year" }],
+    coordinators: [{ name: "Yaswanth Pedapudi", year: "4th Year", phone: "+91 70957 88562" }, { name: "Manish Pawar", year: "3rd Year", phone: "+91 62910 49117" }],
   },
   {
     id: "11",
@@ -763,7 +763,7 @@ const events: Event[] = [
     description:
       "Cosmic Canvas is a 1-hour on-the-spot watercolor art competition where participants bring the beauty and mystery of space to life through their creativity. Paint your vision of the universe using only watercolors and let your imagination soar beyond the stars!",
     registrationLink: "https://unstop.com/p/cosmic-canvas-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1651171",
-    coordinators: [{ name: "M L Narasimha", year: "4th Year" }],
+    coordinators: [{ name: "M L Narasimha", year: "4th Year", phone: "+91 96763 45393" }],
   },
 ]
 
@@ -868,13 +868,22 @@ export function Events() {
                       </div>
                     </div>
                     {selectedEvent.coordinators && selectedEvent.coordinators.length > 0 && (
-                      <div className="bg-white/5 p-3 rounded-lg border border-white/10 col-span-2 flex items-center gap-2">
-                        <Users size={14} className="text-cyan-400 flex-shrink-0" />
-                        <div>
+                      <div className="bg-white/5 p-3 rounded-lg border border-white/10 col-span-2">
+                        <div className="flex items-center gap-2 mb-2">
+                          <Users size={14} className="text-cyan-400 flex-shrink-0" />
                           <p className="text-gray-400 text-[10px] uppercase tracking-wider">Coordinators</p>
-                          <p className="text-cyan-400 font-medium text-xs">
-                            {selectedEvent.coordinators.map(c => `${c.name} (${c.year})`).join(" • ")}
-                          </p>
+                        </div>
+                        <div className="space-y-1.5 ml-5">
+                          {selectedEvent.coordinators.map((c, i) => (
+                            <div key={i} className="flex flex-wrap items-center gap-x-3 gap-y-0.5">
+                              <span className="text-cyan-400 font-medium text-xs">{c.name} ({c.year})</span>
+                              {c.phone && (
+                                <a href={`tel:${c.phone}`} className="text-[11px] text-cyan-400/70 hover:text-cyan-300 transition-colors">
+                                  📞 {c.phone}
+                                </a>
+                              )}
+                            </div>
+                          ))}
                         </div>
                       </div>
                     )}
