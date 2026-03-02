@@ -611,7 +611,7 @@ const events: Event[] = [
     description:
       "Showcase your artistry and precision by letting your skilled hands bring complex machine designs to life in this dynamic fusion of art and engineering.",
     registrationLink: "https://unstop.com/p/cad-crusade-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644138",
-    coordinators: [{ name: "Abhirup", year: "4th Year" }, { name: "Shlok", year: "3rd Year" }],
+    coordinators: [{ name: "Abhirup Bandari", year: "4th Year" }, { name: "Shlok Vyas", year: "3rd Year" }],
   },
   {
     id: "2",
@@ -626,7 +626,7 @@ const events: Event[] = [
     description:
       "Dive into our charged arena of our hovercraft competition where you can show-off your speed and precision by swiftly navigating through an obstacle course.",
     registrationLink: "https://unstop.com/p/hover-havoc-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644155",
-    coordinators: [{ name: "Sateesh", year: "4th Year" }, { name: "Jit", year: "3rd Year" }],
+    coordinators: [{ name: "Satish Gupta", year: "4th Year" }, { name: "Jit Malakar", year: "3rd Year" }],
   },
   {
     id: "3",
@@ -641,7 +641,7 @@ const events: Event[] = [
     description:
       "Ready for the challenge? Compete in our RC Plane Competition and soar through the skies with skill and speed.",
     registrationLink: "https://unstop.com/p/airborne-adventure-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644175",
-    coordinators: [{ name: "Nur", year: "4th Year" }, { name: "Mehul", year: "3rd Year" }],
+    coordinators: [{ name: "Nurjaman Hoque", year: "4th Year" }, { name: "Mehul Mehta", year: "3rd Year" }],
   },
   {
     id: "4",
@@ -656,7 +656,7 @@ const events: Event[] = [
     description:
       "Step into the excitement of our water rocket competition, where you can test your ingenuity and precision by launching rockets through a thrilling flight challenge.",
     registrationLink: "https://unstop.com/p/jalastra-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644181",
-    coordinators: [{ name: "Navonil", year: "4th Year" }, { name: "Pratham", year: "3rd Year" }],
+    coordinators: [{ name: "Navonil Chatterjee", year: "4th Year" }, { name: "Pratham Patel", year: "3rd Year" }],
   },
   {
     id: "5",
@@ -671,7 +671,7 @@ const events: Event[] = [
     description:
       "Unleash your inner engineer and let your creation take flight! Build a glider that embodies innovation and soar to new heights in our challenge.",
     registrationLink: "https://unstop.com/p/falcons-flight-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644166",
-    coordinators: [{ name: "Saurav", year: "4th Year" }, { name: "Jyoti", year: "3rd Year" }],
+    coordinators: [{ name: "Saurav Kumar", year: "4th Year" }, { name: "Jyotiranjan Maholiya", year: "3rd Year" }],
   },
   {
     id: "6",
@@ -686,7 +686,7 @@ const events: Event[] = [
     description:
       "Experience the thrill of aviation in our Flight Simulator event! Navigate the skies and put your piloting skills to the test.",
     registrationLink: "https://unstop.com/o/oYyvbxk?lb=wCdWBIno",
-    coordinators: [{ name: "Ramprasad", year: "4th Year" }, { name: "Samarth", year: "3rd Year" }],
+    coordinators: [{ name: "Ramprasad Badana", year: "4th Year" }, { name: "Samarth Kumar", year: "3rd Year" }],
   },
 
   {
@@ -702,7 +702,7 @@ const events: Event[] = [
     description:
       "A captivating sky-watching experience, where you can discover constellations, planets, and celestial wonders while exploring the vast beauty of the cosmos.",
     registrationLink: "https://unstop.com/o/2mGjNXp?lb=wCdWBIno",
-    coordinators: [{ name: "Pragya", year: "4th Year" }, { name: "Pritam", year: "3rd Year" }],
+    coordinators: [{ name: "Pragya Mondal", year: "4th Year" }, { name: "Pritam Saha", year: "3rd Year" }],
   },
   {
     id: "8",
@@ -717,7 +717,7 @@ const events: Event[] = [
     description:
       "Prepare for liftoff in the Galactic Quiz Bowl! Challenge your mind and compete in a fast-paced, out-of-this-world trivia showdown.",
     registrationLink: "https://unstop.com/p/galactic-quiz-bowl-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644172",
-    coordinators: [{ name: "Adiptya", year: "4th Year" }, { name: "Anurag", year: "3rd Year" }],
+    coordinators: [{ name: "Adiptya Ghosh", year: "4th Year" }, { name: "Anurag Rajeshkumar Singh", year: "3rd Year" }],
   },
   {
     id: "9",
@@ -732,7 +732,7 @@ const events: Event[] = [
     description:
       "Prepare to debate! Showcase your skills in argumentation and critical thinking while engaging in dynamic discussions with fellow competitors.",
     registrationLink: "https://unstop.com/p/star-wars-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644145",
-    coordinators: [{ name: "Sadhan", year: "4th Year" }, { name: "Aditya", year: "3rd Year" }],
+    coordinators: [{ name: "Sadhan Das", year: "4th Year" }, { name: "Aditya Jhunjhunwala", year: "3rd Year" }],
   },
 
   {
@@ -748,7 +748,7 @@ const events: Event[] = [
     description:
       "Join the ultimate showdown of wit and humor! Submit your best memes and battle for the title of Meme Master in a fun, fast-paced competition.",
     registrationLink: "https://unstop.com/p/mach-meme-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644250",
-    coordinators: [{ name: "Yaswanth", year: "4th Year" }, { name: "Manish", year: "3rd Year" }],
+    coordinators: [{ name: "Yaswanth Pedapudi", year: "4th Year" }, { name: "Manish Pawar", year: "3rd Year" }],
   },
   {
     id: "11",
@@ -763,7 +763,7 @@ const events: Event[] = [
     description:
       "Cosmic Canvas is a 1-hour on-the-spot watercolor art competition where participants bring the beauty and mystery of space to life through their creativity. Paint your vision of the universe using only watercolors and let your imagination soar beyond the stars!",
     registrationLink: "https://unstop.com/p/cosmic-canvas-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1651171",
-    coordinators: [{ name: "M. Lakshmi Narasimha", year: "4th Year" }, { name: "", year: "" }],
+    coordinators: [{ name: "M L Narasimha", year: "4th Year" }],
   },
 ]
 
