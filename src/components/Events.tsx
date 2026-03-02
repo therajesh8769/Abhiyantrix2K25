@@ -578,7 +578,7 @@
 
 import type React from "react"
 import { useState } from "react"
-import { Laptop, Bot, Rocket, Landmark, X, HelpCircle, Mic, Send, Monitor, Telescope, SmilePlus, Users, Calendar, MapPin, Trophy } from "lucide-react"
+import { Laptop, Bot, Rocket, Landmark, X, HelpCircle, Mic, Send, Monitor, Telescope, SmilePlus, Users, Calendar, MapPin, Trophy, Palette } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { EventCard } from "./EventCard"
 
@@ -602,10 +602,10 @@ const events: Event[] = [
     icon: <Laptop className="w-6 h-6 md:w-8 md:h-8" />,
     title: "CAD-Crusade",
     tagline: "'Ready your blueprints'",
-    date: "To be Notified",
+    date: "6th March, 2026",
     time: "To be Notified",
-    venue: "To be Notified",
-    prize: "To be Notified",
+    venue: "Gallery 4, Dept of AE & AM",
+    prize: "Worth ₹3,000",
     image: "/images/cad.png",
     description:
       "Showcase your artistry and precision by letting your skilled hands bring complex machine designs to life in this dynamic fusion of art and engineering.",
@@ -616,9 +616,9 @@ const events: Event[] = [
     icon: <Bot className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Floating Frenzy",
     tagline: "'Ready,Set,Hover!'",
-    date: "To be Notified",
+    date: "6th, 7th March, 2026",
     time: "To be Notified",
-    venue: "To be Notified",
+    venue: "Parade Ground",
     prize: "Worth ₹8,000",
     image: "/images/hoverpod.png",
     description:
@@ -630,10 +630,10 @@ const events: Event[] = [
     icon: <Send className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Airborne Adventure",
     tagline: "'Fly Beyond the limits!'",
-    date: "To be Notified",
+    date: "6th March, 2026",
     time: "To be Notified",
     venue: "Lords Ground",
-    prize: "To be Notified",
+    prize: "Worth ₹8,000",
     image: "/images/rcplane.png",
     description:
       "Ready for the challenge? Compete in our RC Plane Competition and soar through the skies with skill and speed.",
@@ -644,7 +644,7 @@ const events: Event[] = [
     icon: <Rocket className="w-6 h-6 md:w-8 md:h-8" />,
     title: "JALAASTRA",
     tagline: "'Launching Dreams:Soaring Heights'",
-    date: "To be Notified",
+    date: "6th March, 2026",
     time: "To be Notified",
     venue: "Lords Ground",
     prize: "Worth ₹4,000",
@@ -658,9 +658,9 @@ const events: Event[] = [
     icon: <Send className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Falcon's Flight",
     tagline: "'Soar. Glide. Conquer. Repeat.'",
-    date: "To be Notified",
+    date: "6th March, 2026",
     time: "",
-    venue: "To be Notified",
+    venue: "Parade Ground",
     prize: "Worth ₹2,000",
     image: "/images/glider.png",
     description:
@@ -672,7 +672,7 @@ const events: Event[] = [
     icon: <Monitor className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Flying Ace",
     tagline: "'Take your wings to the skies'",
-    date: "",
+    date: "6th, 7th March, 2026",
     time: "",
     venue: "Parade Ground",
     prize: "Open event",
@@ -687,9 +687,9 @@ const events: Event[] = [
     icon: <Telescope className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Steller Odyssey",
     tagline: "'Gaze into the infinite'",
-    date: "To be Notified",
+    date: "6th March, 2026",
     time: "To be Notified",
-    venue: "BEC-Modal Ground",
+    venue: "B.E. College Model School Ground",
     prize: "Open event",
     image: "/images/skyWatching.png",
     description:
@@ -701,10 +701,10 @@ const events: Event[] = [
     icon: <HelpCircle className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Galactic Quiz Bowl",
     tagline: "'Blast off with Knowledge'",
-    date: "To be Notified",
+    date: "5th March, 2026",
     time: "To be Notified",
-    venue: "To be Notified",
-    prize: "To be Notified",
+    venue: "Gallery 4, Dept of AE & AM",
+    prize: "Worth ₹2,500",
     image: "/images/quiz.png",
     description:
       "Prepare for liftoff in the Galactic Quiz Bowl! Challenge your mind and compete in a fast-paced, out-of-this-world trivia showdown.",
@@ -715,10 +715,10 @@ const events: Event[] = [
     icon: <Mic className="w-6 h-6 md:w-8 md:h-8" />,
     title: "Star Wars",
     tagline: "'Debate.Discuss.Decide'",
-    date: "To be Notified",
+    date: "7th March, 2026",
     time: "To be Notified",
-    venue: "Gallery-3",
-    prize: "Worth ₹2,000",
+    venue: "Gallery 4, Dept of AE & AM",
+    prize: "Worth ₹2,500",
     image: "/images/debate.png",
     description:
       "Prepare to debate! Showcase your skills in argumentation and critical thinking while engaging in dynamic discussions with fellow competitors.",
@@ -739,9 +739,20 @@ const events: Event[] = [
       "Join the ultimate showdown of wit and humor! Submit your best memes and battle for the title of Meme Master in a fun, fast-paced competition.",
     registrationLink: "https://unstop.com/p/mach-meme-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644250",
   },
-
-
-
+  {
+    id: "11",
+    icon: <Palette className="w-6 h-6 md:w-8 md:h-8" />,
+    title: "Cosmic Canvas",
+    tagline: "'Paint the Universe!'",
+    date: "5th, 6th, 7th March, 2026",
+    time: "1 Hour",
+    venue: "Parade Ground",
+    prize: "Open event",
+    image: "/images/cosmiccanvas.png",
+    description:
+      "Cosmic Canvas is a 1-hour on-the-spot watercolor art competition where participants bring the beauty and mystery of space to life through their creativity. Paint your vision of the universe using only watercolors and let your imagination soar beyond the stars!",
+    registrationLink: "",
+  },
 ]
 
 export function Events() {
