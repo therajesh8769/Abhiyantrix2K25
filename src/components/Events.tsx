@@ -626,7 +626,7 @@ const events: Event[] = [
     description:
       "Dive into our charged arena of our hovercraft competition where you can show-off your speed and precision by swiftly navigating through an obstacle course.",
     registrationLink: "https://unstop.com/p/hover-havoc-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644155",
-    coordinators: [{ name: "Sateesh", year: "4th Year" }, { name: "Mandeep", year: "3rd Year" }],
+    coordinators: [{ name: "Sateesh", year: "4th Year" }, { name: "Jit", year: "3rd Year" }],
   },
   {
     id: "3",
@@ -702,7 +702,7 @@ const events: Event[] = [
     description:
       "A captivating sky-watching experience, where you can discover constellations, planets, and celestial wonders while exploring the vast beauty of the cosmos.",
     registrationLink: "https://unstop.com/o/2mGjNXp?lb=wCdWBIno",
-    coordinators: [{ name: "Pragya", year: "4th Year" }, { name: "Arya", year: "3rd Year" }],
+    coordinators: [{ name: "Pragya", year: "4th Year" }, { name: "Pritam", year: "3rd Year" }],
   },
   {
     id: "8",
@@ -759,7 +759,7 @@ const events: Event[] = [
     time: "1 Hour",
     venue: "Parade Ground",
     prize: "Open event",
-    image: "/images/cosmiccanvas.png",
+    image: "/images/cosmic-canvas.png",
     description:
       "Cosmic Canvas is a 1-hour on-the-spot watercolor art competition where participants bring the beauty and mystery of space to life through their creativity. Paint your vision of the universe using only watercolors and let your imagination soar beyond the stars!",
     registrationLink: "",
