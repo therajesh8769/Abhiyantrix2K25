@@ -1,6 +1,6 @@
 import type React from "react";
 import { motion } from "framer-motion";
-import { Calendar, MapPin, Trophy, ExternalLink, ChevronRight } from "lucide-react";
+import { Calendar, MapPin, Trophy, ExternalLink, ChevronRight, Users } from "lucide-react";
 
 interface Event {
     id: string;
@@ -14,6 +14,7 @@ interface Event {
     image: string;
     description: string;
     registrationLink: string;
+    coordinators?: { name: string; year: string }[];
 }
 
 interface EventCardProps {
@@ -104,6 +105,16 @@ export const EventCard: React.FC<EventCardProps> = ({ event, index, onViewDetail
                             {event.prize}
                         </span>
                     </div>
+
+                    {/* Coordinators */}
+                    {event.coordinators && event.coordinators.length > 0 && (
+                        <div className="flex items-center gap-2 mb-4">
+                            <Users size={14} className="text-cyan-400 flex-shrink-0" />
+                            <span className="text-xs text-gray-400">
+                                {event.coordinators.map(c => c.name).join(" & ")}
+                            </span>
+                        </div>
+                    )}
                 </div>
 
                 {/* CTAs */}
