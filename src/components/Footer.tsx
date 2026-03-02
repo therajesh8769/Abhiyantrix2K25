@@ -73,9 +73,9 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2 justify-center md:justify-end group hover:text-blue-400 transition-colors">
                 <MapPin className="w-4 h-4 text-blue-400 group-hover:text-blue-300 flex-shrink-0" />
-                <span className="text-gray-400 text-sm group-hover:text-blue-400">
-                  1st floor, 2nd lobby, Main Building, IIEST Shibpur
-                </span>
+                <address className="text-gray-400 text-sm group-hover:text-blue-400 not-italic">
+                  1st floor, 2nd lobby, Main Building, IIEST Shibpur, Howrah, West Bengal
+                </address>
               </li>
             </ul>
           </div>
@@ -92,6 +92,7 @@ export function Footer() {
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={url.includes('instagram') ? 'Follow Abhiyantrix on Instagram' : 'Follow Abhiyantrix on Facebook'}
                   onClick={(e) => e.stopPropagation()}
                   className="p-2.5 bg-blue-500/10 rounded-full hover:bg-blue-500/20 transition-colors"
                 >

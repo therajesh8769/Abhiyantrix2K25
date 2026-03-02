@@ -4,20 +4,20 @@ import { Calendar, MapPin, Users } from 'lucide-react';
 
 export function About() {
   return (
-    <div className="relative text-white py-16 md:py-20 overflow-hidden bg-black opacity-80">
+    <article aria-label="About Abhiyantrix - Largest Aerospace Tech Fest in Kolkata, West Bengal" className="relative text-white py-16 md:py-20 overflow-hidden bg-black opacity-80">
       {/* Space-themed background effects */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(56,189,248,0.15),transparent_50%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(59,130,246,0.15),transparent_50%)]" />
-      
+
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
         {/* Animated Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 md:mb-16">
+        <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 md:mb-16">
           <span className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 
                          animate-[shimmer_3s_infinite] bg-[length:200%_100%]">
             About Abhiyantrix
           </span>
-        </h2>
-        
+        </h1>
+
         {/* Introduction Section with Hover Effects */}
         <div className="relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg blur opacity-25 
@@ -33,8 +33,8 @@ export function About() {
                              inline-block transform hover:scale-105 transition-transform">
                 {"Space and Technology"}
               </span>
-              . Conducted by the Aerospace Engineers' Society of the Department of Aerospace Engineering 
-              and Applied Mechanics, Indian Institute of Engineering Science and Technology, Shibpur, 
+              . Conducted by the Aerospace Engineers' Society of the Department of Aerospace Engineering
+              and Applied Mechanics, Indian Institute of Engineering Science and Technology, Shibpur,
               this event stands as a beacon of innovation and collaboration.
             </p>
             <p className="mt-4 leading-relaxed text-lg md:text-xl text-gray-300">
@@ -42,8 +42,8 @@ export function About() {
                 Abhiyantrix 2026
               </span>{" "}
               will be held from{" "}
-              <span className="text-blue-400 font-bold">March 5 to March 7</span>. 
-              The fest ignites technological curiosity, providing an inclusive platform for participants 
+              <span className="text-blue-400 font-bold">March 5 to March 7</span>.
+              The fest ignites technological curiosity, providing an inclusive platform for participants
               to come together and contribute to groundbreaking innovations in the fields of Space and Technology.
             </p>
           </div>
@@ -68,14 +68,14 @@ export function About() {
               subtitle: "From across the nation"
             }
           ].map((item, index) => (
-            <div 
+            <div
               key={index}
               className="group relative"
             >
               {/* Animated border gradient */}
               <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg blur opacity-25 
                            group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-tilt" />
-              
+
               <div className="relative flex flex-col items-center p-6 bg-black/70 backdrop-blur-sm rounded-lg
                            border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300
                            transform hover:scale-105 hover:-translate-y-1 opacity-80">
@@ -84,7 +84,7 @@ export function About() {
                              group-hover:text-cyan-400">
                   {item.icon}
                 </div>
-                
+
                 {/* Content with hover effects */}
                 <h3 className="text-lg md:text-xl font-orbitron font-semibold mb-2 
                              text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
@@ -98,6 +98,6 @@ export function About() {
           ))}
         </div>
       </div>
-    </div>
+    </article>
   );
 }
