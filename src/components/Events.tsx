@@ -616,7 +616,7 @@ const events: Event[] = [
   {
     id: "2",
     icon: <Bot className="w-6 h-6 md:w-8 md:h-8" />,
-    title: "Floating Frenzy",
+    title: "Hover Havoc",
     tagline: "'Ready,Set,Hover!'",
     date: "6th, 7th March, 2026",
     time: "To be Notified",
@@ -626,7 +626,7 @@ const events: Event[] = [
     description:
       "Dive into our charged arena of our hovercraft competition where you can show-off your speed and precision by swiftly navigating through an obstacle course.",
     registrationLink: "https://unstop.com/p/hover-havoc-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1644155",
-    coordinators: [{ name: "Satish Gupta", year: "4th Year", phone: "+91 90386 08012" }, { name: "Jit Malakar", year: "3rd Year", phone: "+91 83359 38070" }],
+    coordinators: [{ name: "Satish Gupta", year: "4th Year", phone: "+91 90386 08012" }, { name: "Shhlok Vyas", year: "3rd Year", phone: "+91 77790 17229" }],
   },
   {
     id: "3",
