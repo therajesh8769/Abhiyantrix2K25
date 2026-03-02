@@ -762,7 +762,7 @@ const events: Event[] = [
     image: "/images/cosmic-canvas.png",
     description:
       "Cosmic Canvas is a 1-hour on-the-spot watercolor art competition where participants bring the beauty and mystery of space to life through their creativity. Paint your vision of the universe using only watercolors and let your imagination soar beyond the stars!",
-    registrationLink: "",
+    registrationLink: "https://unstop.com/p/cosmic-canvas-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1651171",
     coordinators: [{ name: "M. Lakshmi Narasimha", year: "4th Year" }, { name: "", year: "" }],
   },
 ]
