@@ -106,9 +106,11 @@ export function Hero() {
           )}
 
           {/* Download Brochure Button */}
-        <div className="mt-12 mb-4">
-  <a
+       <div className="mt-12 mb-4">
+  
     href="https://drive.google.com/file/d/1q1ZYGAYBk9jlOlo_eRCjNZRLXDtwTwqN/view?usp=sharing"
+    target="_blank"
+    rel="noopener noreferrer"
     className="inline-flex items-center gap-2 px-6 py-3 border border-blue-400 text-blue-200 rounded-full font-light tracking-widest hover:bg-blue-400 hover:text-black transition-all duration-300"
     style={{ fontFamily: "Orbitron, sans-serif", fontSize: "0.85rem" }}
   >
