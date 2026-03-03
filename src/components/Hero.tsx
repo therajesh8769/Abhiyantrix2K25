@@ -69,7 +69,7 @@ export function Hero() {
 
           {/* Teaser Video */}
           {isVideoPlaying && (
-            <div className="relative mt-8 mb-45 perspective-1000 transition-all duration-300 ease-in-out">
+            <div className="relative mt-8 mb-24 perspective-1000 transition-all duration-300 ease-in-out">
               <div
                 className="relative w-full max-w-4xl mx-auto transform transition-transform duration-1000 animate-float flex items-center justify-center"
                 onMouseEnter={() => {
@@ -106,7 +106,7 @@ export function Hero() {
           )}
 
           {/* Download Brochure Button */}
-       <div className="mt-12 mb-4">
+       <div className="relative mt-12 mb-4 z-50">
   <a
     href="https://drive.google.com/file/d/1q1ZYGAYBk9jlOlo_eRCjNZRLXDtwTwqN/view?usp=sharing"
     target="_blank"
