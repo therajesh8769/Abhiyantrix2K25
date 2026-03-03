@@ -34,7 +34,7 @@ export function Hero() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('/stars.png')] opacity-50 animate-twinkle"></div>
+      <div className="absolute inset-0 bg-[url('/stars.png')] opacity-50 animate-twinkle pointer-events-none"></div>
       <div className="relative z-10 w-full max-w-6xl mx-auto">
         <div className="relative text-center space-y-8">
           {/* Rocket with trail effect */}
