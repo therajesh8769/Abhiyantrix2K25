@@ -107,7 +107,7 @@ export function Hero() {
 
           {/* Download Brochure Button */}
        <div className="mt-12 mb-4">
-  
+  <a
     href="https://drive.google.com/file/d/1q1ZYGAYBk9jlOlo_eRCjNZRLXDtwTwqN/view?usp=sharing"
     target="_blank"
     rel="noopener noreferrer"
