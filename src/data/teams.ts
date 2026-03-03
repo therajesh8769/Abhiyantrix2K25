@@ -380,7 +380,7 @@ export const teams: TeamData[] = [
       {
         name: "Joyjit Porey",
         position: "Publicity and Social Media Head (4th Year)",
-        image: "./images/teams/general.jpg",
+        image: "./images/teams/joy.jpeg",
         social: {
           linkedin: "",
           email: "",
