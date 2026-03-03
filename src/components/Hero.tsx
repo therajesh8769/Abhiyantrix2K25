@@ -106,24 +106,17 @@ export function Hero() {
           )}
 
           {/* Download Brochure Button */}
-         <div className="mt-12 mb-4">
-  <button
-    onClick={() => {
-      const link = document.createElement("a");
-      link.href =
-        "https://drive.google.com/uc?export=download&id=1q1ZYGAYBk9jlOlo_eRCjNZRLXDtwTwqN";
-      link.setAttribute("download", "Event-brochure.pdf");
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }}
+        <div className="mt-12 mb-4">
+  <a
+    href="https://drive.google.com/uc?export=download&id=1q1ZYGAYBk9jlOlo_eRCjNZRLXDtwTwqN"
+    target="_self"
+    rel="noopener noreferrer"
     className="inline-flex items-center gap-2 px-6 py-3 border border-blue-400 text-blue-200 rounded-full font-light tracking-widest hover:bg-blue-400 hover:text-black transition-all duration-300"
     style={{ fontFamily: "Orbitron, sans-serif", fontSize: "0.85rem" }}
   >
     EXPLORE THE SPACE
-  </button>
+  </a>
 </div>
-
           {/* Coming soon text with animated dots */}
           <div className="relative mt-16 mb-16">
             {/* <p className="text-xl font-sarif md:text-2xl lg:text-3xl text-blue-200 font-light tracking-widest">EXPLORE THE SPACE</p> */}
