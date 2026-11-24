@@ -120,16 +120,24 @@ export const EventCard: React.FC<EventCardProps> = ({ event, index, onViewDetail
 
                 {/* CTAs */}
                 <div className="flex items-center gap-3 mt-auto pt-2">
-                    <a
-                        href={event.registrationLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
-                        className="inline-flex items-center gap-1.5 px-5 py-2 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white text-sm font-semibold rounded-lg transition-all shadow-md shadow-blue-500/20 hover:shadow-blue-500/40"
-                    >
-                        <ExternalLink size={14} />
-                        Register
-                    </a>
+                    {event.registrationLink ? (
+                        <a
+                            href={event.registrationLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="inline-flex items-center gap-1.5 px-5 py-2 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white text-sm font-semibold rounded-lg transition-all shadow-md shadow-blue-500/20 hover:shadow-blue-500/40"
+                        >
+                            <ExternalLink size={14} />
+                            Register
+                        </a>
+                    ) : (
+                        <span
+                            className="inline-flex items-center gap-1.5 px-5 py-2 bg-gray-700/50 text-gray-400 text-sm font-semibold rounded-lg cursor-not-allowed"
+                        >
+                            Coming Soon
+                        </span>
+                    )}
                     <button
                         onClick={(e) => { e.stopPropagation(); onViewDetails(); }}
                         className="inline-flex items-center gap-1 px-4 py-2 text-sm text-blue-400 hover:text-white border border-blue-500/30 hover:border-blue-400/60 rounded-lg transition-all hover:bg-white/5"

@@ -1,0 +1,388 @@
+<title>Abhiyantrix 2027 Requirements</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+  /* Document-style layout for requirements checklist */
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a2e;
+    --muted: #64648b;
+    --accent: #3b5bdb;
+    --accent-light: #edf2ff;
+    --border: #e0e0ec;
+    --section-bg: #f8f9fc;
+    --check-bg: #f0f4ff;
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f0f1a;
+      --fg: #e8e8f0;
+      --muted: #9898b0;
+      --accent: #748ffc;
+      --accent-light: #1a1a30;
+      --border: #2a2a3e;
+      --section-bg: #161625;
+      --check-bg: #1a1a30;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f0f1a;
+    --fg: #e8e8f0;
+    --muted: #9898b0;
+    --accent: #748ffc;
+    --accent-light: #1a1a30;
+    --border: #2a2a3e;
+    --section-bg: #161625;
+    --check-bg: #1a1a30;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body);
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 2rem;
+    max-width: 720px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .header {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .header h1 {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 0.25rem;
+    color: var(--fg);
+  }
+  .header .subtitle {
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  .header .date {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+
+  .section {
+    margin-bottom: 2rem;
+  }
+  .section-title {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin: 0 0 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .section-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .item-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .item {
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: var(--section-bg);
+    border-radius: 8px;
+    border-left: 3px solid var(--border);
+    align-items: flex-start;
+  }
+  .item.required {
+    border-left-color: var(--accent);
+  }
+  .checkbox {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--border);
+    border-radius: 4px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .item.required .checkbox {
+    border-color: var(--accent);
+  }
+  .item-content {
+    flex: 1;
+    min-width: 0;
+  }
+  .item-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.15rem;
+  }
+  .item-desc {
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+  .badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+  }
+  .badge.required {
+    background: var(--accent);
+    color: #fff;
+  }
+  .badge.optional {
+    background: var(--check-bg);
+    color: var(--muted);
+  }
+
+  .note {
+    margin-top: 2rem;
+    padding: 1rem 1.25rem;
+    background: var(--accent-light);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: var(--muted);
+    border: 1px solid var(--border);
+  }
+  .note strong {
+    color: var(--fg);
+  }
+
+  .footer {
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  @media print {
+    body { max-width: none; padding: 1cm; }
+    .item { break-inside: avoid; }
+  }
+</style>
+
+<div class="header">
+  <h1>Abhiyantrix 2027 — Website Update</h1>
+  <p class="subtitle">Content &amp; asset requirements checklist for the website redesign</p>
+  <p class="date">Prepared: 24 November 2026</p>
+</div>
+
+<div class="section">
+  <div class="section-title"><span class="section-num">1</span> Event Information</div>
+  <ul class="item-list">
+    <li class="item required">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">Event Date &amp; Venue <span class="badge required">Required</span></div>
+        <div class="item-desc">Full dates (day, month, year) and venue/campus name for Abhiyantrix 2027.</div>
+      </div>
+    </li>
+    <li class="item required">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">Theme / Tagline <span class="badge required">Required</span></div>
+        <div class="item-desc">New theme or tagline for 2027. If keeping the space/tech theme, confirm it.</div>
+      </div>
+    </li>
+    <li class="item required">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">About / Description <span class="badge required">Required</span></div>
+        <div class="item-desc">Updated "About Abhiyantrix" paragraph — what the fest is, who organises it, which college.</div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="section">
+  <div class="section-title"><span class="section-num">2</span> Events &amp; Schedule</div>
+  <ul class="item-list">
+    <li class="item required">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">Event List <span class="badge required">Required</span></div>
+        <div class="item-desc">For each event: name, category (Technical / Non-Technical / Workshop / Cultural), short description (2–3 lines), rules or format, and team size.</div>
+      </div>
+    </li>
+    <li class="item required">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">Event Coordinators <span class="badge required">Required</span></div>
+        <div class="item-desc">Coordinator name(s) and phone number for each event.</div>
+      </div>
+    </li>
+    <li class="item">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">Event Schedule / Timeline <span class="badge optional">Optional</span></div>
+        <div class="item-desc">Day-wise schedule with time slots, if available.</div>
+      </div>
+    </li>
+    <li class="item">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">Prize Details <span class="badge optional">Optional</span></div>
+        <div class="item-desc">Prize pool or prize breakdown per event, if decided.</div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="section">
+  <div class="section-title"><span class="section-num">3</span> Registration</div>
+  <ul class="item-list">
+    <li class="item required">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">Registration Link / Method <span class="badge required">Required</span></div>
+        <div class="item-desc">Google Form URL, external platform link, or on-site registration details.</div>
+      </div>
+    </li>
+    <li class="item required">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">Registration Fee <span class="badge required">Required</span></div>
+        <div class="item-desc">Fee per person or per team, and whether it covers all events or is per-event.</div>
+      </div>
+    </li>
+    <li class="item">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">Registration Deadline <span class="badge optional">Optional</span></div>
+        <div class="item-desc">Last date to register, early-bird cutoff if any.</div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="section">
+  <div class="section-title"><span class="section-num">4</span> Branding &amp; Design</div>
+  <ul class="item-list">
+    <li class="item required">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">Logo <span class="badge required">Required</span></div>
+        <div class="item-desc">Updated Abhiyantrix 2027 logo file (PNG with transparent background preferred).</div>
+      </div>
+    </li>
+    <li class="item required">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">Color Scheme / Visual Direction <span class="badge required">Required</span></div>
+        <div class="item-desc">Keep the current space/blue theme or switch to something new? Share any mood boards or references.</div>
+      </div>
+    </li>
+    <li class="item">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">Updated Brochure PDF <span class="badge optional">Optional</span></div>
+        <div class="item-desc">New downloadable brochure to replace the 2026 version.</div>
+      </div>
+    </li>
+    <li class="item">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">Photos / Media <span class="badge optional">Optional</span></div>
+        <div class="item-desc">Event photos from previous years, campus photos, or promo images.</div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="section">
+  <div class="section-title"><span class="section-num">5</span> Contact &amp; Social</div>
+  <ul class="item-list">
+    <li class="item required">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">Contact Details <span class="badge required">Required</span></div>
+        <div class="item-desc">Main organiser name(s), phone numbers, and email address for enquiries.</div>
+      </div>
+    </li>
+    <li class="item required">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">Social Media Links <span class="badge required">Required</span></div>
+        <div class="item-desc">Instagram, LinkedIn, YouTube, Twitter/X, or any other active handles.</div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="section">
+  <div class="section-title"><span class="section-num">6</span> Additional Sections</div>
+  <ul class="item-list">
+    <li class="item">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">Sponsors / Partners <span class="badge optional">Optional</span></div>
+        <div class="item-desc">Sponsor names and logos, with tier levels (Title / Gold / Silver) if applicable.</div>
+      </div>
+    </li>
+    <li class="item">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">Guest Speakers / Chief Guest <span class="badge optional">Optional</span></div>
+        <div class="item-desc">Names, designations, and photos of any invited guests or speakers.</div>
+      </div>
+    </li>
+    <li class="item">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">Core Team / Organisers <span class="badge optional">Optional</span></div>
+        <div class="item-desc">Team member names, roles, and photos for an "Our Team" section.</div>
+      </div>
+    </li>
+    <li class="item">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">Past Highlights / Gallery <span class="badge optional">Optional</span></div>
+        <div class="item-desc">Highlight reel, stats (footfall, participants), or photo gallery from previous editions.</div>
+      </div>
+    </li>
+    <li class="item">
+      <div class="checkbox"></div>
+      <div class="item-content">
+        <div class="item-title">FAQ <span class="badge optional">Optional</span></div>
+        <div class="item-desc">Common questions: accommodation, food, transport, eligibility, refund policy.</div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="footer">
+  Abhiyantrix 2027 — Website Requirements Checklist
+</div>

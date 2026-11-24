@@ -1,100 +1,88 @@
-
-import React from 'react';
 import { Calendar, MapPin, Users } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export function About() {
   return (
-    <article aria-label="About Abhiyantrix - Largest Aerospace Tech Fest in Kolkata, West Bengal" className="relative text-white py-16 md:py-20 overflow-hidden bg-black opacity-80">
-      {/* Space-themed background effects */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(56,189,248,0.15),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(59,130,246,0.15),transparent_50%)]" />
+    <article aria-label="About Abhiyantrix" className="relative text-white py-20 md:py-28 overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(56,189,248,0.1),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(139,92,246,0.06),transparent_50%)]" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
-        {/* Animated Heading */}
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 md:mb-16">
-          <span className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 
-                         animate-[shimmer_3s_infinite] bg-[length:200%_100%]">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 relative">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-14"
+        >
+          <h2 className="text-3xl md:text-5xl font-bold font-orbitron tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-500 mb-3">
             About Abhiyantrix
-          </span>
-        </h1>
+          </h2>
+          <div className="w-20 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-transparent mx-auto mt-4" />
+        </motion.div>
 
-        {/* Introduction Section with Hover Effects */}
-        <div className="relative group">
-          <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg blur opacity-25 
-                         group-hover:opacity-40 transition duration-1000 group-hover:duration-200" />
-          <div className="relative bg-black/80 backdrop-blur-sm rounded-lg p-6 md:p-10 mb-12 
-                         border border-blue-500/20 hover:border-blue-500/40 transition-colors duration-300">
-            <p className="leading-relaxed text-lg md:text-xl text-gray-300 space-y-4">
-              <span className="font-mono text-white inline-block transform hover:scale-105 transition-transform">
-                ABHIYANTRIX
-              </span>
-              , one of the biggest fests in West Bengal, is unique in being centered around,
-              <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 
-                             inline-block transform hover:scale-105 transition-transform">
-                {"Space and Technology"}
-              </span>
-              . Conducted by the Aerospace Engineers' Society of the Department of Aerospace Engineering
-              and Applied Mechanics, Indian Institute of Engineering Science and Technology, Shibpur,
-              this event stands as a beacon of innovation and collaboration.
-            </p>
-            <p className="mt-4 leading-relaxed text-lg md:text-xl text-gray-300">
-              <span className="font-mono text-white inline-block transform hover:scale-105 transition-transform">
-                Abhiyantrix 2026
-              </span>{" "}
-              will be held from{" "}
-              <span className="text-blue-400 font-bold">March 5 to March 7</span>.
-              The fest ignites technological curiosity, providing an inclusive platform for participants
-              to come together and contribute to groundbreaking innovations in the fields of Space and Technology.
-            </p>
-          </div>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="relative bg-white/[0.03] backdrop-blur-md rounded-2xl p-7 md:p-10 mb-14 border border-blue-500/15 hover:border-blue-500/30 transition-colors duration-500"
+        >
+          <p className="leading-relaxed text-base md:text-lg text-gray-300">
+            <span className="font-orbitron text-white font-semibold">ABHIYANTRIX</span>, recognised as{" "}
+            <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+              Kolkata's Largest Space Technology Fest
+            </span>
+            , is organised by the Aerospace Engineers' Society of the Department of Aerospace Engineering
+            and Applied Mechanics, Indian Institute of Engineering Science and Technology, Shibpur.
+            Abhiyantrix brings together aerospace enthusiasts through competitions and challenges involving
+            aeroplane design, CAD modelling and space technology.
+          </p>
+          <p className="mt-5 leading-relaxed text-base md:text-lg text-gray-300">
+            <span className="font-orbitron text-white font-semibold">Abhiyantrix 2027</span>{" "}
+            marks the{" "}
+            <span className="text-cyan-400 font-semibold">5th Edition</span>{" "}
+            of this aerospace festival. The fest ignites technological curiosity, providing an inclusive platform for participants
+            to come together and contribute to groundbreaking innovations in Aerospace, Aircraft and Space.
+          </p>
+        </motion.div>
 
-        {/* Animated Info Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
           {[
             {
-              icon: <Calendar className="w-10 h-10 md:w-12 md:h-12" />,
-              title: "March 5-7, 2026",
-              subtitle: "Three days of innovation"
+              icon: <Calendar className="w-8 h-8" />,
+              title: "Coming Soon",
+              subtitle: "Dates to be announced",
+              delay: 0,
             },
             {
-              icon: <MapPin className="w-10 h-10 md:w-12 md:h-12" />,
-              title: "1st floor,2nd lobby, IIEST Shibpur",
-              subtitle: "Main building"
+              icon: <MapPin className="w-8 h-8" />,
+              title: "IIEST Shibpur",
+              subtitle: "Venue to be confirmed",
+              delay: 0.1,
             },
             {
-              icon: <Users className="w-10 h-10 md:w-12 md:h-12" />,
+              icon: <Users className="w-8 h-8" />,
               title: "1000+ Participants",
-              subtitle: "From across the nation"
+              subtitle: "From across the nation",
+              delay: 0.2,
             }
           ].map((item, index) => (
-            <div
+            <motion.div
               key={index}
-              className="group relative"
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: item.delay }}
+              className="group relative bg-white/[0.03] backdrop-blur-md rounded-xl p-6 border border-blue-500/15
+                         hover:border-blue-400/35 transition-all duration-300 text-center"
             >
-              {/* Animated border gradient */}
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg blur opacity-25 
-                           group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-tilt" />
-
-              <div className="relative flex flex-col items-center p-6 bg-black/70 backdrop-blur-sm rounded-lg
-                           border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300
-                           transform hover:scale-105 hover:-translate-y-1 opacity-80">
-                {/* Animated icon */}
-                <div className="text-blue-400 mb-4 transform group-hover:scale-110 transition-transform duration-300
-                             group-hover:text-cyan-400">
-                  {item.icon}
-                </div>
-
-                {/* Content with hover effects */}
-                <h3 className="text-lg md:text-xl font-orbitron font-semibold mb-2 
-                             text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-                  {item.title}
-                </h3>
-                <p className="text-gray-400 text-sm md:text-base group-hover:text-gray-300 transition-colors">
-                  {item.subtitle}
-                </p>
+              <div className="text-blue-400 mb-3 flex justify-center group-hover:text-cyan-400 transition-colors duration-300">
+                {item.icon}
               </div>
-            </div>
+              <h3 className="text-base md:text-lg font-orbitron font-semibold text-white mb-1.5">
+                {item.title}
+              </h3>
+              <p className="text-gray-400 text-sm">{item.subtitle}</p>
+            </motion.div>
           ))}
         </div>
       </div>

@@ -14,11 +14,16 @@ export function Footer() {
 
           {/* ── Left Column: Logo + About + Secretary ── */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <img
-              src="/images/abh2.png"
-              alt="Abhiyantrix Logo"
-              className="h-14 sm:h-16 w-auto mb-3"
-            />
+            <div className="flex items-center gap-3 mb-3">
+              <img
+                src="/images/AES_LOGO.png"
+                alt="AES Logo"
+                className="h-12 sm:h-14 w-auto"
+              />
+              <span className="text-lg sm:text-xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-400" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+                ABHIYANTRIX 2027
+              </span>
+            </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm mb-5">
               Join us for the most innovative technical festival that pushes the boundaries of technology and creativity.
             </p>
@@ -30,7 +35,7 @@ export function Footer() {
               </h6>
               <div className="flex items-center gap-2 justify-center md:justify-start">
                 <Phone className="w-4 h-4 text-blue-400 flex-shrink-0" />
-                <span className="text-gray-400 text-sm">Navonil Chatterjee: +91 7364897566</span>
+                <span className="text-gray-400 text-sm">Ashutosh Singh</span>
               </div>
             </div>
 
@@ -41,7 +46,7 @@ export function Footer() {
               </h6>
               <div className="flex items-center gap-2 justify-center md:justify-start">
                 <Phone className="w-4 h-4 text-blue-400 flex-shrink-0" />
-                <span className="text-gray-400 text-sm">Shlok Vyas: +91 7779017229</span>
+                <span className="text-gray-400 text-sm">Vikas Dooldani</span>
               </div>
             </div>
           </div>
@@ -56,13 +61,13 @@ export function Footer() {
               <li className="flex items-center gap-2 justify-center md:justify-end group hover:text-blue-400 transition-colors">
                 <Phone className="w-4 h-4 text-blue-400 group-hover:text-blue-300 flex-shrink-0" />
                 <span className="text-gray-400 text-sm group-hover:text-blue-400">
-                  Sandeep Sankuru: +91 9062906676
+                  Mehul Mehta
                 </span>
               </li>
               <li className="flex items-center gap-2 justify-center md:justify-end group hover:text-blue-400 transition-colors">
                 <Phone className="w-4 h-4 text-blue-400 group-hover:text-blue-300 flex-shrink-0" />
                 <span className="text-gray-400 text-sm group-hover:text-blue-400">
-                  Mehul Mehta: +91 7973924794
+                  Bikram Patir
                 </span>
               </li>
               <li className="flex items-center gap-2 justify-center md:justify-end group hover:text-blue-400 transition-colors">
@@ -104,7 +109,7 @@ export function Footer() {
             {/* Copyright + Maintained by */}
             <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center">
               <p className="text-gray-500 text-xs">
-                © All rights reserved by Abhiyantrix 2026
+                © All rights reserved by Abhiyantrix 2027
               </p>
               <a
                 href="https://www.linkedin.com/in/jit-malakar/"

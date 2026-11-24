@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Home, Info, Calendar, Users, Menu, X,Banknote} from "lucide-react"
+import { Home, Info, Calendar, Users, Menu, X, Banknote, Clock, Wrench, Building2, HelpCircle } from "lucide-react"
 import { TeamModal } from "./team-modal"
 import { teams } from "../data/teams"
 
@@ -37,7 +37,10 @@ export function Navbar() {
     { icon: <Home className="w-4 h-4" />, label: "Home" },
     { icon: <Info className="w-4 h-4" />, label: "About" },
     { icon: <Calendar className="w-4 h-4" />, label: "Events" },
+    { icon: <Clock className="w-4 h-4" />, label: "Schedule" },
+    { icon: <Wrench className="w-4 h-4" />, label: "Workshops" },
     { icon: <Banknote className="w-4 h-4" />, label: "Sponsors" },
+    { icon: <HelpCircle className="w-4 h-4" />, label: "FAQ" },
     { icon: <Users className="w-4 h-4" />, label: "Teams", action: () => setIsTeamModalOpen(true) },
     // ...(isLoggedIn
     //   ? [
@@ -74,14 +77,15 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-2">
         <div className="flex items-center justify-between h-14 md:h-16">
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center gap-2.5">
             <img
-              src="/images/abh2.png"
-              alt="Abhiyantrix Logo"
-              width={90}
-              height={30}
-              className="w-auto h-12 md:h-34"
+              src="/images/AES_LOGO.png"
+              alt="AES Logo"
+              className="w-auto h-9 md:h-11"
             />
+            <span className="text-sm md:text-base font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-400" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+              ABHIYANTRIX
+            </span>
           </div>
 
           {/* Desktop Menu */}
